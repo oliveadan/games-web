@@ -1,0 +1,120 @@
+@charset "utf-8";
+<!--首页css样式开始-->
+/*container css*/
+.container{font-size:14px;}
+.subMenu{background:url(../../images/bj.jpg) no-repeat 0 0;height:88px;position:relative;margin:0 auto;}
+.subMenu .tit{position:absolute;left:310px;top:25px;font-size:35px;line-height:40px;}
+.subMenu .media{font-size:16px;position:absolute;right:580px;top:15px;background:url(../../images/logo_vip.png) no-repeat left center;padding:0 0 0 70px;height:60px}
+/*banner开始*/
+#slideshow{position:relative;height:545px;margin:0 auto;padding-bottom:60px;margin-top:40px}
+#slideshow a{float:left;display:inline;height:500px;position:relative;margin-right:10px;overflow:hidden}
+#slideshow a:hover{text-decoration:none}
+#slideshow img{height:500px;overflow:hidden;-webkit-transition:all .25s linear .1s;-moz-transition:all .25s linear .1s;-ms-transition:all .25s linear .1s;-o-transition:all .25s linear .1s;transition:all .25s linear .1s}
+#slideshow span>a:hover>img{text-decoration:none;-webkit-transform:scale(1.05);-moz-transform:scale(1.05);-ms-transform:scale(1.05);-o-transform:scale(1.05);transform:scale(1.05)}
+#slideshow .img{position:absolute;height:500px;overflow:hidden;left:0;top:0}
+#slideshow .img span{position:absolute;display:block}
+#slideshow .btns{z-index:10;position:absolute;}
+#slideshow .btns b{position:absolute;width:100px;display:block;height:14px;overflow:hidden;top:525px;left:50%}
+#slideshow .btns b i{width:10px;background:#fff;float:left;height:10px;font-size:0;overflow:hidden;cursor:pointer;margin-right:6px;background:#252525;-webkit-border-radius:7px;-moz-border-radius:7px;border-radius:7px}
+#slideshow .btns b i:hover{background:#a7a7a6}
+#slideshow .btns b i.on{background:#FDEF0A;cursor:default}
+#slideshow .btns b i.on:hover{background:#60bf30;cursor:default}
+#slideshow .btns s{position:absolute;width:53px;height:82px;overflow:hidden;top:205px;cursor:pointer;filter:alpha(opacity=70);-moz-opacity:.7;opacity:.7}
+#slideshow .btns s i{position:absolute;width:53px;background:url(../../images/btn_slideshow.png);height:82px}
+#slideshow .btns s.prev{left:-70px}
+#slideshow .btns s.prev i{left:0}
+#slideshow .btns s.next{right:-70px}
+#slideshow .btns s.next i{right:0;background-position:-60px 0}
+.slideshow-hover#slideshow .btns s{filter:alpha(opacity=100);-moz-opacity:1;opacity:1;display:block}
+.paging{height:500px;position:absolute;overflow:hidden}
+.pattern{left:-10px}
+.subpattern{right:-10px;top:0}
+.wtit .info,.wtit .tit{float:left}
+.wtit .info{padding:35px 0 0 20px;color:#989898}
+.wtit .info span{margin:0 8px}
+.alpha_layer_h{position:absolute;width:100%;height:100%;left:0;top:0;z-index:10;opacity:.5;filter:alpha(opacity=50);-moz-opacity:.5;-khtml-opacity:.5;background:#000}
+.slideshow_info{height:60px;position:absolute;left:0;bottom:0;display:none}
+#slideshow .img span .current>.slideshow_info{display:block}
+#slideshow .prev:hover{filter:alpha(opacity=100);-moz-opacity:1;opacity:1;display:block}
+#slideshow .next:hover{filter:alpha(opacity=100);-moz-opacity:1;opacity:1;display:block}
+.slideshow_mod_bg{height:60px;background:#000;filter:alpha(opacity=70);-moz-opacity:.7;opacity:.7}
+.slideshow_mod{height:60px;position:absolute;top:0;left:0;color:#fff;text-indent:25px;cursor:pointer}
+.slideshow_mod h3{margin-top:8px;font-family:\5fae\8f6f\96c5\9ed1,STHeiti;font-size:30px;font-weight:bold;height:40px;line-height:40px;overflow:hidden}
+.slideshow_mod_num{float:left;display:inline;font-size:28px;font-weight:bold;/* margin-top:20px; */font-family:\5fae\8f6f\96c5\9ed1 Arial,Helvetica,sans-serif}
+.slideshow_mod_num i{font-style:normal;color:#fff114;font-weight:bold;font-size:36px;padding-right:13px;background:url(../../images/slash.png) no-repeat right 14px;margin-right:-1px}
+.clear{clear:both;height:0;overflow:hidden;line-height:0}
+.world_cup_2014_content{padding-bottom:360px;background:url(../../images/bg_footer.png) no-repeat bottom right}
+.world_cup_2014_content h1{height:0;overflow:hidden;line-height:999px}
+.world_cup_2014_content .w_c_wrap{margin:0 auto;position:relative}
+.w_c_wrap .w_c_l{float:left;display:inline;}
+.w_c_wrap .w_c_r{float:right;display:inline;overflow:hidden}
+.w_c_wrap .ttl{width:100%;height:30px}
+.w_c_wrap .ttl .ad{float:right;height:30px}
+.w_c_wrap .ttl .ad img{width:100%;height:100%}
+.w_c_wrap .w_c_l .ttl h3{font-size:24px;line-height:30px;font-family:\5fae\8f6f\96c5\9ed1;font-weight:bold;color:#252525;float:left}
+.w_c_wrap .w_c_l .today{overflow:hidden;padding:20px 0 40px 2px}
+.w_c_wrap .w_c_l .today table td{height:48px;line-height:28px;font-size:14px;line-height:28px}
+.w_c_wrap .w_c_l .today table td a{color:#333}
+.w_c_wrap .w_c_l .brazil{padding:24px 0 0 3px}
+.w_c_wrap .ad_btm{position:absolute;bottom:10px;left:0;height:150px}
+.brazil p{font-size:14px;line-height:30px;font-family:\5b8b\4f53,SimSun,sans-serif;color:#555}
+.country_ctrl p{font-family:"MicroSoft YaHei",SimSun,sans-serif;color:#afccb2}
+.w_c_wrap .w_c_r .ttl h4{font-size:18px;line-height:30px;font-family:\5fae\8f6f\96c5\9ed1;color:#252525;float:left}
+.w_c_wrap .w_c_r .txt{padding-bottom:25px;border-bottom:1px solid #EEE;margin-bottom:22px}
+.w_c_wrap .w_c_r .txt h5{font-size:14px;line-height:50px;font-family:\5b8b\4f53;color:#252525}
+.w_c_wrap .w_c_r .txt h5>a{color:#252525}
+.w_c_wrap .w_c_r .txt h5>a:hover{color:#ba2636}
+.w_c_wrap .w_c_r .txt p{font-size:12px;line-height:22px;font-family:\5b8b\4f53;color:#252525}
+.w_c_wrap .w_c_r .txt p>a{color:#cc2424}
+.w_c_wrap .w_c_r .txt p img{float:left;margin:6px 10px 10px 0}
+.w_c_wrap .w_c_r .txt_last{padding-bottom:0;border:0;margin-bottom:0}
+.clear{clear:both;height:0;overflow:hidden}
+/*banner结束*/
+.content .silde{font-size:14px;}
+.content .ball_list h3,.content .silde h3,.visa h3{font-size:24px;font-weight:bold;line-height:30px;border-left:8px solid #000;padding-left:10px;margin:30px 0 20px;}
+.content .silde p{padding:5px 0;line-height:30px}
+.content .pc_cont .fr .pic{margin:30px 0;text-align:center;}
+.line{border-bottom:1px solid #ccc;}
+.city_tab{border-right:1px solid #ccc;border-bottom:1px solid #ccc;}
+.city_tab td{border-top:1px solid #ccc;border-left:1px solid #ccc;line-height:30px;padding-left:10px;}
+.ball_list dt{font-size:20px;padding:20px 0;}
+.ball_list dd{line-height:30px;font-size:14px;text-indent:4em}
+.group{margin-top:40px;}
+.group h4{font-size:20px;font-weight:400;line-height:30px}
+.group h5{text-align:center;padding:10px;font-size:16px}
+.group .group_tab table{border-right:1px solid #ccc;border-bottom:1px solid #ccc;}
+.group .group_tab td{border-top:1px solid #ccc;border-left:1px solid #ccc;line-height:24px;text-align:center}
+.visa{padding:20px 0;}
+.visa p{line-height:30px;}
+
+.Field_num{width:100%;margin:0 auto;position:relative}
+.main_top{position:relative;margin:0 auto;text-align:center}
+.nav_box{border-top:1px solid #fff;border-bottom:1px solid #fff;text-align:center;}
+.nav_cont{margin:0 10%;}
+.nav_box a{color:#fff;font-size:18px;height:60px;line-height:60px;display:inline-block}
+.nav_cont .line{border-left:1px solid #fff;height:36px;width:1px;margin-left:3px;}
+/*** Tab ***/
+.detail_box{margin:0 auto;}
+#wrapper_tab{margin-top:35px;}
+.tab_tit{text-align:center}
+#wrapper_tab a.tab_link{position:relative;z-index:1;display:inline-block;margin:0 -5px 0 0;padding:0 10px;height:40px;color:#fff;font-size:14px;line-height:42px;font-weight:bold;border:1px solid #f1f3f5;border-radius:2px 2px 0 0;-moz-border-radius: 2px 2px 0 0;-khtml-border-radius:2px 2px 0 0;}
+#wrapper_tab a.tab_link:hover{border:1px solid #f7f7f7;color:#ecff16}
+#wrapper_tab.tab1 a.tab1,
+#wrapper_tab.tab2 a.tab2{color:#ecff16;border: 1px solid #e0e0e0;border-bottom: 1px solid #fff;border-radius: 2px 2px 0 0;-moz-border-radius: 2px 2px 0 0;-khtml-border-radius: 2px 2px 0 0;z-index: 3;}
+#wrapper_tab div.tab_body {display:none;}
+#wrapper_tab.tab1 div.tab1,
+#wrapper_tab.tab3 div.tab3,
+#wrapper_tab.tab2 div.tab2
+{display:block;position:relative;z-index:2;margin:-1px 0 0 0;}
+.row{margin-top:30px;}
+.row .sort_yel{width:100px;height:50px;background:#eaaf11;color:#fff;font-size:18px;text-align:center;line-height:50px;font-weight:bold}
+.sort_green{width:100px;height:50px;background:#10bd70;color:#fff;font-size:18px;text-align:center;line-height:50px;font-weight:bold}
+.row .sort_yel strong{font-size:40px;margin-right:5px}
+.row .each{border-top:1px solid #fff;}
+.row .each ul{padding:20px 0 15px 20px;}
+.row .each li{float:left;background:#4e5e69;line-height:30px;font-size:14px;color:#fff;text-align:center;margin:10px 30px 10px 0; }
+.count{margin:30px auto;text-align:left;font-size:14px;text-align:center;}
+.count a.atp{background:url(../../images/atp.png) no-repeat center left;}
+.count a.team{background:url(../../images/team.png) no-repeat center left;margin:20px 150px}
+.count a.stat{background:url(../../images/stat.png) no-repeat center left;}
+.count a strong{font-size:16px}

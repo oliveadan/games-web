@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>答题页面</title>
+    <meta name="description" content="particles.js is a lightweight JavaScript library for creating particles.">
+    <meta name="author" content="Vincent Garreau"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" href="{{static_front}}/static/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="{{static_front}}/static/front/questscore/css/css.css">
+    <link rel="stylesheet" type="text/css" href="{{static_front}}/static/front/questscore/css/ui.css">
+    <script src="{{static_front}}/static/front/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+<div class="entrance-bottom" style="overflow-x:hidden">
+    <!--Progress bar-->
+    <div class="timeOut">答题倒计时</div>
+    <div id="progress_bar" class="ui-progress-bar ui-container">
+        <div class="ui-progress" style="width: 40%;"><span class="ui-label" style="display:none;"><b
+                        id="time"></b></span></div>
+    </div>
+    <!--/Progress bar-->
+    <div class="content" id="main_content"></div>
+    <div class="topic-frameli"></div>
+    <div id="radios" class="entrance-bottom-frame clearfix">
+    </div>
+</div>
+<script src="/static/front/layer-v3.1.1/layer.js"></script>
+<script type="text/javascript">
+    var all = "";
+    var enable = 1;
+    var post_flag = false;//设置一个对象来控制是否进入AJAX过程
+    $(function () {
+        var htmls = '';
+        var htmlNodes = '';
+        var htmlbtn = '';
+        var Nodes = '';
+        var rdo1 = '';
+        var rdo2 = '';
+        var father1 = '';
+        var rdos = '';
+        var ls = {{.questList}};
+        for (var i = 0; i < ls.length; i++) {
+            //单选题
+            if (ls[i].ContentType == 1) {
+                var cont = ls[i].Content;
+                Nodes = '';
+                //题目
+                if (ls[i].Pid == 0) {
+                    htmls = '<div class="entrance-bottom-frame-line-title"><span>单选题：<span>' + cont + '</div>';
+                }
+                for (var j = 0; j < ls.length; j++) {
+                    //选项
+                    if (ls[i].Id == ls[j].Pid) {
+                        var cont = ls[j].Content;
+                        htmlNodes = '<input type="radio" name="radio' + ls[i].Id + '" class="entrance-bottom-frame-line-button" value="' + ls[j].Id + '" id=iid' + ls[j].Id + '>' + '<label for="iid' + ls[j].Id + '">' + '<div class="entrance-bottom-frame-line-button-id">' + '</div>' + '<span class="entrance-bottom-frame-line-button-frame">' + cont + '</span>' + '</label>';
+                        Nodes += htmlNodes;
+
+                        htmlbtn = '<button type="button" class="entrance-bottom-frame-line-next" onclick="ck(' + ls[i].Id + ',' + ls[i].Id + ')" >' + '下一题' + '</button>';
+                    }
+                }
+                //题目+选项拼接
+                father1 = '<div class="entrance-bottom-frame-line"  id="did' + ls[i].Id + '">' + htmls + Nodes + htmlbtn + '</div>' + '<div>'
+                rdo1 += father1;
+            }
+            //多选题
+            if (ls[i].ContentType == 2) {
+                var cont = ls[i].Content;
+                Nodes = '';
+                //题目
+                if (ls[i].Pid == 0) {
+                    htmls = '<div class="entrance-bottom-frame-line-title"><span>多选题：<span>' + cont + '</div>';
+                }
+                for (var j = 0; j < ls.length; j++) {
+                    //选项
+                    if (ls[i].Id == ls[j].Pid) {
+                        var cont = ls[j].Content;
+                        htmlNodes = '<input type="checkbox" class="entrance-bottom-frame-line-button" name="radio' + ls[i].Id + '" value="' + ls[j].Id + '" id=iid' + ls[j].Id + '>' + '<label for="iid' + ls[j].Id + '">' + '<div class="entrance-bottom-frame-line-button-id">' + '</div>' + '<span class="entrance-bottom-frame-line-button-frame">' + cont + '</span>' + '</label>';
+                        Nodes += htmlNodes;
+                        htmlbtn = '<button type="button" class="entrance-bottom-frame-line-next" onclick="ck(' + ls[i].Id + ',' + ls[i].Id + ')" >' + '下一题' + '</button>';
+                    }
+                }
+                //题目+选项拼接
+                father1 = '<div class="entrance-bottom-frame-line" id="did' + ls[i].Id + '">' + htmls + Nodes + htmlbtn + '</div>' + '<div>'
+                rdo2 += father1;
+            }
+            rdos = rdo1 + rdo2;
+        }
+        $('#radios').append(rdos);
+        //题目序号循环
+        var timu = {{.titlenumbers}};
+        /*for (var i = 0; i < ls.length / 5; i++) {
+            timu++
+        }**/
+
+        mintime = 1;
+        var dact = document.querySelector(".entrance-bottom-frame-line");
+        var active = "active";
+        addClass(dact, active);
+        var timu_id = 0;
+        var select1 = 1;
+        var frame_left = 0;
+        document.querySelector(".entrance-bottom-frame").style.marginLeft = frame_left + "%";
+        document.querySelector(".topic-frameli").innerHTML = "第 " + "<div>" + select1 + "</div>" + "/" + timu + " 题";
+        //下一题按钮的点击事件
+        ck = function (s, t) {
+            b = [];
+            $('#did' + s + ' input[name="radio' + t + '"]:checked').each(function (i, e) {
+                b.push(e.value);
+                all += "," + e.value;
+            });
+            if (b.length == 0) {
+                layer.msg("至少需要选择一个选项")
+            } else if (b.length > 2) {
+                layer.msg("多选题最多只能选择两题")
+            } else {
+                if (timu_id < document.querySelectorAll(".entrance-bottom-frame-line").length - 1) {
+                    frame_left += -100;
+                    document.querySelector(".entrance-bottom-frame").style.marginLeft = frame_left + "%";
+                    timu_id++;
+                    select1++;
+                    document.querySelector(".topic-frameli").innerHTML = "第 " + "<div>" + select1 + "</div>" + "/" + timu + " 题";
+                    addClass(document.querySelectorAll(".entrance-bottom-frame-line")[timu_id], active);
+                    removeClass(document.querySelectorAll(".entrance-bottom-frame-line")[timu_id - 1], active)
+                } else {
+                    $(".entrance-bottom-frame-line-next").attr('disabled', true);
+                    if (post_flag) return; //如果正在提交则直接返回，停止执行
+                    post_flag = true;//标记当前状态为正在提交状态
+                    $.ajax({
+                        url: '/questscore/index',
+                        type: "post",
+                        dataType: "json",
+                        data: {"gid":{{.gameid}}, "ids": all, "token":{{.token}}, "category":{{.category}}},
+                        success: function (data) {
+                            if (data.code != 1) {
+                                enable = 2;
+                                ss = data.msg + ",系统异常请联系客服处理";
+                                layer.msg(ss);
+                                setTimeout(function () {
+                                    location.href = '{{urlfor "QuestscoreApiController.Login"}}'
+                                }, 2000)
+                            } else {
+                                post_flag = false;
+                                location.href = data.url;
+                            }
+                        },
+                        error: function () {
+                            post_flag = false; //AJAX失败也需要将标志标记为可提交状态
+                        }
+                    });
+                }
+            }
+        }
+    });
+
+
+    //题目切换
+    function addClass(obj, cls) {
+        var obj_class = obj.className,
+            blank = (obj_class != "") ? " " : "";
+        added = obj_class + blank + cls;
+        obj.className = added
+    }
+
+    function removeClass(obj, cls) {
+        var obj_class = " " + obj.className + " ";
+        obj_class = obj_class.replace(/(\s+)/gi, " "), removed = obj_class.replace(" " + cls + " ", " ");
+        removed = removed.replace(/(^\s+)|(\s+$)/g, "");
+        obj.className = removed
+    }
+
+    function hasClass(obj, cls) {
+        var obj_class = obj.className,
+            obj_class_lst = obj_class.split(/\s+/);
+        x = 0;
+        for (x in obj_class_lst) {
+            if (obj_class_lst[x] == cls) {
+                return true
+            }
+        }
+        return false
+    }
+
+    (function (doc, win, undefined) {
+        var docEl = doc.documentElement,
+            resizeEvt = "orientationchange" in win ? "orientationchange" : "resize",
+            recalc = function () {
+                var clientWidth = docEl.clientWidth;
+                if (clientWidth === undefined) {
+                    return
+                }
+                docEl.style.fontSize = 100 * (clientWidth / 750) + "px"
+            };
+        if (doc.addEventListener === undefined) {
+            return
+        }
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener("DOMContentLoaded", recalc, false)
+    })(document, window);
+    //进度条
+    (function ($) {
+        $.fn.animateProgress = function (progress, callback) {
+            return this.each(function () {
+                $(this).animate({
+                    width: progress + "%"
+                }, {
+                    duration: 40000,
+                    easing: "swing",
+                    step: function (progress) {
+                        var labelEl = $(".ui-label", this),
+                            valueEl = $(".value", labelEl);
+                        if (Math.ceil(progress) < 20 && $(".ui-label", this).is(":visible")) {
+                            labelEl.hide()
+                        } else {
+                            if (labelEl.is(":hidden")) {
+                                labelEl.fadeIn()
+                            }
+                        }
+                        if (Math.ceil(progress) == 100) {
+                            labelEl.text("答题时间到");
+                            setTimeout(function () {
+                                labelEl.fadeOut()
+                            }, 1000);
+                            if (enable === 1 && !post_flag) {
+                                post_flag = true;//标记当前状态为正在提交状态
+                                $.ajax({
+                                    url: '/questscore/index',
+                                    type: "post",
+                                    dataType: "json",
+                                    data: {"gid":{{.gameid}}, "ids": all, "token":{{.token}}, "category":{{.category}}},
+                                    success: function (data) {
+                                        if (data.code != 1) {
+                                            ss = data.msg + ",系统异常请联系客服处理";
+                                            layer.msg(ss);
+                                            setTimeout(function () {
+                                                location.href = '{{urlfor "QuestscoreApiController.Login"}}'
+                                            }, 2000)
+                                        } else {
+                                            enable = 2;
+                                            location.href = data.url;
+                                        }
+                                    },
+                                    error: function () {
+                                        post_flag = false; //AJAX失败也需要将标志标记为可提交状态
+                                    }
+                                });
+                                return false;
+                            }
+                        } else {
+                            valueEl.text(Math.ceil(progress) + "%")
+                        }
+                    },
+                    complete: function (scope, i, elem) {
+                        if (callback) {
+                            callback.call(this, i, elem)
+                        }
+                    }
+                })
+            })
+        }
+    })(jQuery);
+    $(function () {
+        $("#progress_bar .ui-progress .ui-label").hide();
+        $("#progress_bar .ui-progress").css("width", "7%");
+        $("#progress_bar .ui-progress").animateProgress(100, function () {
+            $("#main_content").slideDown();
+            $("#fork_me").fadeIn()
+        })
+    });
+
+    $(function () {
+        var m = 1;
+        var s = 10;
+        setInterval(function () {
+            if (m >= 0) {
+                $('#time').html(s);
+                s--;
+                if (s < 0) {
+                    s = 43;
+                    m--;
+                }
+            }
+        }, 1000)
+    });
+    //阻止用户回退，刷新
+    history.go(1);
+    document.onkeydown = function () {
+        if (event.keyCode == 116) {
+            event.keyCode = 0;
+            event.cancelBubble = true;
+            return false;
+        }
+    }
+    document.oncontextmenu = function () {
+        return false;
+    };
+</script>
+</body>
+</html>

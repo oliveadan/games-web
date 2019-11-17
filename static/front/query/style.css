@@ -1,0 +1,80 @@
+*{ -webkit-tap-highlight-color: rgba(0,0,0,0);-webkit-tap-highlight-color: transparent; /* For some Androids */ }  
+
+body{margin:0 auto; background:#fff;font-size:16px;font-family:'STHeiti','Microsoft YaHei',Helvetica,Arial,sans-serif; max-width:640px;}
+
+.header{width:6.4rem;height:0.9rem; background:#532687; background-size:cover; color:#fff;text-align:center; line-height:0.9rem; position:relative}
+.header .logo{ display: block;margin: 0 auto; width:100%; height: 100%;background: url(/static/img/logo240x80.png) center center no-repeat;background-size:35%;}
+
+.clearfix:after{visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0}
+.back{background:url(./back.png) no-repeat;float:left;width:0.6rem;height:0.6rem;background-size:cover;margin: 0.15rem 0.3rem;}
+
+.query{
+	padding: 0.3rem 0;
+	background:	#9370DB;
+}
+
+.query .input{
+	width: 5rem;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    background: #fff4e4;
+    border-radius: 0.2rem;
+    text-align: center;
+    font-size: 0.24rem;
+    border: none;
+    margin: 0 auto;
+    display: block;
+    color: #6c3114;
+	border: 0.01rem solid red;
+}
+
+.split {
+    background: #ddd;
+    width: 100%;
+    height: 0.1rem;
+    _overflow: hidden;
+    vertical-align: middle;
+}
+
+.query .button{
+	width: 5rem;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    background: #f63d3d;
+    border-radius: 0.2rem;
+    text-align: center;
+    font-size: 0.3rem;
+    border: none;
+    margin: 0 auto;
+    margin-top: 0.3rem;
+    display: block;
+    color: #fff;
+    font-weight: bold;
+}
+.content .detail {
+	background: #532687;
+}
+.section{
+	padding: 0.2rem 0.6rem;border-bottom: 1px solid rgba(221, 221, 221, 0.6);
+}
+
+.gift{
+	font-size: 0.4rem;
+	color: #F0FFF0;
+}
+
+.time{
+	margin-top: 0.2rem;color: #DCDCDC;
+}
+.status0{
+	float: right;
+}
+.status1 {
+	float: right;
+	color: #FFFF00;
+}
+.mo{text-align: center;color: #999;}
+.mo .more{display: none;width: 100%;height: 0.8rem;line-height: 0.8rem;}
+.mo .nomore{display: none;height: 0.8rem;line-height: 0.8rem;}
+/* 底部 */
+.footer{ padding-top:0.25rem; padding-bottom:0.25rem;background: #1d1717;color: #574343;text-align:center;font-size: 0.24rem;}

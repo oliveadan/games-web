@@ -1,0 +1,249 @@
+@charset "utf-8";
+/* ----------------Reset Css---------------------*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video, input {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    list-style: none;
+}
+
+html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {
+    -webkit-text-size-adjust: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+html {
+    overflow-y: scroll;
+}
+
+body {
+    font-family: "Microsoft yahei", arial, "PingFangSC-Regular", sans-serif;
+    font-size: 14px;
+    color: #000000;
+    min-width: 100%
+}
+
+a {
+    font-family: "Microsoft yahei", "PingFangSC-Regular";
+    color: #000;
+    text-decoration: none
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+ins {
+    text-decoration: none;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+.fl {
+    float: left
+}
+
+.fr {
+    float: right
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0
+}
+
+* html .clearfix {
+    height: 1%
+}
+
+.db {
+    display: block
+}
+
+.w1200, .w1201 {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.hidden {
+    overflow: hidden;
+}
+
+@charset "utf-8";
+* {
+    -webkit-text-size-adjust: none
+}
+
+header, footer, section, nav, menu, details, hgroup, figure, figcaption, article, aside {
+    margin: 0;
+    padding: 0;
+    display: block
+}
+
+article
+footer {
+    padding-bottom: 20px
+}
+
+*. {
+    font-size: 14px;
+    margin: 0;
+    padding: 0
+}
+
+body {
+    font-family: "\5FAE\8F6F\96C5\9ED1";
+}
+
+a:link, a:visited, a:hover, a:focus {
+    text-decoration: none;
+    color: inherit
+}
+
+img, fieldset, button {
+    border: 0 none;
+    margin: 0;
+    padding: 0
+}
+
+img, input, button {
+    vertical-align: middle
+}
+
+/*hearder&footer*/
+.dd_hd {
+    height: 35px;
+    overflow: hidden;
+    padding: 10px;
+    background: #512e2a;
+    border-bottom: 2px solid #999;
+    width: 100%;
+    position: fixed;
+    z-index: 9999
+}
+
+.dd_logo {
+    display: block;
+    background: url(/static/img/logo240x80.png) no-repeat;
+    width: 120px;
+    height: 40px;
+	background-size: cover;
+}
+
+.top_nav {
+    overflow: hidden;
+}
+
+.top_nav li {
+    float: left;
+}
+
+.top_nav li a span.dd_category {
+    background-position: 0px 0px;
+}
+
+.top_nav li a span.dd_cart {
+    background-position: -30px 0px;
+}
+
+.dd_cart12 {
+    background: url(../images/search.png) no-repeat;
+    float: right;
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+}
+
+.top_nav li a span.dd_my {
+    background-position: -98px 0px;
+}
+
+.fl {
+    float: left;
+    font-size: 0.75em;
+}
+
+.fr {
+    float: right;
+}
+
+.ft {
+    background: #e1e1e1;
+    overflow: hidden;
+    padding: 10px 0 30px;
+    clear: both
+}
+
+
+
+
+.head-top-nav .top-nav-list .branch {
+    position: relative;
+    height: 30px;
+    line-height: 30px;
+    padding: 2px 0;
+    margin: 0 6px;
+}
+
+.head-top-nav .top-nav-list .branch:hover .nav-pull-down {
+    display: block;
+}
+
+.head-top-nav .top-nav-list .branch .branch-main {
+    display: inline-block;
+    color: #3e7aa4;
+}
+
+.top-nav-list .branch .branch-main.on span, .top-nav-list .branch:hover .branch-main {
+    color: #fff;
+}
+
+.top-nav-list .branch .branch-main span {
+    display: inline-block;
+    padding: 2px 11px;
+    height: 25px;
+    line-height: 25px;
+    border-radius: 30px;
+}
+
+.top-nav-list .branch .branch-main.on span, .top-nav-list .branch:hover .branch-main span {
+    background: #0281db;
+}
+
+

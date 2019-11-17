@@ -1,0 +1,38 @@
+/** 返回顶部 开始 **/
+.go-top {
+  position: fixed;
+  bottom: 2em;
+  right: 1.2em;
+  text-decoration: none;
+  color: white;
+  background-color: #f5f5f5;
+  font-size: 30px;
+  padding: 5px;
+  display: none;
+  border-radius: 6px;
+  z-index: 1000;
+  width: 30px;
+  height: 30px;
+}
+.go-top img{width: 30px;}
+.go-top:hover{
+  animation: swing 0.5s ease-in-out;
+  color: white;
+  text-decoration: none;
+}
+/** 返回顶部 结束 **/
+/* 大奖广播弹窗样式 开始 */
+.broadcast-win {
+	background: url(../images/broadcast-win.png) no-repeat;
+	background-size: cover;width: 5.5rem;height:6.27rem;overflow: hidden;text-align: center;display:block;
+}
+.broadcast-msg {
+	margin-top: 4.3rem;color: #5e2b17;
+}
+.broadcast-msg span {
+	color:#f63d3d;
+}
+.broadcast-win button {
+	width: 3rem;height: 0.65rem;line-height: 0.65rem;display: block;margin: 0 auto;margin-top: 0.2rem;background: #f63d3d;border: none;border-radius: 0.1rem;color: #fff;font-size: 0.4rem;position: relative;cursor: pointer;
+}
+/* 大奖广播弹窗样式 结束 */

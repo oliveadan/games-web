@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>login</title>
+    <link rel="shortcut icon" href="{{static_front}}/static/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="{{static_front}}/static/front/questscore/css/bootstrap.css">
+    <link rel="stylesheet" href="{{static_front}}/static/front/questscore/css/login.css">
+</head>
+
+<body>
+<div class="userLogin text-center">
+    <div class="title text-center">
+        <p>{{.siteName}}答题拿豪礼</p>
+        <div class="en text-center">请选择题目类型</div>
+        <div class="an" id="category">
+          <input name="s" value="1" type="radio" >彩票 <input name="s" value="2" type="radio" >真人 <input name="s" value="3"  type="radio" >电子 <input name="s" value="4" type="radio" >体育
+        </div>
+    </div>
+
+    <div class="sub">
+        <input class="userInput" id="name" type="text" placeholder="请输入您的账号" autofocus>
+        <div>
+            <button onclick="checkuser()" class="btn">
+                登 &nbsp 录
+            </button>
+        </div>
+    </div>
+</div>
+<script src="{{static_front}}/static/front/js/jquery.min.js"></script>
+<script src="{{static_front}}/static/front/questscore/js/bootstrap.js"></script>
+<script src="{{static_front}}/static/front/layer-v3.1.1/layer.js"></script>
+</body>
+<script>
+    function checkuser() {
+        console.log(document.location.host);
+        var name = $("#name").val();
+        var category = $('#category input[name="s"]:checked').val();
+        console.log(category);
+        if(category ===  undefined){
+            layer.msg("请选择题目类型");
+            return;
+        }
+        if (name ===""){
+            layer.msg("会员账号不能为空");
+            return
+        }
+        $.ajax({
+            url: {{urlfor "QuestscoreApiController.Login"}},
+            type: "post",
+            data: {"name": name,"category":category,"gid":{{.gameId}}},
+            success: function (info) {
+                if (info.code === 1) {
+                    location.href = "{{urlfor "QuestscoreApiController.get"}}";
+                }
+                layer.msg(info.msg);
+            },
+        });
+    }
+</script>
+</html>

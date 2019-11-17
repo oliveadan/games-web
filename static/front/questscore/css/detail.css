@@ -1,0 +1,177 @@
+body {
+    height: 100%;
+    width: 100%;
+    background: url('../img/bj.jpg');
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+.details {
+    z-index: 2;
+    position: absolute;
+    width: 350px;
+    border-radius: 5px;
+    height: 590px;
+    background: -webkit-linear-gradient(#4defff6e, #4a24a747);
+    /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(#4defff6e, #4a24a747);
+    /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(#4defff6e, #4a24a747);
+    /* Firefox 3.6 - 15 */
+    background: linear-gradient(#4defff6e, #4a24a747);
+    /* 标准的语法 */
+    box-shadow: 0px 0px 5px#333333;
+    top: 47%;
+    left: 50%;
+    margin-top: -250px;
+    margin-left: -175px;
+    transition: all 1s;
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    overflow-y: auto;
+}
+
+/* 设置滚动条的样式 */
+::-webkit-scrollbar {
+    width: 6px;
+    background-color: transparent;
+}
+
+/* 滚动槽 */
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+/* 滚动条滑块 */
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: rgb(128, 128, 128);
+}
+
+.work-text {
+    padding: 2em 1.5em 1.5em;
+}
+
+.work-text h3 {
+    font-size: 2.2em;
+    font-weight: 900;
+    margin-bottom: 0.5em;
+}
+
+/*--tabs--*/
+.ac-container label {
+    padding: 8px 20px 8px 0;
+    position: relative;
+    z-index: 20;
+    display: block;
+    cursor: pointer;
+    line-height: 55px;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.ac-container input {
+    display: none;
+}
+
+.timus {
+    line-height: 28px;
+    display: inline;
+}
+
+.danswer {
+    /* color: #fff; */
+    width: 93%;
+    padding: 0.5em;
+    border: 1px solid #fff;
+    background: #fff;
+    border-radius: 7px;
+    margin-top: 10px;
+    margin-bottom: 1.6em;
+    margin-left: 3px;
+    font-size: 1.3em;
+    box-shadow: 0px 0px 3px#333333;
+}
+
+.letter {
+    margin-left: 2.7em;
+    display: block;
+}
+
+.options {
+    margin-left: 0.6em;
+}
+
+.showyou {
+    margin-right: 3.5em;
+}
+
+.aux2 {
+    margin-left: -3em;
+    color: #0a4cda;
+}
+
+.answers {
+    color: #0a4cda;
+}
+
+.selects {
+    margin-left: 5.8em;
+}
+
+.answerid {
+    text-align: center;
+    margin-bottom: -1.5em;
+    margin-left: 1.65em;
+    color: #fff;
+}
+
+.timus {
+    font-weight: bold;
+}
+
+@media screen and (max-width: 467px) {
+    #child_header {
+        background-color: #9279cf47;
+        border-bottom: #9279cf47 2px solid;
+        height: 32px;
+        padding: 8px 4%;
+        width: 92%
+    }
+
+    #child_header .goback {
+        float: left;
+        width: 38%
+    }
+
+    #child_header .goback i {
+        height: 32px;
+        width: 24px;
+        float: left;
+        background: url(../img/little_icon.png) no-repeat center;
+        background-position: -18px 11px
+    }
+
+    #child_header .current_location span,
+    #child_header .next_operate span {
+        color: #000000;
+        text-decoration: none;
+        font-size: 16px;
+        line-height: 36px;
+        float: left
+    }
+
+    /* #child_header .current_location { } */
+    #child_header .current_location a {
+        display: block
+    }
+
+    #child_header .current_location span {
+        font-size: 18px;
+    }
+
+    #child_header .next_operate {
+        float: right
+    }
+}

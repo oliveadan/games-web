@@ -1,0 +1,32 @@
+.flip {
+	cursor: pointer;
+}
+.flip.show:hover {
+	-webkit-animation-name: hoverleft;
+	-webkit-animation-duration: 500ms;
+	animation-name: hoverleft;
+	animation-duration: 500ms;
+}
+@-webkit-keyframes hoverleft {
+    from { -webkit-transform: rotateY(0); }
+    to { -webkit-transform: rotateY(40deg); }
+}
+@keyframes hoverleft {
+    from { transform: rotateY(0); }
+    to { transform: rotateY(40deg); }
+}
+.flip.out {
+	-webkit-transform: rotateY(360deg);
+    animation: flipouttoleft 500ms linear infinite;
+    -moz-animation: flipouttoleft 500ms linear infinite;
+    -webkit-animation: flipouttoleft 500ms linear infinite;
+    -o-animation: flipouttoleft 500ms linear infinite;
+}
+@-webkit-keyframes flipouttoleft {
+    from { -webkit-transform: rotateY(0); }
+    to { -webkit-transform: rotateY(360deg); }
+}
+@keyframes flipouttoleft {
+    from { transform: rotateY(0); }
+    to { transform: rotateY(360deg); }
+}

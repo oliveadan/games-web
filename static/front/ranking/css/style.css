@@ -1,0 +1,726 @@
+/* 
+* @Author: Lydia
+* @Date:   2017-01-25 09:54:48
+* @Last Modified by name:   Lydia
+* @Last Modified time: 2018-02-06 00:53:17
+*/
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    width: 100%;
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+    padding: 0;
+    margin: 0;
+}
+/*
+    HTML5 display definitions
+*/
+body {
+    font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;/**这两行是让字体打到最佳显示**/
+    font-size: 16px;
+    line-height: 28px;
+    text-rendering: optimizespeed;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+    display: block;
+}
+/*****
+  表单样式重置****
+ */
+button, input, select, textarea {
+    vertical-align: baseline;
+    *vertical-align: middle;
+}
+button, input {
+    line-height: normal;
+}
+button, select {
+    text-transform: none;
+}
+ul, li, ol, dl, dd {
+    list-style: none;
+}
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.5;
+}
+input, button, select, textarea {
+    font-family: 'Microsoft Yahei';
+    font-size: 14px;
+}
+a {
+    text-decoration: none;
+}
+img {
+    border: 0;
+}
+input, button {
+    outline: none;
+}
+button, input[type='button'] {
+    cursor: pointer;
+}
+/*
+****重置表格元素****
+ */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+img {
+    border: 0;
+}
+.button1 {
+    border: none;
+    background: #f00;
+    padding: 5px 20px;
+    color: #fff;
+}
+/*
+****清除浮动样式设置****
+ */
+
+#page {
+    color: #fff;
+}
+#page span {
+    float: left;
+}
+#page a {
+    color: #fff;
+    padding: 10px;
+    right: 0px;
+}
+#page a:hover {
+    color: #fff;
+}
+i {
+    font-style: normal;
+}
+.clearfix {
+    display: block;
+    zoom: 1;
+}
+.clearfix:after, .clearfix:before {
+    content: " ";
+    display: block;
+    font-size: 0;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+/*
+*****高自动，超出部分隐藏****
+ */
+.ht-over {
+    height: auto;
+    overflow: hidden;
+}
+.tl {
+    text-align: left;
+}
+.tc {
+    text-align: center;
+}
+.tr {
+    text-align: right;
+}
+.fontBold {
+    font-weight: bold;
+}
+.border-box {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.border-box:before, .border-box:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.table {
+    color: #444c63;
+}
+/*****设置为块元素*****/
+
+.block {
+    display: block;
+}
+.lineBlock {
+    display: inline-block;
+}
+/*****设置包裹容器*****/
+
+/*****清除浮动样式设置**** */
+.clearfix, .clearfix {
+    display: block;
+    zoom: 1;
+}
+.clearfix:after, .clearfix:before {
+    content: " ";
+    display: block;
+    font-size: 0;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.float_lf, .fl {
+    float: left;
+}
+.float_rt, .fr {
+    float: right;
+}
+/*文字对齐*/
+.tl {
+    text-align: left;
+}
+.tr {
+    text-align: right;
+}
+.tc {
+    text-align: center;
+}
+/******高自动，超出部分隐藏*****/
+.ht_over {
+    height: auto;
+    overflow: hidden;
+}
+.mag {
+    margin: 0 auto;
+}
+.container {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+/*遮罩层*/
+.none, .displaynone {
+    display: none;
+}
+.maskBOX {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    filter: alpha(opacity=30);
+    background: #000;
+    opacity: 0.5;
+    z-index: 99;
+}
+/*一行或者多行省率号显示*/
+.fontrate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.morerate {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+.threerate {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+.fourrate {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+}
+.fiverate {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    overflow: hidden;
+}
+.header {
+    height: 88px;
+    background: #000;
+}
+.head {
+    height: inherit;
+}
+.head .logo img {
+    margin-top: 8px;
+}
+.nav li {
+    float: left;
+    line-height: 86px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background: url(../images/navrightbg.png) right center no-repeat;
+}
+.nav li a {
+    display: block;
+    font-size: 18px;
+    color: #fff;
+}
+.nav li.on a {
+    color: #ceb3a4;
+}
+.nav li:last-child {
+    background: none;
+    padding-right: 0;
+}
+.banner {
+    width: 100%;
+    background: #000;
+}
+.phoneimg {
+    width: 100%;
+    position: relative;
+}
+.phoneimg .bannerimg {
+    width: 100%;
+}
+.searchbox {
+    margin: 0 auto;
+}
+.searchimg {
+    position: absolute;
+    width: 100%;
+    max-width: 929px;
+    left: 22%;
+    bottom: 0;
+    height: auto;
+    overflow: hidden;
+}
+.searchimg img {
+    position: relative;
+}
+.searchimg input {
+    display: block;
+    position: absolute;
+    left: 22%;
+    top: 56%;
+    width: 50%;
+    height: 53px;
+    line-height: 53px;
+    padding-left: 15px;
+    outline: none;
+    margin-bottom: 0;
+    background: transparent;
+    font-size: 18px;
+    color: #fff;
+    border: 0;
+}
+.searchimg button {
+    position: absolute;
+    right: 2%;
+    top: 34%;
+    width: 10%;
+    height: 50%;
+    font-size: 36px;
+    color: #fdb82c;
+    margin-right: 6px;
+    color: #6c3f00;
+    background: transparent;
+    border: 0;
+    margin-left: 5px;
+    cursor: pointer;
+}
+/*add*/
+.bigbox {
+    background: url(../images/contbg.png) top center no-repeat #000;
+    background-size: 100% 100%;
+    margin-top: -4px;
+}
+.noticebox {
+    width: 100%;
+    margin: 20px 0;
+}
+.notice {
+    height: 40px;
+    max-width: 1200px;
+    font-size: 16px;
+    color: #fff;
+    margin: 0 auto;
+}
+.notice span {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    float: left;
+    width: 13%;
+    max-width: 130px;
+}
+.notice .margue {
+    overflow: hidden;
+    height: 40px;
+    line-height: 40px;
+    width: 87%;
+    max-width: 1070px;
+    color: #db302d;
+}
+.maintop img {
+    width: 100%;
+}
+.main {
+
+    padding-top: 70px;
+    background: #000;
+    position: relative;
+    margin-top: 80px;
+}
+.mainnav {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: -78px;
+    z-index: 0;
+}
+.mainnav li {
+    float: left;
+    margin-left: 0px;
+}
+.mainnav li:first-child {
+    margin-left: 0;
+}
+.tabbox {
+    padding: 0 25px 80px 25px;
+    color: #fff;
+    display: none;
+}
+.title {
+    height: 103px;
+    margin: 45px 0;
+    line-height: 98px;
+    background: url(../images/conttitlebg.png) top center no-repeat;
+    font-size: 34px;
+    color: #fff;
+    font-weight: bold;
+    overflow: hidden;
+}
+.maintext1 {
+    line-height: 40px;
+    font-size: 18px;
+}
+.maintext1 span {
+    color: #fdfb00;
+}
+.commonbtab table {
+    margin: 10px 0;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    color: #fff;
+    line-height: 50px;
+}
+.commonbtab table th {
+    background: #690400;
+}
+.commonbtab table th, .commonbtab table td {
+    border: 1px solid #cf2117;
+}
+.maintext2 {
+    line-height: 40px;
+    font-size: 18px;
+    color: #787878;
+}
+.mt20 {
+    margin-top: 40px;
+}
+.footer {
+    line-height: 60px;
+    color: #585858;
+    font-size: 18px;
+}
+.tabbox .selectbox label {
+    display: inline-block;
+    height: 42px;
+    color: #efb458;
+    font-size: 22px;
+    line-height: 42px;
+    padding-right: 20px;
+    vertical-align: top;
+}
+.tabbox .selectbox select {
+    line-height: 30px;
+    margin-top: 9px;
+}
+.phonenavli {
+    display: none;
+}
+/*查询*/
+.searchboxli {
+    width: 60%;
+    height: auto;
+    position: fixed;
+    left: 20%;
+    z-index: 1001;
+    top: 12%;
+    border-radius: 8px;
+    background: #fff;
+    display: none;
+}
+.searchboxli .close {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    right: -4px;
+    top: -15px;
+    z-index: 100;
+    cursor: pointer;
+}
+.sertoptext {
+    line-height: 45px;
+    background: #0e111a;
+    color: #fff;
+    font-size: 16px;
+    text-indent: 10px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.sertable {
+    padding: 15px 10px;
+    max-height: 500px;
+    overflow-y: scroll;
+    margin-top: 12px;
+    margin-bottom: 15px;
+}
+.sertable table {
+    width: 100%;
+    line-height: 40px;
+    border: 1px solid #ccc;
+}
+.sertable table th {
+    background: #690400;
+}
+.sertable td, .sertable th {
+    text-align: center;
+    border: 1px solid #ccc;
+    color: #fff;
+}
+.searchtotal {
+    margin: 15px 0;
+}
+.searchtotal span {
+    padding: 14px 10px;
+    color: #fff;
+    background-size: 100% 100%;
+}
+.fixedrt {
+    position: fixed;
+    right: 0;
+    top: 20%;
+    width: auto;
+}
+.hourimg {
+    width: 60%;
+    position: absolute;
+    top: 34%;
+    left: 25%;
+    height: 25%;
+}
+.goTop {
+    width: 60%;
+    height: 15%;
+    position: absolute;
+    bottom: 23%;
+    left: 25%;
+}
+
+@media screen and (min-width:320px) and (max-width:1100px) {
+    .phoneimg {
+        margin-top: 45px;
+    }
+    .fixedrt {
+        top: 40%;
+        width: 33%;
+        right: 0;
+    }
+    .fixrtimg img {
+        width: 80%;
+    }
+    .hourimg {
+        width: 50%;
+    }
+    .goTop {
+        width: 50%;
+    }
+    .container {
+        width: 100%;
+    }
+    .header {
+        height: 45px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 100;
+    }
+    .phonenavli {
+        margin-top: 8px;
+        margin-right: 8px;
+        display: block;
+    }
+    .logo img {
+        width: 40%;
+    }
+    .notice {
+        height: 40px;
+    }
+    .notice span {
+        display: block;
+        width: 37%;
+        height: 40px;
+        line-height: 40px;
+        font-size: 16px;
+    }
+    .notice .margue {
+        font-size: 14px;
+        height: 40px;
+        line-height: 40px;
+        width: 61%;
+    }
+    .nav {
+        width: 120px;
+        height: auto;
+        overflow: hidden;
+        background: #fff;
+        position: fixed;
+        right: 0;
+        top: 45px;
+        display: none;
+        z-index: 10;
+    }
+    .nav li {
+        width: 100%;
+        margin: 0;
+        clear: both;
+        line-height: 40px;
+        height: 40px;
+        text-align: center;
+        border-bottom: 1px solid #000;
+        padding: 0;
+    }
+    .nav li a {
+        color: #000;
+        font-size: 15px;
+    }
+    /**/
+    .searchimg {
+        position: relative;
+        left: 0;
+    }
+    .searchimg input {
+        height: 45%;
+        line-height: inherit;
+        top: 45%;
+    }
+    .searchimg button {
+        height: 50%;
+        right: 1%;
+        top: 36%;
+    }
+    .main {
+        padding-top: 0;
+    }
+    .mainnav {
+        text-align: center;
+    }
+    .mainnav li {
+        width: 33%;
+        text-align: center;
+        margin-left: 0;
+    }
+    .mainnav li img {
+        width: 90%;
+    }
+    .tabbox {
+        padding: 130px 10px 40px 10px;
+    }
+    .banimg {
+        display: none;
+    }
+    .phoneimg img {
+        width: 100%;
+    }
+    .maintext1, .maintext2 {
+        font-size: 14px;
+        line-height: 30px;
+    }
+    .main {
+        margin-top: 50px;
+    }
+    .mainnav {
+        top: -40px;
+    }
+    .searchboxli {
+        width: 94%;
+        left: 3%;
+    }
+    .searchboxli .close {
+        right: 16px;
+        top: 0px;
+    }
+    .title {
+        line-height: 60px;
+        height: 60px;
+        background-size: 64% 100%;
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width:415px) and (max-width:1024px) {
+    .searchbox {
+        padding: 0;
+    }
+    .tabbox {
+        padding: 50px 42px 75px 42px;
+    }
+    .mainnav li {
+        width: 25%;
+    }
+    .main {
+        padding-top: 40px;
+    }
+}
+
+@media screen and (min-width:1601px) {
+    .phoniconnav {
+        display: none;
+    }
+    .searchimg {
+        left: 25%;
+    }
+    .bigtitle {
+        position: absolute;
+        top: 19.5%;
+        right: 17%;
+    }
+}
+
+@media screen and (min-width:1025px) {
+    .phonenavli {
+        display: none;
+    }
+}
+
+@media screen and (width:320px) and (max-width:415px) {
+    .sertable {
+        padding: 15px 10px;
+        max-height: 350px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1100px) {
+        .searchimg input {
+            margin-top: 30px;
+        }
+    }
+}

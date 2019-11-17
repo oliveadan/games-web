@@ -1,0 +1,43 @@
+ .tanbx{
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width:100%;
+	height:100%;
+	overflow-y:auto;
+	padding-right:20px;
+	background: rgba(0,0,0,0.6);
+	z-index: 999;
+}
+.tawinbx{
+	position:absolute;
+	width:300px;
+	
+	margin-left:50px;
+	top: 10%;
+	border-radius:9px;
+	overflow:hidden;
+	min-height: 180px;
+	background:#373737;
+}
+.tanentou{
+	font-size:18px;
+	color:#1f1e1c;
+	font-weight:bold;
+	height:37px;
+	line-height:37px;
+	padding-left:24px;
+	background-image: -webkit-linear-gradient(bottom, #b8963d 15%, #fde180);
+	background-image: -moz-linear-gradient(bottom, #b8963d 15%, #fde180);
+	background-image: -o-linear-gradient(bottom, #b8963d 15%, #fde180);
+	background-image: -ms-linear-gradient(bottom, #b8963d 15%, #fde180);
+	background-image: linear-gradient(to top, #b8963d 15%, #fde180);
+}
+.closex{
+	position:absolute;
+	width:29px;
+	height: 29px;
+	background: url(../images/cha.png) no-repeat center top;
+	right: 5px;
+	top: 4px;
+}

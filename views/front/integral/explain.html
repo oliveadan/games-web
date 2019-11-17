@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>积分说明</title>
+    <link rel="stylesheet" href="{{static_front}}/static/front/integral/v2/wap/css/bootstrap.css">
+    <style>
+        body {
+            background-color: #CEFEF2;
+        }
+
+        .sm_img {
+            width: 30%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container text-center">
+        <div class="login row pb-4">
+            <div class="col-12 login_tit m-0 bg-warning  text-left">
+                <div class="text-left ">
+                    <div class="back btn">
+                        返回
+                    </div>
+                </div>
+            </div>
+            <!-- 积分规则 -->
+            <div class="container rule">
+                <div class="text-center .rule_box">
+                    <div class=" pt-1 text-success text-left ">
+                        <p></p>
+                        <p></p>
+                        <img class="sm_img pl-1" src="{{static_front}}/static/front/integral/v2/wap/img/c_1.png" alt=""><br>
+                        <span class="text-primary pl-2">成功充值100元即为1积分</span><br>
+                        <span class="text-danger pl-2">温馨提示：每年2月1号自动清零</span>
+                        <br><br>
+                        <img class="sm_img" src="{{static_front}}/static/front/integral/v2/wap/img/c_3.png" alt="">
+                        <p class="text-primary pl-2 pr-2 mb-0">北京时间每周五为会员积分兑换日， 当天24小时以内（00:00-23:59）均可进行兑换，所有现金券可重复兑换
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+        <script src="{{static_front}}/static/front/integral/v2/wap/js/jquery-3.3.1.min.js"></script>
+        <script src="{{static_front}}/static/front/integral/v2/wap/js/popper.min.js"></script>
+        <script src="{{static_front}}/static/front/integral/v2/wap/js/bootstrap.js"></script>
+        <script>
+            $(".back").on("click", function () {
+                window.history.go(-1);
+            })
+        </script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+
+.selectbox {
+    text-align: center;
+    padding: 20px 0
+}
+.tabbox img{width:100%}
+.selectbox h2 {
+    font-size: 26px;
+    color: #f6d48a;
+    line-height: 1
+}
+.selectbox label {
+    display: inline-block;
+    height: 45px;
+    color: #f6d48a;
+    font-size: 24px;
+    line-height: 45px;
+    padding-right: 20px;
+    vertical-align: top
+}
+.selectbox .fm-select {
+    display: inline-block;
+    width: 353px;
+    height: 45px;
+    line-height: 45px;
+    /*background: url(images/select-bg.png*/
+}
+.selectbox .fm-select select {
+    appearance: none;
+    -webkit-appearance: none;
+    background: 0 0;
+    border: 0;
+    width: 100%;
+    text-indent: 20px;
+    color: #4f4f4f;
+    font-size: 16px;
+    padding: 11px 10px\9;
+    background: #fff\9;
+    background-color: white;
+}
+.tbl2-box {
+    width: 80%;
+    font-size: 12px;
+    margin: 0 auto
+}
+.tbl2-box table {
+    width: 100%;
+    text-align: center;
+    font-size: 14px
+}
+.tbl2-box table.table2 {
+    font-size: 13px
+}
+.tbl2-box table th {
+    border: solid 1px #e9dc85;
+    background: #e9dc85;
+    height: 30px;
+    color: #2c2c2c;
+    font-weight: 400
+}
+.tbl2-box table td {
+    border: solid 1px #424242;
+    height: 30px;
+    color: #fff;
+    background: #2c2c2c
+}
+.tbl2-box table span {
+    display: block
+}
+.tbl2-box .key { background: #f00; font-size:20px;}
+
+.tbl2-box a:link {color: #FFf}     /* 未访问的链接 */
+.tbl2-box a:hover  {color: #F00}    /* 当有鼠标悬停在链接上 */
+.tbl2-box a:visited {color: #fff}  /* 已访问的链接 */
+.tbl2-box a:active {color: #fff}   /* 被选择的链接 */
+

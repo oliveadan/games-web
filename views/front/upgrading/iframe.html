@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="lt-ie9 lt-ie8 lt-ie7 no-js" lang="en"> <![endif]-->
+<!--[if IE 7]>
+<html class="lt-ie9 lt-ie8 no-js" lang="en"> <![endif]-->
+<!--[if IE 8]>
+<html class="lt-ie9 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{.siteName}}-{{.gameDesc}}</title>
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="{{static_front}}/static/img/favicon.ico"/>
+    <link rel="stylesheet" href="{{static_front}}/static/front/upgradingIframe/css/bet-active.css">
+    <link rel="stylesheet" href="{{static_front}}/static/front/upgradingIframe/css/bet-iframe.css">
+</head>
+
+<body>
+<div class="search">
+    <div class="wrapper">
+        <div class="inner2">
+            <input type="text" id="search1" name="search1" value="" placeholder="请输入会员账号">
+            <button onclick="showDetail()" class="btn-search" type="button" name="button"></button>
+        </div>
+    </div>
+</div>
+<!-- 弹出 -->
+<div id="show">
+    <div id="tangchuang">
+        <div id="close"></div>
+        <div id="stitle">查询中心</div>
+        <div class="fathers" style=" overflow-y: scroll; overflow-x: hidden; margin-bottom: 10px;">
+            <div class="l8" style="width:100%;margin-left:5px;margin-right:5px">
+                <div class="to0">会员帐号</div>
+                <div class="to1">等级</div>
+                <div class="to2">总投注额</div>
+                <div class="to3">周俸禄</div>
+                <div class="to4">月俸禄</div>
+                <div class="last to5">距晋级需投注</div>
+            </div>
+            <div id="totalup" class="l8 clearMargin white" style="width:100%;margin-left:5px;margin-right:5px">
+                <div class="to0">无</div>
+                <div class="to1">无</div>
+                <div class="to2">无</div>
+                <div class="to3">无</div>
+                <div class="to4">无</div>
+                <div class="last to5">无</div>
+            </div>
+            <div class="l8" style="width:100%;margin-left:5px;margin-right:5px">
+                <div class="to6">会员帐号</div>
+                <div class="to7">当周投注金额</div>
+                <div class="to8">晋级彩金</div>
+                <div class="to9">投注周期</div>
+            </div>
+            <div id="weekup" class="l8 clearMargin white" style="width:100%;margin-left:5px;margin-right:5px">
+                <div class="to6">无</div>
+                <div class="to7">无</div>
+                <div class="to8">无</div>
+                <div class="to9">无</div>
+            </div>
+            <div class="pages" style="width:100%;margin-left:5px;margin-right:5px">
+                <div id="countweek" class="total">共0条</div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="{{static_front}}/static/front/js/jquery.min.js"></script>
+<script src="{{static_front}}/static/front/upgradingIframe/js/Query.js"></script>
+</html>

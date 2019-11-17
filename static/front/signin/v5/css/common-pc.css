@@ -1,0 +1,61 @@
+﻿/** 中奖记录查询 开始 **/
+.rldialog_zz{display:none;position:fixed;top:0%;left:0%;width:100%;height:100%;background-color:black;z-index:1001;-moz-opacity:0.7;opacity:.70;filter:alpha(opacity=70);}
+.rldialog{display:none;position:fixed;top:25%;left:35%;width:589px;height:391px;z-index:1002;overflow:auto;border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;}
+.rldialog .rlbox{width:589px;height:391px;margin:0 auto;background-color: #700001;}
+.rldialog .rlbox_bt{height:36px;line-height:36px;background-color: #CC380D;}
+.rldialog .rlbox_bt span{font-size:17px;color:#f1f3b3;float:left;padding-left:15px;}
+.rldialog .rlbox_bt a{font-size:17px;margin-right:20px;float:right;color:#ffe681;text-decoration:none;width: 50px;text-align: center;}
+.rldialog .rlbox_hy{height:50px;padding:30px 0 0 90px;}
+.rldialog .rlbox_hy label{display: inline;font-size:17px;color:#f1f3b3;line-height:32px;}
+.rldialog .rlbox_hy input{border:1px solid #cb2129;height:30px;line-height:30px;width:220px;background:#750606;font-size:17px;color:#f1f3b3;font-family:Arial,"微软雅黑";padding-left:10px;}
+.rldialog .rlbox_hy button{cursor:pointer; background: #CC380D;height:35px;width:86px;font-size:17px;border: none;border-radius: 5px;line-height:35px;text-align:center;color:#f1f3b3;}
+.rldialog .rlbox_bd{color:#ffe681;}
+.rldialog .rlbox_bd table{margin:0 auto;border-bottom:1px solid #dd0002;border-left:1px solid #dd0002;}
+.rldialog .rlbox_bd table tr td{line-height:32px;text-align:center;font-size:15px; font-family:Arial,"微软雅黑";border:1px solid #dd0002;border-bottom:0px;border-left:0px;}
+.rldialog .rlbox_bd table tr.ad{background:#700001;}
+.rldialog .rl_pages{padding:10px 0px;text-align: center;}
+/** 中奖记录查询 结束 **/
+/** 返回顶部 开始 **/
+
+.rankingBtn1 img{ 
+  position: absolute;
+    top: 800px;
+    left: 315px;}
+
+.go-top {
+  position: fixed;
+  bottom: 2em;
+  right: 1.2em;
+  text-decoration: none;
+  color: white;
+  background-color: #f5f5f5;
+  font-size: 30px;
+  padding: 5px;
+  display: none;
+  border-radius: 6px;
+  z-index: 1000;
+  width: 30px;
+  height: 30px;
+}
+.go-top img{width: 30px;}
+.go-top:hover{
+  animation: swing 0.5s ease-in-out;
+  color: white;
+  text-decoration: none;
+}
+/** 返回顶部 结束 **/
+/* 大奖广播弹窗样式 开始 */
+.broadcast-win {
+	background: url(../images/broadcast-win.png) no-repeat;
+	background-size: cover;width: 438px;height: 500px;overflow: hidden;text-align: center;display:block;
+}
+.broadcast-msg {
+	margin-top: 340px;font-size: 24px;color: #5e2b17;
+}
+.broadcast-msg span {
+	color:#f63d3d;
+}
+.broadcast-win button {
+	width: 200px;height: 45px;line-height: 45px;display: block;margin: 0 auto;margin-top: 30px;background: #f63d3d;border: none;border-radius: 20px;color: #fff;font-size: 24px;position: relative;cursor: pointer;
+}
+/* 大奖广播弹窗样式 结束 */

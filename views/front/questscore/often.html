@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <title>答题类型选择</title>
+    <meta name="description" content="particles.js is a lightweight JavaScript library for creating particles.">
+    <meta name="author" content="Vincent Garreau"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" href="{{static_front}}/static/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="{{static_front}}/static/front/questscore/css/often.css">
+    <link rel="shortcut icon" href="{{static_front}}/static/img/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+<div>
+    <div id="child_header">
+        <div class="goback"><a href="{{urlfor "QuestscoreApiController.Login"}}"><i></i></a></div>
+        <div class="current_location"><span></span></div>
+    </div>
+    <div class="div1">
+        <div class="titleoften">选择您最了解的一个类型</div>
+        <div id="categroy" class="checkform">
+            <input name="check" type="radio" id="checkbox1" value="2" class="ch" />
+            <label for="checkbox1">刺激真人</label>
+            <input name="check" type="radio" id="checkbox2" value="1" class="ch" />
+            <label for="checkbox2">直播彩票</label>
+            <input name="check" type="radio" id="checkbox3" value="3" class="ch" />
+            <label for="checkbox3">电子棋牌</label>
+            <input name="check" type="radio" id="checkbox4" value="4" class="ch" />
+            <label for="checkbox4">实时体育</label>
+            <input type="button"  class="s-mod-button" value="开始答题" onclick="Check()" id="xz">
+        </div>
+    </div>
+</div>
+<script src="{{static_front}}/static/front/js/jquery.min.js"></script>
+<script src="{{static_front}}/static/front/layer-v3.1.1/layer.js"></script>
+<script>
+    function Check() {
+        var category = $('#categroy input[name="check"]:checked').val();
+        if (category === undefined){
+            layer.msg("请选择一种题目类型");
+            return
+        }else {
+            $.ajax({
+                url: {{urlfor "CategoryapiController.post"}},
+                type: "post",
+                data: {"questcategory":category,"gid":{{.gid}}},
+                success: function (info) {
+                    console.log(info);
+                    if (info.code === 1){
+                        location.href = info.url;
+                    }else{
+                        layer.msg(info.msg);
+                    }
+                },
+            });
+        }
+    }
+</script>
+</body>
+</html>

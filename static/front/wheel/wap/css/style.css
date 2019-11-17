@@ -1,0 +1,95 @@
+*{ -webkit-tap-highlight-color: rgba(0,0,0,0);-webkit-tap-highlight-color: transparent; /* For some Androids */ }  
+
+body{margin:0 auto; background:#fff;font-size:16px;font-family:'STHeiti','Microsoft YaHei',Helvetica,Arial,sans-serif; max-width:640px;}
+img{width:100%}
+#page{ }
+
+.header{width:6.4rem;height:0.9rem; background-color: #9f3a20; background-size:cover;text-align:center; line-height:0.9rem; position:relative}
+
+.header .logo{ display: inline-block;margin: 0 0 0 1.2rem; width:2.7rem; height: 100%;background: url(/static/img/logo240x80.png) center center no-repeat;background-size:cover;}
+.header .search{background:url(../images/search.png) no-repeat;float:right;width:0.6rem;height:0.6rem;background-size:cover;margin: 0.15rem 0.3rem;}
+/* 滚动公告 */
+
+.dzpmain{ background:url(../images/bg.jpg) no-repeat; background-size:cover; width:6.4rem; margin:0 auto; height:11.16rem; position:relative; overflow:hidden}
+.dzpmain .turntablebg{width:6.24rem; height:6.25rem; left:50%; margin-left:-3.12rem; top:3rem; background:url(../../images/turntablebg.gif) no-repeat; position:absolute;background-size:cover;}
+.dzpmain .turntablebg .playbtn{ display:block;background:url(../../images/playbtn.png) no-repeat; background-size:cover; width:2.75rem; height:4.3rem; left:50%; margin-left:-1.365rem; top:0.194rem; position:absolute}
+
+.dzpmain .logined{ height:0.4rem; line-height:0.4rem; position:absolute; top:0.14rem; text-align:center; width:6.4rem; color:#e2b562; font-size:0.24rem; z-index:10; display:none}
+.dzpmain .logined i{ color:#e2b562;  font-size:0.32rem; margin:0 0.05rem; display:inline-block; vertical-align:middle;}
+.dzpmain .logined span{ }
+.dzpmain .logined b{ font-weight:normal; color:#fff;  font-size:0.24rem; margin: 0 0.05rem;}
+.dzpmain .logined .btn{ width:0.7rem; height:0.36rem; line-height:0.36rem; display: inline-block; background:#e60014; color:#fff;border-radius:0.1rem; margin-left:0.1rem; display:inline-block;position:relative; vertical-align:top; }
+
+
+/* 底部 */
+.footer{ padding-top:0.25rem; padding-bottom:0.25rem;background: #1d1717;color: #574343;text-align:center;font-size: 0.24rem;}
+
+.bottomseat{ height:1.08rem;}
+.bottom{ position:fixed;bottom:0; z-index: 999; width:6.4rem; height:1.08rem;background:#58341f;}
+.bottom ul li{ float:left; width:25%; text-align:center;}
+.bottom ul li a{position: relative; display:block; overflow:hidden; height:1.08rem; border-left:0.02rem solid #71442b;}
+.bottom ul li .iconfont{display:block;margin:0 auto;margin-top:0.18rem;color:#fff;font-size:0.38rem;}
+.bottom ul li p{ color:#fff; font-size:0.2rem; line-height:0.4rem;}
+
+.tclogin{ background:url(../../images/tclogin.png) no-repeat; background-size:cover; width:5.64rem; height:3.17rem; overflow:hidden; display:none}
+.tclogin .user_name{ width:3.5rem; height:0.8rem;line-height:0.8rem; background:#fff4e4; border-radius:0.2rem; text-align:center; font-size:0.24rem; border:none; margin:0 auto; margin-top:0.68rem; display:block; color:#6c3114}
+.tclogin .tcsub{ width:3.5rem; height:0.8rem;line-height:0.8rem; background:#f63d3d; border-radius:0.2rem; text-align:center; font-size:0.3rem; border:none; margin:0 auto; margin-top:0.68rem;display:block; color:#fff; font-weight:bold}
+
+.tcwin{ background:url(../../images/tcwin.png) no-repeat; background-size:cover; width:5.64rem; height:6.44rem; overflow:hidden; text-align:center; display:none}
+.tcwin .wintext{ margin-top:4.5rem; font-size:0.36rem; color:#5e2b17;}
+.tcwin .wintext b{ color:#f63d3d; font-weight:normal}
+.tcwin .makesure{ width:3rem; height:0.75rem; line-height:0.75rem; display:block; margin:0 auto; margin-top:0.2rem; background:#f63d3d; border:none; border-radius:0.2rem; color:#fff; font-size:0.3rem; position:relative;}
+
+
+.wininfobg{ background:url(../images/wininfo.png) no-repeat; background-size:cover; width:6.36rem; height:1.51rem;  text-align:center; bottom:0rem; position:absolute; overflow:hidden;}
+.wininfo{ width:5.6rem; height:0.6rem; margin-top:0.42rem; margin-left:0.36rem; overflow:hidden}
+.wininfo ul{ line-height:0.6rem;}
+.wininfo ul li{ color:#fff; font-size:0.3rem;}
+.wininfo ul li em,.wininfo ul li i{ color:#ffec17; font-weight:bold; font-style:normal; margin:0 0.05rem}
+
+.layui-layer-nobg{box-shadow:0;}
+.layui-layer-nobg .layui-layer-setwin{ right:0; top:0;}
+.layui-layer-nobg .layui-layer-setwin .layui-layer-close2{ background:url(../../images/close.png) no-repeat; background-size:cover; width:0.68rem; height:0.68rem; display:block; right:-0.24rem; top:-0.24rem}
+.layui-layer-nobg .layui-layer-setwin .layui-layer-close2:hover{background: url(../../images/close.png) no-repeat;background-size:cover; }
+
+
+
+.hbcxcon{margin: 0 auto;height:10.45rem}
+.hbcxcon .hbcxtitle{height:0.9rem;position: relative;line-height:0.9rem;text-align: center;color: #fff;font-size: 0.28rem;border-bottom: 1px solid #f83737; background: #b30000}
+.hbcxcon .hbcxtitle .back{position: absolute;left:0.3rem;top: 0rem;background-size: cover; font-size:0.3rem; display:block; color:#deb558}
+.hbcxcon .content table{width: 100%;border-collapse: collapse;}
+.hbcxcon .content table tr th{height:0.9rem;line-height:0.9rem;color: #ffadad;font-size: 0.27rem; text-align:center;border:1px solid #f83737;border-top: none;}
+.hbcxcon .content table tr td{height: 0.9rem;line-height:0.9rem;color: #ffffff;font-size: 0.27rem;text-align:center;border:1px solid #f83737;border-top: none;text-align:center}
+.hbcxcon .content table tr td span{ color:#ffcf2e}
+
+.pages{padding-top:0.2rem; text-align:center}
+.pages span.total{ color:#fff; font-size:0.2rem; margin-right:0.2rem}
+.pages a{ min-width:0.3rem;height:0.6rem; line-height:0.6rem; padding:0 0.1rem;background: #fff;display:inline-block;color:#64717b; font-size:0.2rem;border-radius:0.05rem; text-align:center; margin:0 0.05rem}
+
+.pages a.on{color: #fff;background: #f83737;border-color: #46c972;}
+
+.maincon{background:#531200}
+.maincon .title{ width: 297px; height: 72px; line-height: 72px; margin: 0 auto; text-align: center; color: #fff100;font-size: 30px; font-weight: bold;}
+.maincon .con{padding-bottom: 30px;}
+.maincon .con1{margin-top:35px;color:#eee;font-size: 14px; line-height: 32px;margin-left: 10px;}
+.maincon .con1 .con1left{float: left; margin-left:10px;width: 100%;}
+.maincon .con1 h3{font-size: 22px;color: #fff100;font-weight:bold;line-height:50px; height:50px;}
+.maincon .con1 .con1left table{border-collapse: collapse;text-align: center;margin-top: 15px;}
+.maincon .con1 .con1left table tr td{width: 100%; height: 44px;line-height: 44px; border:1px solid #f6af8a;border-spacing: 0; color: #ffffff;font-size: 15px;}
+.maincon .con1 .con1right{float:right; width:100%;color: #eee;font-size: 14px;line-height: 35px;}
+.maincon .con2 .title{ margin-bottom: 20px; }
+.maincon .con2 {color: #eee;font-size: 14px; line-height: 32px; margin-left:10px;}
+
+.broadcast-win {
+	background: url(/static/front/images/broadcast-win.png) no-repeat;
+	background-size: cover;width: 5.5rem;height:6.27rem;overflow: hidden;text-align: center;display:block;
+}
+.broadcast-msg {
+	margin-top: 4.3rem;color: #5e2b17;
+}
+.broadcast-msg span {
+	color:#f63d3d;
+}
+.broadcast-win button {
+	width: 3rem;height: 0.65rem;line-height: 0.65rem;display: block;margin: 0 auto;margin-top: 0.2rem;background: #f63d3d;border: none;border-radius: 0.1rem;color: #fff;font-size: 0.4rem;position: relative;cursor: pointer;
+}

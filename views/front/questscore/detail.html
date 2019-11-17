@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>正确答案</title>
+    <meta name="description" content="particles.js is a lightweight JavaScript library for creating particles.">
+    <meta name="author" content="Vincent Garreau"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" href="{{static_front}}/static/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="{{static_front}}/static/front/questscore/css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="{{static_front}}/static/front/questscore/css/detail.css"/>
+    <script src="{{static_front}}/static/front/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<style>
+</style>
+
+<body>
+<div id="child_header">
+    <div class="goback"><a href="javascript:history.back(-1)"><i></i></a></div>
+    <div class="current_location"><span></span></div>
+</div>
+<div class="details">
+    <div class="work-text">
+        <section class="ac-container">
+            <div>
+                <label class="grid1">
+                </label>
+                <article class="ac-small">
+                    {{range $i,$v := .list}}
+                        {{if eq 0  $v.Pid}}
+                            <div class="danswer">
+                                <div class="timus"></div>
+                                <p>{{$v.Content}}</p>
+                                <hr>
+                                <br>
+                                <span class="showyou"></span>
+                                <span class="aux2">正确答案：</span><br>
+                                {{range $h,$j := $.list}}
+                                    {{if eq $v.Id $j.Pid}}
+                                        {{if gt $j.Score 0}}
+                                            <span class="answers">{{$j.Content}}</span><br>
+                                        {{end}}
+                                    {{end}}
+                                {{end}}
+                            </div>
+                        {{end}}
+                    {{end}}
+                </article>
+            </div>
+        </section>
+    </div>
+</div>
+</body>
+</html>

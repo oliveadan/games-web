@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>{{.siteName}}{{.gameDesc}}</title>
+    <meta name="description" content="particles.js is a lightweight JavaScript library for creating particles.">
+    <meta name="author" content="Vincent Garreau"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" href="{{static_front}}/static/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="{{static_front}}/static/front/questscore/css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="{{static_front}}/static/front/questscore/css/login.css"/>
+</head>
+
+<body>
+<div id="particles-js">
+    <div class="login">
+        <div class="login-top">会员登录</div>
+        <div class="login-center clearfix">
+            <div class="login-center-img"><img src="{{static_front}}/static/front/questscore/img/name.png"/></div>
+            <div class="login-center-input">
+                <input class="mlogin" type="text" id="account" value="" placeholder="请输入您的账号"
+                       onfocus="this.placeholder=''" onblur="this.placeholder='请输入您的用户名'"/>
+                <div class="login-center-input-text">会员账号</div>
+            </div>
+        </div>
+        <div onclick="Login()" class="login-button">登录</div>
+    </div>
+    <div class="sk-rotating-plane"></div>
+</div>
+<!--scripts-->
+<script src="{{static_front}}/static/front/js/jquery.min.js"></script>
+<script src="{{static_front}}/static/front/layer-v3.1.1/layer.js"></script>
+<script src="{{static_front}}/static/front/questscore/js/particles.min.js"></script>
+<script src="{{static_front}}/static/front/questscore/js/app.js"></script>
+<script type="text/javascript">
+    function Login() {
+        var name = $("#account").val();
+        if (name === "") {
+            layer.msg("会员账号不能为空");
+            return
+        }
+        $.ajax({
+            url: {{urlfor "CategoryapiController.Login"}},
+            type: "post",
+            data: {"name": name, "gid":{{.gameId}}},
+            success: function (info) {
+                if (info.code === 1) {
+                    location.href = info.url
+                }
+                layer.msg(info.msg);
+            },
+        });
+    }
+</script>
+</body>
+</html>

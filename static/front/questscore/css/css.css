@@ -1,0 +1,1212 @@
+@charset "utf-8";
+
+/* CSS Document */
+/*Reset*/
+* {
+    box-sizing: content-box;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    max-width: 1920px;
+    -webkit-text-size-adjust: none;
+}
+
+fieldset,
+img {
+    border: 0;
+}
+
+img {
+    vertical-align: top;
+    max-width: 100%;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+th,
+var {
+    font-style: normal;
+    font-weight: normal;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+caption,
+th {
+    text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+q:before,
+q:after {
+    content: '';
+}
+
+abbr,
+acronym {
+    border: 0;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+* html .clearfix {
+    zoom: 1;
+}
+
+/* IE6 */
+*:first-child+html .clearfix {
+    zoom: 1;
+}
+
+/* IE7 */
+.cli {
+    clear: both;
+    font-size: 0;
+    height: 0;
+    overflow: hidden;
+    display: block;
+}
+
+.lclear {
+    clear: left;
+    font-size: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+body {
+    font-size: 12px;
+    font-family: '微软雅黑', "宋体", "Arial Narrow", Helvetica, sans-serif;
+    color: #000;
+    line-height: 1.2;
+    text-align: left;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+/* 设置滚动条的样式 */
+::-webkit-scrollbar {
+    width: 6px;
+    background-color: transparent;
+}
+
+/* 滚动槽 */
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+/* 滚动条滑块 */
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: transparent;
+}
+
+.index {
+    width: 100%;
+    padding-bottom: 1.1rem;
+}
+
+/*topic页面*/
+.topic {
+    position: relative;
+    height: 100%;
+    overflow-y: auto;
+    width: 100%;
+    background-attachment: fixed;
+    box-sizing: border-box;
+}
+
+.topic-frameli {
+    text-align: center;
+    line-height: 1.5rem;
+    font-size: 0.36rem;
+    width: 5.65rem;
+    height: 1.3rem;
+    margin: 0.15rem auto 0.6rem auto;
+    font-weight: bold;
+    background-size: cover;
+    color: rgb(56, 54, 54);
+}
+
+.topic-frameli div {
+    display: inline-block;
+    font-size: 0.54rem;
+    color: #ffa132;
+}
+
+.entrance-bottom {
+    z-index: 2;
+    position: absolute;
+    width: 350px;
+    border-radius: 5px;
+    height: 650px;
+    background: -webkit-linear-gradient(#4defff6e, #4a24a747);
+    /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(#4defff6e, #4a24a747);
+    /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(#4defff6e, #4a24a747);
+    /* Firefox 3.6 - 15 */
+    background: linear-gradient(#4defff6e, #4a24a747);
+    /* 标准的语法 */
+    box-shadow: 0px 0px 5px#333333;
+    top: 39%;
+    left: 50%;
+    margin-top: -105px;
+    margin-left: -175px;
+}
+
+.entrance-bottom-frame {
+    transition: all 0.5s;
+    width: 10000%;
+    height: 10em;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 0.3rem;
+}
+
+.entrance-bottom-frame-line {
+    cursor: default;
+    width: 1%;
+    float: left;
+    position: relative;
+    padding: 0 0.35rem;
+    box-sizing: border-box;
+}
+
+.entrance-bottom-frame-line-title {
+    font-size: 0.38rem;
+    margin-bottom: 1em;
+    margin-top: -1em;
+    line-height: 0.5rem;
+    font-weight: bold;
+    color: rgb(56, 54, 54);
+}
+
+.entrance-bottom-frame-line-button-frame {
+    font-size: 0.3rem;
+    margin-left: -0.7rem;
+    min-width: 16.5em;
+    min-height: 2em;
+    top: 0.9em;
+    position: absolute;
+
+}
+
+.entrance-bottom-frame-line-next {
+    cursor: pointer;
+    width: 7.9em;
+    margin-left: 31%;
+    margin-top: 15%;
+    min-height: 0.9rem;
+    box-sizing: border-box;
+    float: left;
+    background: #ffa132;
+    color: white;
+    border-radius: 0.54rem;
+    font-size: 0.5em;
+    border: none;
+    text-align: center;
+    display: block;
+}
+
+.entrance-bottom-frame-line-next:active {
+    background-color: #c47a26;
+}
+
+input {
+    display: none;
+}
+
+label {
+    /* transition: margin 0.5s; */
+    position: relative;
+    cursor: pointer;
+    width: 24.5em;
+    font-size: 12px;
+    margin-bottom: 1.3em;
+    float: left;
+    box-sizing: border-box;
+    background: #f7f7f7;
+    border-radius: 0.54rem;
+    padding: 0 0.5rem;
+    margin-left: 2.5%;
+}
+
+input:checked {
+    background-color: #ffa132;
+}
+
+input:checked+label {
+    background: #ffa132;
+    color: white;
+}
+
+.entrance-bottom-frame-line-button-id {
+    display: inline;
+    line-height: 0.9rem;
+    font-size: 0.3rem;
+    margin-left: 1.5em;
+
+}
+
+/* .entrance-bottom-frame-line.active {
+    pointer-events: auto;
+} */
+
+.ui-progress-bar {
+    margin-top: 9%;
+    margin-bottom: 8px;
+    margin-left: 26%;
+    width: 68%;
+}
+
+.timeOut {
+    font-size: 0.45em;
+    float: left;
+    margin-top: 1.28em;
+    margin-left: 0.3em;
+    color: rgb(56, 54, 54);
+}
+
+@media screen and (min-width: 458px) {
+    html {
+        height: 100%;
+    }
+
+    .topic-frameli {
+        line-height: 1.5em;
+        font-size: 0.43em;
+        width: 5.65em;
+        height: 1.3em;
+        margin: 1em auto;
+    }
+
+    .topic-frameli div {
+        font-size: 0.4rem;
+    }
+
+    .entrance-bottom {
+        width: 350px;
+        border-radius: 5px;
+        height: 650px;
+        top: 39%;
+        left: -9%;
+        margin-top: -58%;
+        margin-left: -26%;
+    }
+
+    .entrance-bottom-frame-line {
+        width: 1%;
+        max-height: 10em;
+        padding: 1em 0.35rem;
+    }
+
+    .entrance-bottom-frame-line-title {
+        width: 14em;
+        font-size: 0.43em;
+        margin-top: -12%;
+        margin-left: 9%;
+        margin-bottom: 1.5em;
+        line-height: 1.3em;
+    }
+
+    .entrance-bottom-frame-line-next {
+        width: 6em;
+        margin-left: 30%;
+        min-height: 2.4em;
+        border-radius: 0.8em;
+        font-size: 18px;
+    }
+
+    label {
+        position: relative;
+        display: flex;
+        width: 20.9em;
+        line-height: 0.4em;
+        font-size: 13px;
+        min-height: 3em;
+        border-radius: 0.54rem;
+        margin-left: 4%;
+    }
+
+    .entrance-bottom-frame-line-button-id {
+        line-height: 2.5em;
+        font-size: 16px;
+        margin-left: -0.5em;
+
+    }
+
+    .entrance-bottom-frame-line-button-frame {
+        font-size: 17px;
+        margin-left: -0.8em;
+        min-width: 15em;
+        min-height: 2em;
+        top: 1.1em;
+        position: absolute;
+    }
+
+    .timeOut {
+        font-size: 0.36em;
+        margin-top: 1.25em;
+        margin-left: 0.4em;
+    }
+}
+
+@media screen and (min-width: 554px) {
+    html {
+        height: 100%;
+    }
+
+    .topic-frameli {
+        line-height: 1.5em;
+        font-size: 0.4em;
+        width: 6em;
+        height: 1.3em;
+        margin: 1.2em auto 1.2em auto;
+    }
+
+    .topic-frameli div {
+        font-size: 0.4rem;
+    }
+
+    .entrance-bottom {
+        left: 5%;
+        margin-top: -58%;
+        margin-left: -26%;
+    }
+
+    .entrance-bottom-frame-line {
+        max-height: 10em;
+        padding: 1em 0.35rem;
+    }
+
+    .entrance-bottom-frame-line-title {
+        width: 14em;
+        font-size: 0.4em;
+        margin-top: -18%;
+        margin-left: 1%;
+        margin-bottom: 1em;
+        line-height: 1.3em;
+    }
+
+    .entrance-bottom-frame-line-next {
+        width: 6em;
+        margin-left: 30%;
+        min-height: 2.4em;
+        border-radius: 0.8em;
+        font-size: 18px;
+    }
+
+    label {
+        display: flex;
+        position: relative;
+        width: 26.8em;
+        line-height: 2.9em;
+        font-size: 0.1em;
+        border-radius: 0.54rem;
+        margin-left: -5%;
+    }
+
+    .entrance-bottom-frame-line-button-id {
+        line-height: 2.5em;
+        font-size: 16px;
+        margin-left: -5em;
+
+    }
+
+    .entrance-bottom-frame-line-button-frame {
+        font-size: 18px;
+        margin-left: -1.5em;
+        position: absolute;
+        top: 2em;
+        margin-top: -2em;
+        max-height: 5em;
+        display: inline-block;
+    }
+
+    .timeOut {
+        font-size: 0.32em;
+        margin-top: 1.3em;
+        margin-left: 0.4em;
+    }
+}
+
+@media screen and (min-width: 630px) {
+    html {
+        height: 100%;
+    }
+
+    .topic-frameli {
+        line-height: 1.5em;
+        font-size: 0.4em;
+        margin: 1.2em auto 1.2em auto;
+    }
+
+    .topic-frameli div {
+        font-size: 0.4rem;
+    }
+
+    .entrance-bottom {
+        left: 5%;
+        margin-top: -58%;
+        margin-left: -26%;
+    }
+
+    .entrance-bottom-frame-line {
+        max-height: 10em;
+        padding: 1em 0.35rem;
+    }
+
+    .entrance-bottom-frame-line-title {
+        width: 14em;
+        font-size: 0.33em;
+        margin-top: -20%;
+        margin-left: 0%;
+        margin-bottom: 1em;
+        line-height: 1.3em;
+    }
+
+    .entrance-bottom-frame-line-next {
+        width: 6em;
+        margin-left: 30%;
+        min-height: 2.4em;
+        border-radius: 0.8em;
+        font-size: 18px;
+    }
+
+    label {
+        display: flex;
+        position: relative;
+        width: 26.8em;
+        line-height: 2.9em;
+        font-size: 0.1em;
+        border-radius: 0.54rem;
+        margin-left: -8%;
+    }
+
+    .entrance-bottom-frame-line-button-id {
+        line-height: 2.5em;
+        font-size: 16px;
+        margin-left: -5em;
+
+    }
+
+    .entrance-bottom-frame-line-button-frame {
+        font-size: 18px;
+        margin-left: -2em;
+        position: absolute;
+        top: 2em;
+        margin-top: -2em;
+        max-height: 5em;
+        display: inline-block;
+    }
+
+    .timeOut {
+        font-size: 0.26em;
+        margin-top: 1.3em;
+        margin-left: 0.4em;
+    }
+}
+
+@media screen and (min-width: 772px) {
+    html {
+        height: 100%;
+    }
+
+    .topic-frameli {
+        line-height: 1.5em;
+        font-size: 0.32em;
+        margin: 1.2em auto 1.2em auto;
+    }
+
+    .topic-frameli div {
+        font-size: 0.3rem;
+    }
+
+    .entrance-bottom {
+        left: 5%;
+        margin-top: -58%;
+        margin-left: -11%;
+    }
+
+    .entrance-bottom-frame-line {
+        max-height: 10em;
+        padding: 1em 0.35rem;
+    }
+
+    .entrance-bottom-frame-line-title {
+        width: 12.5em;
+        font-size: 0.29em;
+        margin-top: -30%;
+        margin-left: 0;
+        line-height: 1.3em;
+    }
+
+    .entrance-bottom-frame-line-next {
+        width: 6em;
+        margin-left: 30%;
+        min-height: 2.4em;
+        border-radius: 0.8em;
+        font-size: 18px;
+    }
+
+    label {
+        display: flex;
+        position: relative;
+        width: 26.8em;
+        line-height: 2.9em;
+        font-size: 0.1em;
+        border-radius: 0.54rem;
+        margin-left: -11%;
+    }
+
+    .entrance-bottom-frame-line-button-id {
+        line-height: 2.5em;
+        font-size: 16px;
+        margin-left: -5em;
+
+    }
+
+    .entrance-bottom-frame-line-button-frame {
+        font-size: 18px;
+        margin-left: -2.5em;
+        position: absolute;
+        top: 2em;
+        margin-top: -2em;
+        max-height: 5em;
+        display: inline-block;
+    }
+
+    .timeOut {
+        font-size: 0.21em;
+        margin-top: 1.3em;
+        margin-left: 0.4em;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    html {
+        height: 100%;
+    }
+
+    .topic-frameli {
+        line-height: 1.5em;
+        font-size: 0.25em;
+        width: 5.65em;
+        height: 1.3em;
+        margin: 0.9em auto 0.6em auto;
+    }
+
+    .topic-frameli div {
+        font-size: 0.23rem;
+    }
+
+    .entrance-bottom {
+        margin-top: -58%;
+        margin-left: 0;
+    }
+
+    .entrance-bottom-frame-line {
+        max-height: 10em;
+        padding: 1em 0.35rem;
+    }
+
+    .entrance-bottom-frame-line-title {
+        width: 12em;
+        font-size: 0.25em;
+        margin-top: -35%;
+        margin-left: -1%;
+        margin-bottom: 8%;
+        line-height: 1.3em;
+    }
+
+    .entrance-bottom-frame-line-next {
+        width: 6em;
+        margin-left: 28%;
+        min-height: 2.4em;
+        border-radius: 0.8em;
+        font-size: 18px;
+    }
+
+    label {
+        display: flex;
+        position: relative;
+        width: 26.8em;
+        line-height: 2.9em;
+        font-size: 0.1em;
+        border-radius: 0.54rem;
+        margin-left: -13%;
+    }
+
+    .entrance-bottom-frame-line-button-id {
+        line-height: 2.5em;
+        font-size: 16px;
+        margin-left: -5em;
+
+    }
+
+    .entrance-bottom-frame-line-button-frame {
+        font-size: 18px;
+        margin-left: -3em;
+        position: absolute;
+        top: 2em;
+        margin-top: -2em;
+        max-height: 5em;
+        display: inline-block;
+    }
+
+    .timeOut {
+        font-size: 0.17em;
+        margin-top: 1.4em;
+        margin-left: 0.4em;
+    }
+}
+
+@media screen and (min-width: 1050px) {
+    html {
+        height: 100%;
+    }
+
+    .topic-frameli {
+        line-height: 1.5em;
+        font-size: 0.25em;
+        width: 6em;
+        height: 1.3em;
+        margin: 0.9em auto 0.6em auto;
+    }
+
+    .topic-frameli div {
+        font-size: 0.23rem;
+    }
+
+    .entrance-bottom {
+        margin-top: -58%;
+        margin-left: 4%;
+    }
+
+    .entrance-bottom-frame-line {
+        max-height: 10em;
+        padding: 1em 0.35rem;
+    }
+
+    .entrance-bottom-frame-line-title {
+        width: 12em;
+        font-size: 0.24em;
+        margin-top: -45%;
+        margin-left: -3%;
+        line-height: 1.3em;
+    }
+
+    .entrance-bottom-frame-line-next {
+        width: 6em;
+        margin-left: 28%;
+        min-height: 2.4em;
+        border-radius: 0.8em;
+        font-size: 18px;
+    }
+
+    label {
+        display: flex;
+        position: relative;
+        width: 26.8em;
+        line-height: 2.9em;
+        font-size: 0.1em;
+        border-radius: 0.54rem;
+        margin-left: -16%;
+    }
+
+    .entrance-bottom-frame-line-button-id {
+        line-height: 2.5em;
+        font-size: 16px;
+        margin-left: -5em;
+
+    }
+
+    .entrance-bottom-frame-line-button-frame {
+        font-size: 18px;
+        margin-left: -3.5em;
+        position: absolute;
+        top: 2em;
+        margin-top: -2em;
+        max-height: 5em;
+        display: inline-block;
+    }
+
+    .timeOut {
+        font-size: 0.16em;
+        margin-top: 1.3em;
+        margin-left: 0.4em;
+    }
+}
+
+@media screen and (min-width: 1150px) {
+    html {
+        height: 100%;
+    }
+
+    .topic-frameli {
+        line-height: 1.5em;
+        font-size: 0.2em;
+        width: 6em;
+        height: 1.3em;
+        margin: 0.9em auto 0.6em auto;
+    }
+
+    .topic-frameli div {
+        font-size: 0.2rem;
+    }
+
+    .entrance-bottom {
+        margin-top: -58%;
+        margin-left: 6%;
+    }
+
+    .entrance-bottom-frame-line {
+        /* transition: all 0.5s; */
+        width: 1%;
+        max-height: 10em;
+        padding: 1em 0.35rem;
+    }
+
+    .entrance-bottom-frame-line-title {
+        width: 11em;
+        font-size: 0.2em;
+        margin-top: -55%;
+        margin-left: -8%;
+        line-height: 1.3em;
+    }
+
+    .entrance-bottom-frame-line-next {
+        width: 6em;
+        margin-left: 24%;
+        min-height: 2.4em;
+        border-radius: 0.8em;
+        font-size: 18px;
+    }
+
+    label {
+        display: flex;
+        position: relative;
+        width: 26.8em;
+        line-height: 2.9em;
+        font-size: 0.1em;
+        border-radius: 0.54rem;
+        margin-left: -20%;
+    }
+
+    .entrance-bottom-frame-line-button-id {
+        line-height: 2.5em;
+        font-size: 16px;
+        margin-left: -5em;
+
+    }
+
+    .entrance-bottom-frame-line-button-frame {
+        font-size: 18px;
+        margin-left: -3.9em;
+        position: absolute;
+        top: 2em;
+        margin-top: -2em;
+        max-height: 5em;
+        display: inline-block;
+    }
+
+    .timeOut {
+        font-size: 0.15em;
+        margin-top: 1.2em;
+        margin-left: 0.4em;
+    }
+}
+
+@media screen and (min-width: 1336px) {
+    html {
+        height: 100%;
+    }
+
+    .topic-frameli {
+        line-height: 1.5em;
+        font-size: 0.15em;
+        width: 6em;
+        height: 1.3em;
+        margin: 0.9em auto 0.6em auto;
+    }
+
+    .topic-frameli div {
+        font-size: 0.17rem;
+    }
+
+    .entrance-bottom {
+        margin-top: -58%;
+        margin-left: 11%;
+    }
+
+    .entrance-bottom-frame-line {
+        width: 1%;
+        max-height: 10em;
+        padding: 0 0.35rem;
+    }
+
+    .entrance-bottom-frame-line-title {
+        width: 12em;
+        font-size: 0.18em;
+        margin-top: -15%;
+        margin-left: -10%;
+        margin-bottom: 8%;
+        line-height: 1.3em;
+    }
+
+    .entrance-bottom-frame-line-next {
+        width: 6em;
+        margin-left: 25%;
+        min-height: 2.4em;
+        border-radius: 0.8em;
+        font-size: 18px;
+    }
+
+    label {
+        display: flex;
+        position: relative;
+        width: 26em;
+        line-height: 2.9em;
+        font-size: 0.1em;
+        border-radius: 0.54rem;
+        margin-left: -25%;
+    }
+
+    .entrance-bottom-frame-line-button-id {
+        line-height: 2.5em;
+        font-size: 16px;
+        margin-left: -5em;
+
+    }
+
+    .entrance-bottom-frame-line-button-frame {
+        font-size: 18px;
+        margin-left: -4.3em;
+        position: absolute;
+        top: 2em;
+        margin-top: -2em;
+        max-height: 5em;
+        display: inline-block;
+    }
+
+    .timeOut {
+        font-size: 0.14em;
+        margin-top: 1.2em;
+        margin-left: 0.4em;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    html {
+        height: 100%;
+    }
+
+    .topic-frameli {
+        line-height: 1.5em;
+        font-size: 0.15em;
+        width: 6em;
+        height: 1.3em;
+        margin: 0.9em auto 0.6em auto;
+    }
+
+    .topic-frameli div {
+        font-size: 0.17rem;
+    }
+
+    .entrance-bottom {
+        width: 350px;
+        border-radius: 5px;
+        height: 650px;
+        top: 39%;
+        left: 50%;
+        margin-top: -58%;
+        margin-left: -26%;
+    }
+
+    .entrance-bottom-frame-line {
+        max-height: 10em;
+    }
+
+    .entrance-bottom-frame-line-title {
+        width: 12em;
+        font-size: 0.17em;
+        margin-top: -15%;
+        margin-left: -17%;
+        margin-bottom: 8%;
+        line-height: 1.3em;
+    }
+
+    .entrance-bottom-frame-line-next {
+        width: 6em;
+        margin-left: 25%;
+        min-height: 2.4em;
+        border-radius: 0.8em;
+        font-size: 18px;
+    }
+
+    label {
+        display: flex;
+        position: relative;
+        width: 22.5em;
+        line-height: 2.9em;
+        font-size: 0.1em;
+        border-radius: 0.54rem;
+        margin-left: -30%;
+    }
+
+    .entrance-bottom-frame-line-button-id {
+        line-height: 2.5em;
+        font-size: 16px;
+        margin-left: -5em;
+
+    }
+
+    .entrance-bottom-frame-line-button-frame {
+        font-size: 18px;
+        margin-left: -5em;
+        position: absolute;
+        top: 2em;
+        margin-top: -2em;
+        max-height: 5em;
+        display: inline-block;
+    }
+
+    .timeOut {
+        font-size: 0.13em;
+        margin-top: 1.2em;
+        margin-left: 0.4em;
+    }
+}
+
+@media screen and (min-width: 1700px) {
+    html {
+        height: 100%;
+    }
+
+    .topic-frameli {
+        line-height: 1.5em;
+        font-size: 0.15em;
+        width: 5.65em;
+        height: 1.3em;
+        margin: 0.9em auto 0.6em auto;
+    }
+
+    .topic-frameli div {
+        font-size: 0.15rem;
+    }
+
+    .entrance-bottom {
+        margin-top: -58%;
+        margin-left: -26%;
+    }
+
+    .entrance-bottom-frame-line {
+        max-height: 10em;
+        padding: 0 0.35rem;
+    }
+
+    .entrance-bottom-frame-line-title {
+        width: 13em;
+        font-size: 0.15em;
+        margin-top: -20%;
+        margin-left: -23%;
+        margin-bottom: 8%;
+        line-height: 1.3em;
+    }
+
+    .entrance-bottom-frame-line-next {
+        width: 5.8em;
+        margin-left: 20%;
+        min-height: 2em;
+        border-radius: 0.8em;
+        font-size: 20px;
+        margin-top: 25%;
+    }
+
+    label {
+        display: flex;
+        position: relative;
+        width: 20.5em;
+        line-height: 2.9em;
+        font-size: 0.1em;
+        border-radius: 0.54rem;
+        margin-left: -34%;
+    }
+
+    .entrance-bottom-frame-line-button-id {
+        line-height: 2.5em;
+        font-size: 16px;
+        margin-left: -5em;
+
+    }
+
+    .entrance-bottom-frame-line-button-frame {
+        font-size: 18px;
+        margin-left: -5.5em;
+        position: absolute;
+        top: 2em;
+        margin-top: -2em;
+        max-height: 5em;
+        display: inline-block;
+    }
+
+    .timeOut {
+        font-size: 0.11em;
+        margin-top: 1.2em;
+        margin-left: 0.4em;
+    }
+}
+
+@media screen and (min-width: 1860px) {
+    html {
+        height: 100%;
+    }
+
+    .topic-frameli {
+        line-height: 1.5em;
+        font-size: 0.15em;
+        width: 5.65em;
+        height: 1.3em;
+        margin: 0.9em auto 0.6em auto;
+    }
+
+    .topic-frameli div {
+        font-size: 1.5em;
+    }
+
+    .entrance-bottom {
+        margin-top: -60%;
+        margin-left: -22%;
+    }
+
+    .entrance-bottom-frame-line {
+        max-height: 10em;
+        padding: 0 0.35rem;
+    }
+
+    .entrance-bottom-frame-line-title {
+        width: 14em;
+        font-size: 0.13em;
+        margin-top: -30%;
+        margin-left: -38%;
+        line-height: 1.3em;
+        margin-bottom: 1%;
+    }
+
+    .entrance-bottom-frame-line-next {
+        width: 7em;
+        margin-left: 13%;
+        min-height: 2.3em;
+        border-radius: 0.8em;
+        font-size: 18px;
+        margin-top: 30%;
+    }
+
+    label {
+        display: flex;
+        position: relative;
+        width: 18.5em;
+        line-height: 2.9em;
+        font-size: 0.1em;
+        border-radius: 0.54rem;
+        margin-left: -38%;
+    }
+
+    .entrance-bottom-frame-line-button-id {
+        line-height: 2.5em;
+        font-size: 16px;
+        margin-left: -5em;
+
+    }
+
+    .entrance-bottom-frame-line-button-frame {
+        font-size: 18px;
+        margin-left: -6.5em;
+        position: absolute;
+        top: 2em;
+        margin-top: -2em;
+        max-height: 5em;
+        display: inline-block;
+        /*line-height: 1em;*/
+        /*z-index: 1;*/
+
+    }
+
+    .timeOut {
+        font-size: 0.1em;
+        margin-top: 1.21em;
+        margin-left: 0.4em;
+    }
+}

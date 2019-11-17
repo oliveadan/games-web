@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>签到</title>
+    <script src="{{static_front}}/static/front/monthsignin/js/jquery-1.10.2.min.js"></script>
+    <script src="{{static_front}}/static/front/monthsignin/js/swiper.min.js"></script>
+    <link rel="stylesheet" href="{{static_front}}/static/front/monthsignin/css/bootstrap3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{static_front}}/static/front/monthsignin/css/style.css">
+    <link rel="stylesheet" href="{{static_front}}/static/front/monthsignin/css/qiandao_style.css">
+    <link rel="stylesheet" href="{{static_front}}/static/front/monthsignin/css/anim.css">
+    <link rel="stylesheet" href="{{static_front}}/static/front/monthsignin/css/swiper.min.css">
+    <link rel="shortcut icon" href="{{static_front}}/static/img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <input type="hidden" id="gid" value="{{.gameId}}">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 clearPadding">
+                <!-- 轮播 -->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><a href="" target="view_window"><img
+                                    src="{{static_front}}/static/front/monthsignin/images/qdBanner.jpg" /></a>
+                        </div>
+                        <div class="swiper-slide"><a href="" target="view_window"><img
+                                    src="{{static_front}}/static/front/monthsignin/images/qdbanner2.jpg"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="calendar">
+                    <!-- 会员信息 -->
+                    <div class="vipmsg">
+                        <div class="pt-2 please">
+                            <button href="#" class="btn btn-left userLogin userLogin2 mr-3"
+                                onclick="login()">会员登录</button>
+                        </div>
+                        <div class="user_grade">
+                            <div class="uname text-left">
+                                <span class="myName">您好，
+                                    <span id="account" class="uid text-primary"></span>
+                                </span>
+                                <div class="tddml" style="display: none;">昨日存款：<b class="dml"></b></div>
+                                <a href="" class="btn btn-right logout_btn1 ml-2 text-danger">退出</a>
+                                <button class="search" onclick="dtl()">活动详情</button>
+                                <a href="{{urlfor "DoorController.Query" "gid" .gameId}}" class="search">领奖查询</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="calenbox">
+                        <div id="calendar"></div>
+                    </div>
+                    <div class="sds" display="none">您一共签到<b class="signdays" id="signdays"></b>天</div>
+                    <div class="text-center qdList">
+                    </div>
+                </div>
+                <div class="padding10">
+                    <div class="font16 pb10 borderb"><strong>累计签到礼包</strong></div>
+                    <div class="libaolist">
+                    </div>
+                </div>
+                <dvi id="div-container3" class="div-container3" style="display:none;">
+                    <div class="div-child-container3">
+                        <div class="div-child3">
+                            <div class="div-title3">
+                                活动规则
+                            </div>
+                            <div class="div-body3">
+                                {{str2html .gameRule}}
+                            </div>
+                            <div class="my-btn3">
+                                <button class="cancleBtn" onclick="cancle3()">确定</button>
+                            </div>
+                        </div>
+                    </div>
+                </dvi>
+
+                <div class="div-container" id="div-container" style="display: none;">
+                    <div class="div-child-container">
+                        <div class="div-child">
+                            <div class="div-title"></div>
+                            <div class="div-body"></div>
+                            <div class="div-foot"></div>
+                            <div class="div-img"></div>
+                            <div class="my-btn">
+                                <button class="cancleBtn" onclick="cancle()">
+                                    <div class="xx">x</div>
+                                </button>
+                            </div>
+                            <div class="bq" style="display:none;">
+                                <!-- <button class="bqBtn">补签</button> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 隐藏登录框 -->
+                <div class="login row pb-3">
+                    <!-- <div class="col-12 row login_tit m-0"><a class="vipSign text-left pl-4">会员登录</a><button class="btn col-2 login_close">关闭</button></div><div class="col-12 p-0 text-center bg-light"><p class="bg-light"></p><input id="uid" class="text-center" type="text" placeholder="请输入会员账号" autofocus></div><div style="margin-bottom: 12px;" class="col-12 p-0 text-center bg-light"><p class="login_tips bg-light"></p><button class="login_btn btn btn-warning userLogin1" onclick="User()">立 即 登 录</button></div> -->
+                </div>
+                <div class="black_overlay"></div>
+            </div>
+        </div>
+
+    </div>
+    <div class="maskbox"></div>
+    <script src="{{static_front}}/static/front/monthsignin/css/bootstrap3/js/bootstrap.js"></script>
+    <script src="{{static_front}}/static/front/monthsignin/js/kalendar.js"></script>
+    <script src="{{static_front}}/static/front/monthsignin/js/common.min.js"></script>
+    <script src="{{static_front}}/static/front/monthsignin/js/popper.min.js"></script>
+    <script src="{{static_front}}/static/front/monthsignin/js/layer-v3.1.1/layer.js"></script>
+    <script>
+        function signIn() {
+            $(".maskbox").fadeIn();
+            $(".qdbox").fadeIn();
+            $(".maskbox").height($(document).height());
+        }
+        $(".maskbox").click(function () {
+            $(".maskbox").fadeOut();
+            $(".qdbox").fadeOut();
+        });
+
+        var SignList = [{
+            "SignDay": 0
+        }];
+        calUtil.init(SignList);
+
+        var bqimg = '<img class="bqimg" src="{{static_front}}/static/front/monthsignin/images/buqian.png" alt="">'
+    </script>
+</body>
+
+</html>

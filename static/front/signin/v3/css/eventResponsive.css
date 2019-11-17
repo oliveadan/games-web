@@ -1,0 +1,38 @@
+@media (max-width: 980px) {
+.reelHeader								   { height: 150px; }
+
+}
+
+@media (max-width: 768px) {
+img#startStamp, img#finishStamp            { top: 48%;}
+#rankingImgTitle 						   { width: 80%;}
+.rankingButtonBar						   { width: 50%;}
+img#rankingMedal						   { margin-right: 0px; }
+.eventTxt								   { width: 77%;}
+.wrapper-rule-col-2 					   { padding-bottom: 50px;}
+.content.event                             { background-size: 200% auto;}
+.rankingSection							   { width:84%; }
+.reelHeader								   { height: 104px; }
+
+}
+
+@media (max-width: 450px) {
+.rankingButtonBar						   { margin: 0px auto 0 auto; width: 70%; }
+.rankingBtn                                { padding: 0 5px; }
+img#rankingMedal						   { max-width: 25px; }
+#eventRankingTable tr					   { height: 40px; margin-bottom: 8px;}
+#eventRankingTable thead tr				   { padding: 0px; margin: 0px; height: 30px}
+#eventRankingTable th                      { padding-top: 0px; }
+.enlarge                                   { font-size: 13pt;}
+.eventTxt								   { width: 77%;}
+.howToPlayContentText					   { font-size: 9pt; }
+.wrapper-rule-broder	 				   { width: 84%; padding: 0 2% 0 5%;}
+.wrapper-rule-content					   { padding-bottom: 10px; }
+.reelHeader								   { height: 60px; }
+.goldBar								   { height: 10px; }
+.goldBarDiv								   { top: 8px; }
+.eventTxtContainer						   { padding-top: 30px; }
+.featurContainer, .howToPlayContainer      { padding-top: 30px; }
+#eventRankingTableDiv                      { border-radius: 12px; }
+
+}

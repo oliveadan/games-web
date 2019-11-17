@@ -1,0 +1,612 @@
+
+/********************* 新版骰子 ***************/
+.dicenewWrap {
+	display: none;
+    position: relative;
+    transform-style: preserve-3d;
+    /* animation: roll infinite 10s;  */
+    width: 100px;
+    height: 100px;
+    left: 50%;
+    margin-left: -50px;
+    top: 980px;
+}
+
+.dicenewWrap>.dicenew {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    position: absolute;
+    background-color: #ffba00;
+    box-shadow: #fef2d3 0px 0px 10px 0px inset;
+}
+
+.dicenew.dicenew1 {
+    transform: rotateX(-90deg) translateZ(50px);
+}
+
+.dicenew.dicenew1.inner {
+    transform: rotateX(-90deg) translateZ(49px);
+}
+
+.dicenew.dicenew2 {
+    transform: rotateX(-270deg) translateZ(50px);
+}
+
+.dicenew.dicenew2.inner {
+    transform: rotateX(-270deg) translateZ(49px);
+}
+
+.dicenew.dicenew3 {
+    transform: rotateX(0deg) translateZ(50px);
+}
+
+.dicenew.dicenew3.inner {
+    transform: rotateX(0deg) translateZ(49px);
+}
+
+.dicenew.dicenew4 {
+    transform: rotateX(-180deg) translateZ(50px);
+}
+
+.dicenew.dicenew4.inner {
+    transform: rotateX(-180deg) translateZ(49px);
+}
+
+.dicenew.dicenew5 {
+    transform: rotateX(-90deg) rotateY(90deg) translateZ(50px);
+}
+
+.dicenew.dicenew5.inner {
+    transform: rotateX(-90deg) rotateY(90deg) translateZ(49px);
+}
+
+.dicenew.dicenew6 {
+    transform: rotateX(-180deg) rotateY(-90deg) translateZ(50px);
+}
+
+.dicenew.dicenew6.inner {
+    transform: rotateX(-180deg) rotateY(-90deg) translateZ(49px);
+}
+
+.dicenewWrap>.dicenew>.dot {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.dicenewWrap>.dicenew1>.dot {
+    left: 50%;
+    top: 50%;
+    margin-left: -10px;
+    margin-top: -10px;
+    background-color: #f00;
+}
+
+.dicenewWrap>.dicenew2>.dot {
+    background-color: blue;
+}
+
+.dicenewWrap>.dicenew2>.dot:nth-child(1) {
+    left: 5%;
+    top: 5%;
+}
+
+.dicenewWrap>.dicenew2>.dot:nth-child(2) {
+    right: 5%;
+    bottom: 5%;
+}
+
+.dicenewWrap>.dicenew3>.dot {
+    background-color: blue;
+}
+
+.dicenewWrap>.dicenew3>.dot:nth-child(1) {
+    left: 5%;
+    top: 5%;
+}
+
+.dicenewWrap>.dicenew3>.dot:nth-child(2) {
+    left: 50%;
+    top: 50%;
+    margin-left: -10px;
+    margin-top: -10px;
+}
+
+.dicenewWrap>.dicenew3>.dot:nth-child(3) {
+    right: 5%;
+    bottom: 5%;
+}
+
+.dicenewWrap>.dicenew4>.dot {
+    background-color: #f00;
+}
+
+.dicenewWrap>.dicenew4>.dot:nth-child(1) {
+    left: 5%;
+    top: 5%;
+}
+
+.dicenewWrap>.dicenew4>.dot:nth-child(2) {
+    left: 5%;
+    bottom: 5%;
+}
+
+.dicenewWrap>.dicenew4>.dot:nth-child(3) {
+    right: 5%;
+    top: 5%;
+}
+
+.dicenewWrap>.dicenew4>.dot:nth-child(4) {
+    right: 5%;
+    bottom: 5%;
+}
+
+.dicenewWrap>.dicenew5>.dot {
+    background-color:blue;
+}
+
+.dicenewWrap>.dicenew5>.dot:nth-child(1) {
+    left: 5%;
+    top: 5%;
+}
+
+.dicenewWrap>.dicenew5>.dot:nth-child(2) {
+    left: 5%;
+    bottom: 5%;
+}
+
+.dicenewWrap>.dicenew5>.dot:nth-child(3) {
+    left: 50%;
+    top: 50%;
+    margin-left: -10px;
+    margin-top: -10px;
+}
+
+.dicenewWrap>.dicenew5>.dot:nth-child(4) {
+    right: 5%;
+    top: 5%;
+}
+
+.dicenewWrap>.dicenew5>.dot:nth-child(5) {
+    right: 5%;
+    bottom: 5%;
+}
+
+.dicenewWrap>.dicenew6>.dot {
+    background-color: blue;
+}
+
+.dicenewWrap>.dicenew6>.dot:nth-child(1) {
+    left: 5%;
+    top: 5%;
+}
+
+.dicenewWrap>.dicenew6>.dot:nth-child(2) {
+    left: 5%;
+    bottom: 5%;
+}
+
+.dicenewWrap>.dicenew6>.dot:nth-child(3) {
+    left: 5%;
+    top: 50%;
+    margin-top: -10px;
+}
+
+.dicenewWrap>.dicenew6>.dot:nth-child(4) {
+    right: 5%;
+    top: 5%;
+}
+
+.dicenewWrap>.dicenew6>.dot:nth-child(5) {
+    right: 5%;
+    top: 50%;
+    margin-top: -10px;
+}
+
+.dicenewWrap>.dicenew6>.dot:nth-child(6) {
+    right: 5%;
+    bottom: 5%;
+}
+
+.dicenewWrap>.cover,
+.dicenewWrap>.inner {
+    background: #fbebc0;
+    box-shadow: none;
+}
+
+.dicenewWrap>.cover {
+    border-radius: 3px;
+    transform: translateZ(0px);
+}
+
+.dicenewWrap>.cover.x {
+    transform: rotateX(-90deg) rotateY(90deg);
+}
+
+.dicenewWrap>.cover.y {
+    transform: rotateX(-90deg);
+}
+
+.dicenewWrap>.cover.z {
+    transform: rotateX(0deg);
+}
+
+/* @keyframes roll {
+    0% {
+        -webkit-transform: rotate3d(1, 1, 1, 0deg) rotateY(0deg) scale3d(0.5, 0.5, 0.5);
+        transform: rotate3d(1, 1, 1, 0deg) rotateY(0deg) scale3d(0.5, 0.5, 0.5);
+    }
+    50% {
+        -webkit-transform: rotate3d(1, 1, 1, 360deg) rotateY(360deg) scale3d(1, 1, 1);
+        transform: rotate3d(1, 1, 1, 360deg) rotateY(360deg) scale3d(1, 1, 1);
+    }
+    100% {
+        -webkit-transform: rotate3d(1, 1, 1, 720deg) rotateY(720deg) scale3d(0.5, 0.5, 0.5);
+        transform: rotate3d(1, 1, 1, 720deg) rotateY(720deg) scale3d(0.5, 0.5, 0.5);
+    }
+}  */
+/*************** 以上是新版的骰子 ***************/
+
+/* 大背景 */
+/* .zillion-act-wrapper{
+    width:100%;
+    height:2644px;
+    background:url(../images/zillion-bbg.png) no-repeat center;
+} */
+/* 走格子部分 */
+.go-grid-box{width:100%;background-repeat:no-repeat;background-position:center;}
+.grid-rel{position:relative;}
+.go-gridTop-box{
+    height:630px;
+}
+.go-gridTop-box .userKu-icon{
+     position:absolute;
+    top:370px;
+    left:710px; 
+    /* display:block;
+    margin-left:65px; */
+    width:90px;
+    height:140px;
+    background:url(../images/zillion-icon.png) no-repeat 0px 0px;
+    z-index:7;
+}
+.go-gridTop-box .userKu-icon.kubao-jump{
+    -webkit-animation: kubaoup-down .8s ease infinite 80ms ;
+    animation: kubaoup-down .8s ease infinite 80ms ; 
+}
+/* css3动画 */
+@keyframes kubaoup-down{from{-webkit-transform:translate(0,-8px);transform:translate(0,-8px)}to{-webkit-transform:translate(0,8px);transform:translate(0,8px)}}
+/* 起点 */
+.go-gridTop-box .start-point{
+    position:absolute;
+    top:385px;
+    left:165px;
+    width:48px;
+    height:53px;
+    display:none;
+    background:url(../images/start-icon.png) no-repeat center;
+    z-index:6;
+}
+.go-gridTop-box .dice-stage{
+    position:absolute;
+	color: #f6dba3;
+    font-weight: bold;
+    font-size: 20px;
+    top:720px;
+    left:50%;
+    margin-left:-152px;
+    width:305px;
+    height:110px;
+    line-height:110px;
+    text-align:center;
+}
+.go-gridTop-box .throw-dice{
+    position:absolute;
+    top:1020px;
+    left:49%;
+    margin-left:-152px;
+    width:305px;
+    height:110px;
+    line-height:110px;
+    text-align:center;
+    background:url(../images/zillion-icon.png) no-repeat -178px 0px;
+    z-index:8;
+}
+
+/* 走格子游戏部分 */
+/* 骰子动画 */
+.go-gridTop-box .go-grid-game{position:relative;}
+.go-gridBottom-box{height:685px;}
+.go-gridBottom-box .throwDice-infoBox{
+	display: none;
+    width:545px;
+    margin:0 auto;
+    background:#412c2a;
+    border:2px solid #3b2927;
+    border-radius:10px;
+    padding:35px 20px 0px;
+}
+.go-gridBottom-box .remnant-info{
+	display: none;
+    text-align:center;
+    padding:160px 0;
+    color:#f6dba3;
+    font-weight:bold;
+    font-size:20px;
+}
+.go-gridBottom-box .remnant-info a{
+    color:#f6dba3;
+    text-decoration:underline;
+    margin-left:20px;
+}
+.go-gridBottom-box .remnant-info a:hover{color:#0082df;}
+.go-gridBottom-box .infoBox-top{font-size:18px;color:#f6dba3;}
+.go-gridBottom-box .infoBox-top b{font-weigth:bold;font-size:24px;}
+.go-gridBottom-box .infoBox-main p{color:#c2ac7e;line-height:30px;padding:20px 0 15px;}
+.infoBox-main .copy-shareAct {
+    width:530px;
+    height:36px;
+    -webkit-box-shadow: 0px 0px 1px 1px rgba(59,41,39,.8);
+    -moz-box-shadow: 0px 0px 1px 1px rgba(59,41,39,.8);
+    box-shadow: 0px 0px 1px 1px rgba(59,41,39,.8);
+    position:relative;
+}
+.infoBox-main .copy-shareAct .copy-info{width:430px;height:36px;line-height:36px;color:#b9a274;background:#5f4442;padding-left:10px;}
+.infoBox-main .copy-shareAct .copy-btn{
+    width:89px;
+    height:36px;
+    line-height:36px;
+    border-left:1px solid #412c2a;
+    text-align:center;
+    background:#7f574c;
+    background: -moz-linear-gradient(top,  #7f574c 0%, #67473e 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7f574c), color-stop(100%,#67473e));
+    background: -webkit-linear-gradient(top,  #7f574c 0%,#67473e 100%);
+    background: -o-linear-gradient(top,  #7f574c 0%,#67473e 100%);
+    background: -ms-linear-gradient(top,  #7f574c 0%,#67473e 100%);
+    background: linear-gradient(to bottom,  #7f574c 0%,#67473e 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7f574c', endColorstr='#67473e',GradientType=0 );
+    color:#f6dba3;
+    font-weight:bold;
+    cursor:pointer;
+}
+/* 活动动态 */
+.actDynamic-box{height:269px;background:url(../images/actDynamic.jpg) no-repeat center;}
+.actDynamic-box .actDynamic{padding-top:55px;}
+.actDynamic .actDynamic-l{font-size:18px;color:#b9a274;margin-left:45px;margin-top:17px;}
+.actDynamic .actDynamic-l b{font-size:24px;vertical-align:-3px;padding:0 15px;}
+.actDynamic .actDynamic-r{
+    margin-left:80px;
+    width:950px;
+    height:65px;
+    line-height:65px;
+    text-align:center;
+}
+.actDynamic .actDynamic-r .title{color:#b9a274;font-weight:bold;font-size:18px;}
+.actDynamic .actDynamic-r .dynamic-box{overflow:hidden;width:800px;height:65px;white-space:nowrap;margin-left:30px;}
+.actDynamic .actDynamic-r ul{display:inline-block;}
+.actDynamic .actDynamic-r ul li{color:#b9a274;display:inline-block;margin:0 19px;}
+.zillion-h2{
+    width:315px;
+    height:120px;
+    line-height:110px; 
+    text-align:center;
+    background:url(../images/zillion-icon.png) no-repeat 0px -150px;
+    color:#c4ae83;
+    font-size:36px;
+    font-weight:bold;
+}
+.win-user-box .zillion-h2{
+    position:absolute;
+    top:-60px;
+    left:50%;
+    margin-left:-157px;
+}
+/* 活动说明 */
+.act-rule-box{padding-bottom: 20px; background-image:url(../images/zillion-sbg004.jpg); background-repeat: repeat-y;}
+.act-rule-box h2{margin:0 auto;}
+.act-rule-box .act-rule{
+    color:#c4ae83;
+    font-size:18px;
+    line-height:39px;
+    padding:0 25px;
+    margin-top:25px;
+}
+/* 弹窗 */
+.zillion-pub-wd {
+    position: absolute;
+    top: 50%;
+    z-index: 999;
+    left: 50%;
+    width:584px;
+    height:393px;
+    margin-left:-292px;
+    margin-top:-196px;
+    background:#fff;
+    border-radius:4px;
+    text-align:center;
+}
+.zillion-pub-wd .zillWd-head em.kuBao-icon{
+    display:block;
+    margin:0 auto 10px;
+    background-image:url(../images/zillion-icon.png);
+    background-repeat:no-repeat;
+}
+.zillion-pub-wd .zillWd-head em.kuBao-priIcon{
+    width:292px;
+    height:170px;
+    margin-top:-68px;
+    background-position:-5px -274px;
+}
+.zillion-pub-wd .zillWd-head em.kuBao-failIcon{
+     width:294px;
+    height:86px;
+    margin-top:65px;
+    margin-bottom:35px;
+    background-position:-7px -449px;
+}
+.zillion-pub-wd .zillWd-head em.kuBao-noChance{
+     width:158px;
+    height:182px;
+    margin-top:-68px;
+    margin-bottom:25px;
+    background-position:-73px -543px; 
+}
+.zillion-pub-wd .zillWd-head em.close-btn{
+    position:absolute;
+    right:55px;
+    top:10px;
+    width:20px;
+    line-height:20px;
+    font-size:30px;
+    color:#222;
+    cursor:pointer;
+    font-weight:bold;
+}
+.zillion-pub-wd .zillWd-body .wd-head{position:relative;}
+.zillion-pub-wd .zillWd-body .zillWd-info{color:#222;font-size:24px;font-weight:bold;}
+.zillion-pub-wd .zillWd-body .zill-price{
+    color:#d60909;
+    font-size:60px;
+    font-weight:bold;
+    padding:33px 0;
+}
+.zillion-pub-wd .zillWd-body .zill-sel-vip{color:#222;font-size:18px;margin-bottom:36px;}
+.zillion-pub-wd .zillWd-body .zill-sel-vip a{
+    display:inline-block;
+    width:117px;
+    height:45px;
+    line-height:45px;
+    text-align:center;
+    border:1px solid #cecece;
+    border-radius:3px;
+    margin:0 10px;
+    font-weight:bold;
+}
+.zillion-pub-wd .zillWd-body .zill-sel-vip a.on{border-color:#078cca;}
+.zillion-pub-wd .zillWd-body>a.zillWd-btn{
+    display: inline-block;
+    margin: 0 auto;
+    min-width: 157px;
+    height: 50px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 25px;
+	background: url(../images/bt1.png) no-repeat;
+    font-size:18px;
+    color:#853f11;
+    font-weight:bold;
+}
+.zillion-pub-wd .zillWd-body .kuCoin-use{color:#727272;margin-top:20px;}
+.zillion-pub-wd .zillWd-body .kuCoin-use a{text-decoration:underline;color:#727272;margin-left:8px;}
+.zillion-pub-wd .zillWd-body .kuCoin-use a:hover{color:#0063ca;}
+.zillion-pub-wd .zillWd-body .entity-info{color:#606060;font-size:16px;line-height:35px;}
+/* 复制链接弹窗 */
+.zillion-pub-wd .copy-shareAct{width:482px;height:38px;position:relative;margin:32px auto 0;}
+.zillion-pub-wd .copy-shareAct .copy-info{
+    background:#fff;
+    width:376px;
+    height:36px;
+    line-height:36px;
+    border:1px solid #c7c7c7;
+    border-right:none;
+    padding-left:14px;
+}
+.zillion-pub-wd .copy-shareAct .copy-link{
+    width:89px;
+    height:36px;
+    line-height:36px;
+    background:#7f574c;
+    background: -moz-linear-gradient(top,  #7f574c 0%, #67473e 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7f574c), color-stop(100%,#67473e));
+    background: -webkit-linear-gradient(top,  #7f574c 0%,#67473e 100%);
+    background: -o-linear-gradient(top,  #7f574c 0%,#67473e 100%);
+    background: -ms-linear-gradient(top,  #7f574c 0%,#67473e 100%);
+    background: linear-gradient(to bottom,  #7f574c 0%,#67473e 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7f574c', endColorstr='#67473e',GradientType=0 );
+    border:1px solid #412c2a;
+    color:#f6dba3;
+    text-align:center;
+    cursor:pointer;
+    font-weight:bold;
+}
+.copy-shareAct .copy-hintInfo{
+    position:absolute;
+    right:-5px;
+    top:-40px;;
+    padding:0 14px;
+    height:30px;
+    line-height:30px;
+    border-radius:5px;
+    background:#fff;
+    border:1px solid #a6a6a6;
+}
+.copy-shareAct .copy-hintInfo i{
+    display:inline-block;
+    width:12px;
+    height:12px;
+    background:url(../images/group-actIcon.png) no-repeat -23px -57px;
+    vertical-align:-1px;
+    margin-right:5px;
+}
+.copy-shareAct .copy-hintInfo i.error-hint{
+    background-position:-3px -57px;
+}
+.copy-shareAct .triangle-box{position:relative;}
+.copy-shareAct .triangle-box:after{
+    content:"";
+    position:absolute;
+    left:50%;
+    margin-left:-7px;
+    width:14px;
+    height:8px;
+    background:url(../images/group-actIcon.png) no-repeat -43px -59px;
+}
+
+/* -------------大富翁查询------大富翁查询-弹窗------------------开始-------------- */
+.black_overlay{display:none;position:fixed;top:0%;left:0%;width:100%;height:100%;background-color:black;z-index:1001;-moz-opacity:0.7;opacity:.70;filter:alpha(opacity=70);
+
+
+}
+.white_content{display:none;position:fixed;top:25%;left:28%;z-index:1002;overflow:auto;border-radius:10px;-moz-border-radius:10px;-webkit-border-radius:10px;}
+.white_content1{display:none;position:fixed;top:25%;left:35%;z-index:1002;overflow:auto;border-radius:10px;-moz-border-radius:10px;-webkit-border-radius:10px;}
+.cxbox{width:800px;height:500px;margin:0 auto;}
+.cxbox1{width:580px;height:500px;margin:0 auto;}
+.cxbox_bt{height:100px;line-height:36px;}
+.cxbox_bt p{font-size:17px;color:#512e2a;float:left;padding-left:15px; font-weight: bold;}
+.cxbox_bt a{font-size:17px;margin-right:20px;float:right;}
+.cxbox_hy{height:50px;  background: #fff; border-radius:10px;}
+.cxbox_hy p{float:left;font-size:17px;color:#ffe681;line-height:32px;}
+.cxbox_hy input{border:1px solid #c7c7c7;height:30px;line-height:30px;width:220px;background:#ffffff;float:left;font-size:17px;color:#000000;font-family:Arial,"微软雅黑";padding-left:10px;}
+.cxbox_hy a{height:32px;width:140px;display:block;float:left;font-size:17px;line-height:32px;text-align:center;color:#7c0303; margin-left: 20px; vertical-align: middle;}
+.cxbox_bd table{margin:0 auto;border-bottom:1px solid #c7c7c7;border-left:1px solid #c7c7c7;}
+.cxbox_bd table tr td{line-height:32px;text-align:center;font-size:15px; font-family:Arial,"微软雅黑";    border: 1px solid #c7c7c7;border-bottom:0px;border-left:0px;}
+.cxbox_bd table tr.ad{background:#ffffff;}
+/* -------------大富翁查询------大富翁查询-弹窗-----------------结束-------------- */
+
+.ad{background-color: #7f5849 ; color:#ffe681}
+.ad td{background-color: #7f5849 ; }
+.bai{color:#fff;font-size:15px;line-height:36px;}
+
+.stat{
+	border: none;
+	padding: 10px 30px;
+	border-radius: 10px; 
+	width: 90%;
+	height: 64px;
+	background: url(../images/start.png) no-repeat;
+	margin: 30px auto;
+	cursor: pointer;
+}
+
+.search11{background: url(../images/search-botton.png) no-repeat;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    border:none; 
+    border-radius: 10px;}
+.gban{position: absolute;
+    top: 120px;
+    right: 1px;}

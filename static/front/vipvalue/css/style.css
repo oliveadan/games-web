@@ -1,0 +1,473 @@
+/*--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+--*/
+/* reset */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+dl,
+dt,
+dd,
+ol,
+nav ul,
+nav li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+ol,
+ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* start editing from here */
+a {
+	text-decoration: none;
+}
+
+.txt-rt {
+	text-align: right;
+}
+
+/* text align right */
+.txt-lt {
+	text-align: left;
+}
+
+/* text align left */
+.txt-center {
+	text-align: center;
+}
+
+/* text align center */
+.float-rt {
+	float: right;
+}
+
+/* float right */
+.float-lt {
+	float: left;
+}
+
+/* float left */
+.clear {
+	clear: both;
+}
+
+/* clear float */
+.pos-relative {
+	position: relative;
+}
+
+/* Position Relative */
+.pos-absolute {
+	position: absolute;
+}
+
+/* Position Absolute */
+.vertical-base {
+	vertical-align: baseline;
+}
+
+/* vertical align baseline */
+.vertical-top {
+	vertical-align: top;
+}
+
+/* vertical align top */
+nav.vertical ul li {
+	display: block;
+}
+
+/* vertical menu */
+nav.horizontal ul li {
+	display: inline-block;
+}
+
+/* horizontal menu */
+img {
+	max-width: 100%;
+}
+
+/*end reset*/
+/****-----start-body----****/
+html {
+	font-family: 'Open Sans', sans-serif;
+	height: 100%;
+	background: url("../images/vipbg.jpg") no-repeat;
+	background-size: 100% 100%;
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+form p a {
+	color: #888;
+	font-family: 'Open Sans', sans-serif;
+}
+
+input[type="text"] {
+	margin-top: 85%;
+	margin-left: 11.2%;
+	text-align: left;
+	position: relative;
+	width: 70%;
+	padding: 3.5%;
+	background: #D3D3D3;
+	font-family: 'Open Sans', sans-serif;
+	color: #555555;
+	font-weight: 550;
+	font-size: 20px;
+	outline: none;
+	border: none;
+	border-radius: 8px;
+	border: 1px solid #DED6D6;
+	-webkit-appearance: none;
+}
+
+input[type="text"]:hover {
+	border: 1px solid #949494;
+	transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-o-transition: 0.5s;
+	-ms-transition: 0.5s;
+
+}
+
+input[type="button"] {
+	width: 55%;
+	padding: 3.5%;
+	margin-left: 22.5%;
+	margin-bottom: 8%;
+	margin-top: 10%;
+	background: #feeeae;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 550;
+	font-size: 19px;
+	color: rgb(54, 54, 54);
+	box-shadow: inset 10px 10px 15px #b38a3a;
+	-webkit-text-shadow: 0px 0px 3px #c4973f;
+	-moz-text-shadow: 0px 0px 3px #c4973f;
+	-o-text-shadow: 0px 0px 3px #c4973f;
+	-ms-text-shadow: 0px 0px 3px #c4973f;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	border-radius: 8px;
+	transition: 0.5s;
+	-webkit-appearance: none;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-o-transition: 0.5s;
+	-ms-transition: 0.5s;
+}
+
+a,
+input,
+button {
+	-webkit-tap-highlight-color: transparent;
+}
+
+/*模态框*/
+.modal {
+	display: none;
+	/* 默认隐藏 */
+	position: fixed;
+	/* 根据浏览器定位 */
+	z-index: 1;
+	/* 放在顶部 */
+	left: 0;
+	top: 0;
+	width: 100%;
+	/* 全宽 */
+	height: 100%;
+	/* 全高 */
+	overflow: auto;
+	/* 允许滚动 */
+	background-color: rgba(0, 0, 0, 0.4);
+	/* 背景色 */
+}
+
+/*模态框内容*/
+.modal-content {
+	color: #fff;
+	background: url('../images/viptc.png') no-repeat;
+	background-size: 100% 100%;
+	display: flex;
+	/*采用flexbox布局*/
+	flex-direction: column;
+	/*垂直排列*/
+	position: relative;
+	margin: 55% auto 0 auto;
+	/*距顶部15% 水平居中*/
+	padding: 20px;
+	width: 60%;
+	height: 42%;
+	animation: topDown 0.4s;
+	/*自定义动画，从模态框内容上到下出现*/
+}
+
+.close img {
+	width: 13%;
+	margin: 2% 0 0 44%;
+}
+
+.modal-body b {
+	color: rgb(230, 188, 80);
+}
+
+@keyframes topDown {
+	from {
+		top: -300px;
+		opacity: 0
+	}
+
+	to {
+		top: 0;
+		opacity: 1
+	}
+}
+
+/*模态框头部*/
+.modal-header {
+	position: relative;
+	color: rgb(230, 188, 80);
+	top: 58%;
+	margin: 0 auto;
+	font-size: 18px;
+	display: flex;
+	/*采用flexbox布局*/
+	flex-direction: row;
+	/*水平布局*/
+	align-items: center;
+	/*内容垂直居中*/
+	justify-content: space-between;
+	text-align: center;
+}
+
+.modal-body {
+	position: relative;
+	top: 59%;
+	margin: 0 auto;
+	font-size: 16px;
+	text-align: center;
+}
+
+.modal-footer {
+	position: relative;
+	top: 60%;
+	margin: 0 auto;
+	font-size: 16px;
+	text-align: center;
+}
+
+.modal-footer b {
+	font-size: 26px;
+	color: rgb(230, 188, 80);
+}
+
+/*关闭X 样式*/
+.close {
+	color: #aaa;
+	float: right;
+	font-size: 24px;
+	font-weight: bold;
+	margin: 0 auto;
+	position: relative;
+	top: 75%;
+}
+
+.close:hover {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+
+input[type="submit"]:hover {
+	background: #128A42;
+	color: #fff;
+}
+
+/****************/
+.copy-right {
+	position: absolute;
+	bottom: -19%;
+	left: 43.7%;
+}
+
+.copy-right p {
+	color: #fff;
+	font-size: 1em;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+}
+
+.copy-right p a {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1em;
+	color: #21A957;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+
+.copy-right p a:hover {
+	color: #fff;
+}
+
+
+/*-----start-responsive-design------*/
+@media (max-width:480px) {
+
+	input[type="text"],
+	input[type="password"],
+	input[type="submit"] {
+		font-weight: 600;
+		margin-bottom: 4%;
+	}
+
+	@media (max-width:320px) {
+
+		input[type="text"],
+		input[type="password"],
+		input[type="submit"] {
+			font-weight: 600;
+			font-size: 15px;
+		}
+
+		input[type="submit"] {
+			padding: 4%;
+		}
+
+	}
+}
+
+@media (min-width:599px) {
+	.modal-content {
+		background-size: 100% 100%;
+		margin: 15% auto 0 auto;
+		padding: 20px;
+		width: 21%;
+		height: 44%;
+	}
+
+	.close img {
+		width: 13%;
+		margin: 12% 0 0 45%;
+	}
+}

@@ -1,0 +1,123 @@
+.title {
+    height: 260px;
+    background: url(../img/bg.png) no-repeat;
+    background-size: cover;
+}
+.signList{
+    font-size: 1.4em;
+}
+.bor {
+    width: 29%;
+    border-top: 2px solid rgb(252, 197, 79);
+    opacity: 0.5;
+}
+
+#signBtn {
+    border-radius: 50%;
+    background-color: #fff;
+    height: 3.2em;
+    width: 3.2em;
+    line-height: 2.3em;
+    color: rgb(212, 149, 13);
+    font-weight: bold;
+    font-size: 30px;
+    margin: 0 auto;
+    border: 7px solid #eee;
+    animation: kf 3s infinite linear alternate-reverse;
+}
+
+@keyframes kf {
+    0% {
+        border: 7px solid #fff;
+        background-color: #FEEA4D;
+        
+    }
+
+    50% {
+        border: 7px solid #FEEA4D;
+        background-color: rgb(209, 190, 42);
+    }
+    100% {
+        border: 7px solid #fff;
+        background-color: #FEEA4D;
+
+    }
+}
+
+.signed {
+    border-radius: 50%;
+    background-color: #eee;
+    height: 3em;
+    width: 3em;
+    line-height: 2.5em;
+    color: rgb(252, 197, 79);
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#userInput {
+    display: none;
+    text-align: center;
+}
+
+#sub {
+    color: #fff;
+    font-weight: bold;
+}
+
+#res {
+    background-color: red;
+    background: url(../img/res.png) no-repeat;
+    background-size: cover;
+    width: auto;
+    height: 220px;
+    display: none;
+}
+
+.money {
+    font-size: 30px;
+    font-weight: bold;
+    color: red;
+    line-height: 70px;
+}
+
+.btn1 {
+    color: #fff !important;
+    background-color: rgb(252, 197, 79);
+    border-radius: 2em;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    padding: .5em 2em .55em;
+    opacity: 0.9;
+}
+
+.roleBox {
+    width: 90%;
+    height: auto;
+    border-radius: 0.5em;
+    box-shadow: 1px 2px 1px 1px rgb(240, 238, 238);
+    line-height: 60px;
+    color: #666;
+}
+
+.roleNum {
+    font-size: 30px;
+    color: rgb(252, 197, 79);
+    border-right: 1px solid rgb(248, 247, 247);
+    padding-right: 0.8em;
+    font-weight: bold;
+    opacity: 0.8;
+}
+
+.roleText {
+    margin-left: -40px;
+    font-size: 14px;
+}
+
+.goVIP {
+    background: #fff;
+    border: 1px solid rgb(252, 197, 79);
+    color: rgb(252, 197, 79) !important;
+}

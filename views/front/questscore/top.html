@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>答题排行榜</title>
+    <meta name="description" content="particles.js is a lightweight JavaScript library for creating particles.">
+    <meta name="author" content="Vincent Garreau"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" href="{{static_front}}/static/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="{{static_front}}/static/front/questscore/css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="{{static_front}}/static/front/questscore/css/top.css"/>
+    <link rel="stylesheet" href="{{static_front}}/static/front/js/jquery.min.js">
+</head>
+
+<body>
+<div id="child_header">
+    <div class="goback"><a href="javascript:history.back(-1)"><i></i></a></div>
+    <div class="current_location"><span></span></div>
+</div>
+<div class="details">
+    <div class="detail">
+        <div class="titletop">
+            <p>答题排行</p>
+        </div>
+        <ul class="topul">
+            {{range $i,$v := .list}}
+                {{if lt $i 3}}
+                    <li class="topli">
+                        <div>
+                            <span id="nums{{numberAdd $i 1}}" class="nums">{{numberAdd $i 1}}.</span>
+                            <span class="vipname">{{$v.Account}}</span>
+                            <span class="scores">
+                                <span>{{$v.Score}}</span>分
+                            </span>
+                        </div>
+                    </li>
+                {{else}}
+                    <li class="topli">
+                        <div>
+                            <span class="nums">{{numberAdd $i 1}}.</span>
+                            <span class="vipname">{{$v.Account}}</span>
+                            <span  class="scores">
+                                <span>{{$v.Score}}</span>分
+                            </span>
+                        </div>
+                    </li>
+                {{end}}
+            {{end}}
+        </ul>
+    </div>
+</div>
+</body>
+</html>

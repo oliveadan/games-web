@@ -1,0 +1,70 @@
+
+.header {
+    width: 7.5rem;
+    height: 0.9rem;
+    background: url(../images/header-m-bg.png);
+    color: #fff;
+    text-align: center;
+    line-height: 0.9rem;
+    position: relative;
+}
+.header .logo {
+    display: inline-block;
+    margin: 0 auto;
+    width: 2.7rem;
+    height: 100%;
+    background: url(/static/img/logo240x80.png) center center no-repeat;
+    background-size: cover;
+}
+.footer{text-align:center;color:#bd8c53;background: url(../../images/foot-bg.png);font-size:14px; height:1rem; line-height:1rem;}
+.g_survey .survey_wrap {
+}
+.g_survey .survey_main {
+    padding-top: 30px;
+}
+
+.survey_content {
+    border-style: solid;
+    border-width: 25px;
+    border-color: #fff;
+    -moz-border-image: url(../../images/border.jpg) 25 repeat;
+    -webkit-border-image: url(../../images/border.jpg) 25 repeat;
+    -o-border-image: url(../../images/border.jpg) 25 repeat;
+    border-image: url(../../images/border.jpg) 25 fill repeat;
+}
+.page_survey .g_content {
+    min-width: inherit;
+    max-width: inherit;
+}
+.g_survey .survey_title .title_content:before {
+    content: '';
+    height: 22px;
+    width: 172px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    background-repeat: no-repeat;
+    background-image: url(../../images/title_decoration_pc.png);
+}
+.g_footer {
+    background-color: transparent !important;
+}
+.g_footer p, .g_footer a {
+    color: rgba(255, 255, 255, 0.9);
+}
+.survey_ads {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.survey_ads a {
+    width: auto !important;
+}
+.g_survey .survey_title {
+    line-height: 1;
+}
+.g_survey .survey_title .title_content {
+    padding: 13px 0;
+    font-size: 1rem;
+    line-height: 1.2rem;
+	text-align: center;
+}

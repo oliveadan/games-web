@@ -1,0 +1,243 @@
+// main: ../main.less
+
+/**
+ * Core reset stylesheet
+ *
+ * Don't make any changes in this file!
+ *
+ * Version 1.1
+ */
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+select,
+button,
+textarea,
+p,
+blockquote,
+th,
+td {
+	margin: 0;
+	padding: 0;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+fieldset,
+img {
+	border: 0;
+	vertical-align: middle;
+}
+li {
+	list-style: none;
+}
+:focus {
+	outline: 0;
+}
+/*@purpose To enable resizing for IE */
+/*@branch For IE6-Win, IE7-Win */
+input,
+button,
+textarea,
+select {
+	*font-size: 100%;
+}
+/* Remove special stylesheet in firefox */
+button::-moz-focus-inner,
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+input[type="file"] > input[type="button"]::-moz-focus-inner {
+	border: none;
+	padding: 0;
+}
+/* Remove highlight in mobie */
+input	{
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+/*
+[base]
+
+	0- Global
+	1- Links
+	2- Content(For tinymce)
+	3- Form
+*/
+/* =0 Global
+---------------------------------------------------------------------------------------------------------------------*/
+* {
+	.box-sizing(border-box);
+}
+.hide {
+	display: none;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+.clear {
+	clear: both;
+}
+/* Clearfix
+------------------------------------------------------*/
+.clearfix:after {
+	clear: both;
+	content: " ";
+	display: block;
+	font-size: 0;
+	height: 0;
+	visibility: hidden;
+}
+/* for IE6 */
+*html .clearfix {
+	zoom: 1;
+}
+/* for IE7 */
+* + html .clearfix {
+	zoom: 1;
+}
+
+/* Clearfix for LESS
+------------------------------------------------------*/
+.clearfix() {
+	*zoom: 1;
+	&:before,
+	&:after {
+		content: "";
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
+}
+/* Flexible  for LESS
+------------------------------------------------------*/
+.display-box() {
+   display: -moz-box;
+	 display: -webkit-box;
+	 display: box;
+}
+.box-orient() {
+	-moz-box-orient: vertical;
+  -webkit-box-orient: vertical;
+  box-orient: vertical;
+}
+.box-flex(@sizing){
+	-ms-box-flex: @sizing;
+	-moz-box-flex: @sizing;
+	-webkit-box-flex: @sizing;
+	-ms-flex: @sizing;
+	-webkit-flex:@sizing;
+	flex: @sizing;
+}
+/* Flexible  for LESS
+------------------------------------------------------*/
+.flex-center() {
+  display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+/* margin/padding useing px2rem  for LESS
+------------------------------------------------------*/
+
+.margin(@top: 0, @right: 0, @bottom: 0, @left: 0) {
+	.px2rem(margin-left,@left);
+	.px2rem(margin-right,@right);
+	.px2rem(margin-top,@top);
+	.px2rem(margin-bottom,@bottom);
+}
+.margin-top(@sizing) {
+	.px2rem(margin-top,@sizing);
+}
+.margin-bottom(@sizing) {
+	.px2rem(margin-bottom,@sizing);
+}
+.margin-left(@sizing) {
+	.px2rem(margin-left,@sizing);
+}
+.margin-right(@sizing) {
+	.px2rem(margin-right,@sizing);
+}
+.padding(@top: 0, @right: 0, @bottom: 0, @left: 0) {
+	.px2rem(padding-left,@left);
+	.px2rem(padding-right,@right);
+	.px2rem(padding-top,@top);
+	.px2rem(padding-bottom,@bottom);
+}
+.padding-top(@sizing) {
+	.px2rem(padding-top,@sizing);
+}
+.padding-bottom(@sizing) {
+	.px2rem(padding-bottom,@sizing);
+}
+.padding-left(@sizing) {
+	.px2rem(padding-left,@sizing);
+}
+.padding-right(@sizing) {
+	.px2rem(padding-right,@sizing);
+}
+
+/* ellipsis useing in txt  for LESS
+------------------------------------------------------*/
+.text-overflow() {
+	 white-space: nowrap;
+	 overflow:hidden;
+	 text-overflow:ellipsis;
+}
+
+
+
+
+
+
+/* =1 Links
+---------------------------------------------------------------------------------------------------------------------*/
+a {
+	color: @Gray-darker;
+	text-decoration: none;
+	&:hover {
+		text-decoration: none;
+	}
+}

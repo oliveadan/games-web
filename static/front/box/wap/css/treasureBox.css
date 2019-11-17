@@ -1,0 +1,206 @@
+body {
+    background-color: black;
+}
+
+.title {
+    border-bottom: 1px solid gold
+}
+
+.title img {
+    width: auto;
+    height: 50px;
+    background-color: #15151B !important;
+}
+
+.title>div>span {
+    font-size: 26px;
+    color: gold;
+
+}
+
+.more {
+    font-size: 10px;
+}
+
+.dropdown-menu {
+    background-color: #000;
+}
+
+.boxs {
+    background: url(../img/bg.jpg) no-repeat;
+    background-size: 100%;
+}
+
+.boxs img {
+    border: 2px solid #B8AB67;
+    width: 85%;
+    height: auto;
+}
+
+.boxs .tx {
+    height: auto;
+    width: 85%;
+    margin: 0 auto;
+    border-top: 28px solid rgba(173, 136, 15, 0.637);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    opacity: 0.8;
+    position: relative;
+}
+
+.boxs .boxName {
+    width: 100%;;
+    color: rgb(204, 198, 162);
+    display: inline-block;
+    position: absolute;
+    top: 82.5%;
+    font-weight: bold;
+}
+.tit{
+    position: relative;
+}
+.tit>div>div{
+    position: absolute;
+    top: 21%;
+    left: 40%;
+    
+}
+.tit img{
+    position: absolute;
+    /* background-color: #000; */
+    top: -2%;
+    left: 14%;
+    width: 70%;
+}
+#scrollBox {
+    height: 30px;
+    width: 85%;
+    margin: 0px auto;
+    overflow: hidden;
+    color: gold;
+    border: 2px solid #B8AB67;
+    border-radius: 1rem;
+}
+#scrollBox ul{
+    list-style-type: none;
+}
+#scrollBox1 {
+    height: auto;
+    width: 85%;
+    margin: 0px auto;
+    overflow: hidden;
+    color: #B8AB67;
+    border: 2px solid #B8AB67;
+    border-radius: 1rem;
+}
+.tit1{
+    position: relative;
+}
+.tit1>div>div{
+    position: absolute;
+    top: 3%;
+    left: 40%;
+    
+}
+.tit1 img{
+    position: absolute;
+    /* background-color: #000; */
+    top: -1%;
+    left: 14%;
+    width: 70%;
+}
+.foot{
+    width: 100%;
+}
+.foot>img{
+    height: 40px;
+    width: auto;
+    border: 0;
+    font-size: 14px;
+}
+
+#userInput{
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+}
+#uname{
+    
+    color: #000;
+}
+#res{
+    display: none;
+    background-color: rgba(173, 136, 15, 0.737);
+    border-radius: 0.5rem;
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.keysImg{
+    width: 100%;
+    height: auto;
+    font-size: 12px;
+}
+.keysImg img{
+    border: 0;
+    width: 35%;
+    height: auto;
+}
+.keysImg span{
+    font-size: 16px;
+    color: gold;
+}
+#sub{
+    font-size: 20px;
+    color: #fff;
+}
+#menu{
+    display: none;
+}
+.menu a{
+    background-color: rgba(173, 136, 15, 0.3) !important;
+    color: gold;
+}
+#menuBtn{
+    background: #000;
+    color: rgba(173, 136, 15, 0.837);
+}
+.list{
+    position: absolute;
+    top: 20%;
+    width: 92%;
+    display: none;
+    z-index: 10;
+}
+#dialogs{
+    background-color: rgba(255, 255, 255, 0.95);
+    height: 20rem;
+    font-size: 12px;
+    overflow: scroll;
+}
+
+#dialogs1{
+    background: url(../img/中奖页面.png) no-repeat;
+    background-size: contain;
+    background-color: rgba(0, 0, 0, 0.76);
+    position: absolute;
+    top: 6rem;
+    width: 92%;
+    height: auto;
+    border-radius: 1rem;
+    font-size: 25px;
+    display:none ;
+}
+.jImg{
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+}
+#msg{
+    font-size: 14px;
+}
+#close{
+    font-size: 50px;
+    color: gold;
+}

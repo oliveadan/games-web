@@ -1,0 +1,56 @@
+@charset "utf-8";
+/* CSS Document */
+.go-gridTop-box .go-grid-game a {
+	color:#9d8853;
+}
+.go-gridTop-box .go-grid-game li{
+	color:#9d8853;
+	text-align: center;  
+	font-size: 30px;
+	font-weight: bold;
+	line-height: 90px;
+    position:absolute;
+    width:90px; height:90px; border:3px solid #614a18;border-radius: 10px;
+	background: linear-gradient(to bottom, #ddc086, #f7dca5 30%, #ddc086);
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+.go-gridTop-box .go-grid-game img{
+    width:90px; height:90px;
+}
+.go-gridTop-box .go-grid-game .grid-num1{top:347px;left:226px;}
+.go-gridTop-box .go-grid-game .grid-num2{top:347px;left:326px;}
+.go-gridTop-box .go-grid-game .grid-num3{top:347px;left:426px;}
+.go-gridTop-box .go-grid-game .grid-num4{top:347px;left:526px;}
+.go-gridTop-box .go-grid-game .grid-num5{top:347px;left:626px;}
+.go-gridTop-box .go-grid-game .grid-num6{top:347px;left:726px;}
+.go-gridTop-box .go-grid-game .grid-num7{top:347px;left:826px;}
+.go-gridTop-box .go-grid-game .grid-num8{top:347px;left:926px;}
+.go-gridTop-box .go-grid-game .grid-num9{top:347px;left:1026px;}
+.go-gridTop-box .go-grid-game .grid-num10{top:447px;left:1026px;}
+.go-gridTop-box .go-grid-game .grid-num11{top:547px;left:1026px;}
+.go-gridTop-box .go-grid-game .grid-num12{top:647px;left:1026px;}
+.go-gridTop-box .go-grid-game .grid-num13{top:747px;left:1026px;}
+.go-gridTop-box .go-grid-game .grid-num14{top:847px;left:1026px;}
+.go-gridTop-box .go-grid-game .grid-num15{top:947px;left:1026px;}
+.go-gridTop-box .go-grid-game .grid-num16{top:1047px;left:1026px;}
+.go-gridTop-box .go-grid-game .grid-num17{top:1047px;left:926px;}
+.go-gridTop-box .go-grid-game .grid-num18{top:1047px;left:826px;}
+.go-gridTop-box .go-grid-game .grid-num19{top:1047px;left:726px;}
+.go-gridTop-box .go-grid-game .grid-num20{top:1047px;left:626px;}
+.go-gridTop-box .go-grid-game .grid-num21{top:1047px;left:526px;}
+
+
+
+.go-gridTop-box .go-grid-game .grid-num22{top:1047px;left:426px;}
+.go-gridTop-box .go-grid-game .grid-num23{top:1047px;left:326px;}
+.go-gridTop-box .go-grid-game .grid-num24{top:1047px;left:226px;}
+.go-gridTop-box .go-grid-game .grid-num25{top:1047px;left:126px;}
+.go-gridTop-box .go-grid-game .grid-num26{top:947px;left:126px;}
+.go-gridTop-box .go-grid-game .grid-num27{top:847px;left:126px;}
+.go-gridTop-box .go-grid-game .grid-num28{top:747px;left:126px;}
+.go-gridTop-box .go-grid-game .grid-num29{top:647px;left:126px;}
+.go-gridTop-box .go-grid-game .grid-num30{top:547px;left:126px;}
+.go-gridTop-box .go-grid-game .grid-num31{top:447px;left:126px;}

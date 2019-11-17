@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>答题结果</title>
+    <meta name="description" content="particles.js is a lightweight JavaScript library for creating particles.">
+    <meta name="author" content="Vincent Garreau" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" href="{{static_front}}/static/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="{{static_front}}/static/front/questscore/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="{{static_front}}/static/front/questscore/css/result.css" />
+</head>
+
+<body>
+    <input type="hidden" id="gid" value="{{.gid}}">
+    <div id="child_header">
+
+    </div>
+    <div class="details">
+        <div class="detail">
+            <div class="resultimg"><img src="{{static_front}}/static/front/questscore/img/result.png" alt=""></div>
+            <p class="score1"><span class="scoreimg"><img src="{{static_front}}/static/front/questscore/img/score.png" alt=""></span><span id="result1">{{.scoure}}</span></p><br>
+            <p class="lastp"><span class="award">{{.msg}}</span></p>
+        </div>
+        <div>
+            <button align="left" style="float:left" class="detailButton" onclick="toDetail()">查看答案</button>
+            <button align="right" class="detailButton2" onclick="toTop()">查看排名</button>
+        </div>
+    </div>
+</body>
+<!--scripts-->
+<script  src="{{static_front}}/static/front/js/jquery.min.js"></script>
+<script type="text/javascript">
+    var gid = $("#gid").val();
+    function toDetail() {
+        location.href = '/questscore/correct?gid='+gid;
+    }
+    function toTop() {
+        location.href = '/questscore/ranking?gid='+gid;
+    }
+</script>
+
+</html>

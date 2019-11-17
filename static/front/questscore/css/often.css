@@ -1,0 +1,213 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    width: 100%;
+    background: url('../img/bj.jpg');
+    background-size: cover;
+}
+
+.div1 {
+    z-index: 2;
+    position: absolute;
+    width: 350px;
+    border-radius: 5px;
+    height: 590px;
+    background: -webkit-linear-gradient(#4defff6e, #4a24a747);
+    /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(#4defff6e, #4a24a747);
+    /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(#4defff6e, #4a24a747);
+    /* Firefox 3.6 - 15 */
+    background: linear-gradient(#4defff6e, #4a24a747);
+    /* 标准的语法 */
+    box-shadow: 0px 0px 5px#333333;
+    top: 47%;
+    left: 50%;
+    margin-top: -250px;
+    margin-left: -175px;
+    transition: all 1s;
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+}
+
+.titleoften {
+    font-size: 1.5em;
+    margin: 1em 0.5em 0em 0.5em;
+    text-align: center;
+}
+
+input {
+    display: none
+}
+
+label {
+    width: 36%;
+    height: 4em;
+    display: inline-block;
+    line-height: 4em;
+    margin-left: 3%;
+    position: relative;
+    top: -2em;
+    left: 1.3em;
+    text-align: center;
+    /* border-top: 1px solid#eee; */
+    background: #fff;
+    margin-bottom: 0.7em;
+    font-size: 1.4em;
+    font-family: '微软雅黑';
+    border-radius: 25px;
+}
+
+label:active {
+    background: #ffa132;
+}
+
+/* label:after {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    border: 1px solid#e6c329;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    left: -49%
+} */
+
+input:checked+label:after {
+    background-color: #ffa132;
+}
+
+input:checked+label {
+    /* background: -webkit-linear-gradient(left top, #e2bb0c, #dbb300) */
+    background: #ffa132;
+    color: white;
+}
+
+.s-mod-button {
+    width: 8em;
+    height: 3em;
+    font-size: 1.3em;
+    background: #ffa132;
+    color: white;
+    display: block;
+    border: none;
+    margin-top: 15%;
+    margin-left: 27%;
+    border-radius: 8px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s
+}
+
+a {
+    text-decoration: none
+}
+
+span {
+    color: #fff
+}
+
+.OftenTitle {
+    width: 9em;
+    font-size: 1.5em;
+    margin-left: 19%;
+    margin-bottom: 10%;
+    margin-top: 10%;
+    color: #ffa132;
+    font-weight: bold
+}
+
+.checkform {
+    margin-top: 130px;
+}
+
+
+@media screen and (min-width: 468px) {
+    .div1 {
+        width: 29.18rem;
+        border-radius: 5px;
+        height: 54.1rem;
+        top: 30%;
+        left: 46.95%;
+        margin-top: -250px;
+        margin-left: -175px;
+    }
+
+    .titleoften {
+        font-size: 2em;
+        margin: 1em 2em 0em 2em;
+    }
+
+    label {
+        width: 73%;
+        height: 11%;
+        line-height: 3em;
+        margin-left: 5.5%;
+        font-size: 2em;
+        top: -2em;
+    }
+
+    .s-mod-button {
+        width: 6.3em;
+        height: 2.1em;
+        font-size: 2.2em;
+        margin-top: -8%;
+        margin-left: 30%;
+    }
+
+    .OftenTitle {
+        width: 9em;
+        font-size: 2.5em;
+        margin-left: 14%;
+        margin-bottom: 10%;
+        margin-top: 10%;
+    }
+}
+
+@media screen and (max-width: 467px) {
+    #child_header {
+        background-color: #9279cf47;
+        border-bottom: #9279cf47 2px solid;
+        height: 32px;
+        padding: 8px 4%;
+        width: 92%
+    }
+
+    #child_header .goback {
+        float: left;
+        width: 38%
+    }
+
+    #child_header .goback i {
+        height: 32px;
+        width: 24px;
+        float: left;
+        background: url(../img/little_icon.png) no-repeat center;
+        background-position: -18px 11px
+    }
+
+    #child_header .current_location span,
+    #child_header .next_operate span {
+        color: #000000;
+        text-decoration: none;
+        font-size: 16px;
+        line-height: 36px;
+        float: left
+    }
+
+    /* #child_header .current_location { } */
+    #child_header .current_location a {
+        display: block
+    }
+
+    #child_header .current_location span {
+        font-size: 18px;
+    }
+
+    #child_header .next_operate {
+        float: right
+    }
+}

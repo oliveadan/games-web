@@ -1,0 +1,108 @@
+figure, figcaption {
+	display: block;
+}
+.transition {
+	-webkit-transition: top 400ms linear;
+	-moz-transition: top 400ms linear;
+	-ms-transition: top 400ms linear;
+	-o-transition: top 400ms linear;
+	transition: top 400ms linear;
+}
+.timeTo {
+	font-family: Tahoma, Verdana, Aial, sans-serif;
+	font-size: 60px;
+	line-height: 108%;
+	font-weight: bold;
+	height: 70px;
+}
+.timeTo span {
+	vertical-align: top;
+	color: #fff;
+}
+.timeTo.timeTo-white div {
+	color: #FFF;
+	background: -webkit-gradient(linear,0% 0,0% 100%,from(#82183b),to(#F5033C));
+    background: -webkit-linear-gradient(#82183b,#F5033C);
+	width: 
+}
+.timeTo.timeTo-black div {
+	color: white;
+
+}
+.timeTo.timeTo-black .timeTo-alert {
+
+}
+.timeTo.timeTo-white .timeTo-alert {
+
+}
+.timeTo figure {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+.timeTo figcaption {
+	text-align: center;
+	line-height: 80%;
+	font-weight: normal;
+	color: #888;
+}
+.timeTo div {
+	position: relative;
+	display: inline-block;
+
+	overflow: hidden;
+}
+.timeTo div.first {
+	margin-right: 0 !important;
+}
+.timeTo ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	left: 3px;
+}
+.timeTo ul li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#countdown{
+    margin-top: 2px;
+    margin-left: 155px;
+    padding: 0px 20px;
+    color: #fff;
+    text-align: center;
+}
+/*é¦ï½ˆç™é–²æˆžç‰éŠæŽ•î…¸éƒï¿½*/
+
+#timedown .t{
+	font-size: 30px;
+    line-height: 38px;
+    float:left;
+    font-weight: bold;
+    padding: 1px;
+
+}
+#countdown div{
+    width: 35px !important;
+    height: 38px !important;
+    line-height: 32px;
+    box-shadow: 0px 0px 5px 0 #E16D73;
+}
+#timedown .days span{
+	width: 50px;
+    display: inline-block;
+    text-align: right;
+}
+
+#timedown ins {
+    color: #ffbd38;
+    text-decoration: none;
+}
+#timedown em {
+    display: block;
+    font-size: 34px;
+    text-align: right;
+    padding: 0 10px 0 0;
+}

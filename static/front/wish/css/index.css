@@ -1,0 +1,2161 @@
+html {
+    height: 100%;
+    width: 100%;
+    max-width: 700px;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, "Microsoft YaHei";
+}
+
+ul,
+li {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+img {
+    display: block;
+    border: 0px;
+}
+
+a {
+    -webkit-tap-highlight-color: transparent;
+    text-decoration: none;
+    color: #fff;
+}
+
+.clear {
+    clear: both;
+}
+
+.headFixdClick {
+    height: 35px;
+}
+
+.topHeadLogin {
+    height: 35px;
+    line-height: 35px;
+    background-image: url('../images/headbg.jpg');
+    background-repeat: repeat-x;
+    color: #fff;
+    font-size: 12px;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 100;
+}
+
+.huang {
+    color: yellow;
+}
+
+.topHeadLogin a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.login {
+    width: 533px;
+    height: 318px;
+    position: fixed;
+    z-index: 20;
+    top: 50%;
+    left: 50%;
+    margin: -152px 0px 0px -267px;
+    box-shadow: 1px 2px 5px #000;
+    display: none;
+    z-index: 900;
+    background: url("../images/login_03.jpg") no-repeat;
+    border-radius: 8px;
+}
+
+.loginHeadStyleBg {
+    color: #000;
+    line-height: 38px;
+    text-align: center;
+    font-size: 21px;
+    padding-top: 45px;
+}
+
+.login-form {
+    padding: 15px;
+}
+
+.control-group {
+    padding-top: 10px;
+    padding-left: 25px;
+}
+
+.control-group-1 {
+    padding-top: 15px;
+}
+
+.span3 {
+    font-family: "Microsoft YaHei";
+    padding: 0px 5px;
+}
+
+.btn {
+    background: url(../images/login_08.jpg) no-repeat;
+    border: 0px;
+    width: 136px;
+    height: 39px;
+    margin: 10px auto;
+    display: block;
+    cursor: pointer;
+}
+
+.loginClose {
+    position: absolute;
+    right: -10px;
+    top: -20px;
+}
+
+.shoppingcart {
+    width: 890px;
+    height: 532px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin: -266px 0px 0px -445px;
+    display: none;
+    z-index: 900;
+    border-radius: 15px;
+    /* background: url("../images/smbg_03.jpg") no-repeat; */
+}
+
+.shoppingcartBg {
+    color: rgb(254, 5, 100);
+    line-height: 38px;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 70px;
+
+}
+
+.shoppingcartXx {
+    padding: 20px 50px;
+    line-height: 24px;
+}
+
+.shoppingcartClose {
+    position: absolute;
+    right: 25px;
+    top: 40px;
+}
+
+.inputStyleNum {
+    width: 50px;
+    height: 22px;
+    padding: 0px 5px;
+}
+
+.shoppingcartXx b {
+    color: #6a166a;
+}
+
+.xq_Contents .xq_Contents_text {
+    width: 770px;
+    height: 215px;
+    background-color: #e5e5e5;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.selectTy {
+    font-size: 12px;
+    color: #666;
+}
+
+#Confirm {
+    display: block;
+    margin: 10px auto;
+    width: 136px;
+}
+
+.shopListContent {
+    padding: 1px 1px 2px 5px;
+    font-size: 14px;
+    color: #6a166a;
+    line-height: 20px;
+    height: 220px;
+    width: 89%
+}
+
+/* .shoppingcartTr td {
+    color: #6a166a;
+} */
+
+/* .blue {
+    width: 50%;
+    padding: 0;
+} */
+
+
+
+
+table {
+    margin-left: 1em;
+	font-family: verdana,arial,sans-serif;
+	font-size:11px;
+	color:#333333;
+	border-width: 1px;
+	border-color: #fe0666;
+    border-collapse: collapse;
+    word-wrap:break-word;
+    word-break:break-all;
+}
+table th {
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #fe0666;
+}
+
+table tr {
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #fe0666;
+}
+
+tr:last-child {
+    border-color: transparent;
+}
+
+.shopListContent {
+    width: 90% !important;
+    margin-left: 1.25em;
+}
+
+table td {
+    padding: 0 2.5px;
+}
+
+.cengStyle {
+    padding: 20px;
+    width: 492px;
+    height: 278px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin: -159px 0px 0px -266px;
+    background: url(../images/login_03.jpg) no-repeat;
+    z-index: 1000;
+    display: none;
+    border-radius: 8px;
+}
+
+.cengContent {
+    padding-top: 10px;
+}
+
+.cengContent span {
+    display: block;
+    font-family: "YouYuan", "SimHei", "Microsoft YaHei";
+    font-size: 40px;
+    padding: 10px 20px;
+    text-align: center;
+    font-style: italic;
+    color: #fb1f20;
+}
+
+.cengContent span b {
+    color: #076601;
+}
+
+.cengStyle a {
+    width: 175px;
+    background: #076601;
+    color: #fff;
+    float: left;
+    margin: 60px 0px 0px 50px;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 0px;
+    border-radius: 100px;
+}
+
+.pisTextZhu {
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    font-family: "Microsoft YaHei";
+}
+
+
+.mCustomScrollBox {
+    overflow: hidden !important;
+}
+
+.EventDescription,
+.HeavenHaoLi {
+    width: 200px;
+    height: 450px;
+    /* background: url("../images/smbg_03.jpg") no-repeat; */
+    background-size: 100% 100%;
+    position: fixed;
+    z-index: 300;
+    top: 2%;
+    left: 13%;
+    font-size: 12px;
+    line-height: 24px;
+    padding: 20px 35px;
+    box-shadow: 0px 0px 10px #000;
+    display: none;
+    border-radius: 17px;
+    color: black;
+}
+
+.EventDescriptionClose {
+    position: absolute;
+    right: -10px;
+    top: -20px;
+}
+
+.EventDescription li,
+.HeavenHaoLi li {
+    list-style: inherit;
+    padding-bottom: 5px;
+}
+
+.EventDescription ol,
+.HeavenHaoLi ol {
+    padding-left: 20px;
+}
+
+.EventDescription h3,
+.HeavenHaoLi h3 {
+    text-align: center;
+    font-size: 18px;
+}
+
+.top {
+    float: right;
+    margin-top: 3.5%;
+    margin-right: 2.5%;
+}
+
+.iconVip {
+    position: absolute;
+    width: 45%;
+    left: -45%;
+}
+
+.topA {
+    position: relative;
+    float: right;
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(224, 200, 64);
+}
+
+.topA p {
+    position: absolute;
+    margin-top: 1%;
+    float: right;
+}
+
+.bai {
+    color: #fff;
+    font-size: 15px;
+    line-height: 36px;
+}
+
+.relative {
+    position: relative;
+}
+
+.pic-1 {
+    overflow: hidden;
+}
+
+.pic-1-bg1 {
+    background: #000 url("../images/pic-1_01.jpg") top center no-repeat;
+    height: 582px;
+}
+
+.pic-1-bg2 {
+    background: #000 url("../images/pic-1_03.jpg") top center no-repeat;
+    height: 423px;
+}
+
+.pic-1-inco {
+    top: 0px;
+    width: 1210px;
+    position: absolute;
+    left: 50%;
+    margin: 0px 0px 0px -605px;
+    height: 220px;
+}
+
+.pic-1-inco img {
+    position: absolute;
+    margin-top: -10px;
+    transform-origin: 50% 0 0;
+    -webkit-transform-origin: 50% 0 0;
+    -webkit-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s;
+}
+
+.pic-1-inco-img1 {
+    left: 90px;
+}
+
+.pic-1-inco-img2 {
+    left: 180px;
+}
+
+.pic-1-inco-img3 {
+    right: 0px;
+}
+
+.rightNav {
+    position: fixed;
+    right: 10px;
+    top: 20%;
+    width: 93px;
+    text-align: center;
+}
+
+.menuNav {
+    background: url(../images/dh_02.png) no-repeat;
+    height: 186px;
+}
+
+.menuNav a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    padding-top: 7px;
+}
+
+.menuNav a:hover {
+    color: yellow;
+}
+
+.h422 {
+    height: 422px;
+    font-size: 14px;
+}
+
+@keyframes myfirst {
+    0% {
+        -webkit-transform: rotate(50deg);
+    }
+
+    50% {
+        -webkit-transform: rotate(-50deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(50deg);
+    }
+}
+
+@-moz-keyframes myfirst {
+    0% {
+        -webkit-transform: rotate(50deg);
+    }
+
+    50% {
+        -webkit-transform: rotate(-50deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(50deg);
+    }
+}
+
+@-webkit-keyframes myfirst {
+    0% {
+        -webkit-transform: rotate(50deg);
+    }
+
+    50% {
+        -webkit-transform: rotate(-50deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(50deg);
+    }
+}
+
+@-o-keyframes myfirst {
+    0% {
+        -webkit-transform: rotate(50deg);
+    }
+
+    50% {
+        -webkit-transform: rotate(-50deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(50deg);
+    }
+}
+
+.pic-1-inco img {
+    animation: myfirst 2s infinite;
+    -moz-animation: myfirst 2s infinite;
+    -webkit-animation: myfirst 2s infinite;
+    -o-animation: myfirst 2s infinite;
+}
+
+.specialofferstartTime {
+    position: absolute;
+    background-color: #ffac00;
+    padding: 10px;
+    width: 250px;
+    text-align: center;
+    left: 57px;
+    top: 140px;
+    border-radius: 4px;
+}
+
+.none {
+    display: none;
+}
+
+.pic-1-footerBg {
+    background: url("../images/pic-1-footerBg.jpg") no-repeat;
+    height: 84px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+.pic-1-content {
+    width: 1210px;
+    position: absolute;
+    top: 585px;
+    left: 50%;
+    z-index: 10;
+    margin: 0px 0px 0px -605px;
+}
+
+.pic-1-contentLeftList span {
+    float: left;
+    width: 120px;
+    color: yellow;
+    margin-right: 20px;
+    text-align: center;
+    line-height: 16px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.pic-1-contentLeftList b {
+    margin-top: -15px;
+    display: block;
+    font-weight: 300;
+    text-shadow: 0px 0px 5px #000;
+}
+
+.clear {
+    clear: both;
+}
+
+.pic-1-contentLeft {
+    width: 667px;
+    float: left;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.pic-1-contentLeftList {
+    padding: 5px 0px 0px 140px;
+}
+
+.Registration-instructions {
+    color: #fff;
+    text-align: center;
+    width: 667px;
+}
+
+.Registration-instructions span {
+    color: yellow;
+    text-shadow: 0px 0px 5px #000;
+    line-height: 30px;
+}
+
+.pic-1-contentRight {
+    width: 493px;
+    height: 352px;
+    float: left;
+    margin: -10px 0px 0px 10px;
+}
+
+.pic-1-contentRightBg {
+    background: url("../images/timeBg_03.png") no-repeat;
+    position: absolute;
+    z-index: 1;
+    height: 352px;
+}
+
+.pic-1-contentRightList {
+    padding: 45px 61px 0px 68px;
+}
+
+.RegistrationContent a {
+    float: left;
+    width: 61px;
+    height: 56px;
+    background: #000000;
+    margin: 15px;
+    border-radius: 10px;
+    font-size: 28px;
+    color: #fff;
+    padding-top: 5px;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+    transition: background 0.5s;
+    -moz-transition: background 0.5s;
+    -webkit-transition: background 0.5s;
+    -o-transition: background 0.5s;
+}
+
+.RegistrationContent a span {
+    display: block;
+    font-size: 11px;
+    color: #69ec3a;
+}
+
+.RegistrationTitle {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.RegistrationContent a:hover {
+    background: #12ff00;
+}
+
+.RegistrationContent .selectInco {
+    background: #12ff00;
+    color: #000;
+}
+
+.RegistrationContent .selectInco span {
+    color: #333;
+}
+
+.RegistrationContent .selectInco span:hover {
+    color: #FFF;
+}
+
+.selectInco img {
+    position: absolute;
+    right: -6px;
+    top: -3px;
+}
+
+.myRegistrationBtn {
+    padding: 13px 0px 0px 85px;
+}
+
+.pic-1-footerContent {
+    width: 1210px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.pic-1-footerContent img {
+    position: absolute;
+}
+
+.pic-1-footerInco0 {
+    top: -385px;
+    left: -290px;
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+}
+
+.pic-1-footerInco1 {
+    top: -385px;
+    right: -290px;
+}
+
+.pic-1-footerInco2 {
+    left: 390px;
+    top: -5px;
+}
+
+.pic-1-footerInco3 {
+    top: -15px;
+    right: 200px;
+}
+
+.pic-1-footerInco4 {
+    top: -110px;
+    right: 20px;
+}
+
+.pic-1-footerInco5 {
+    left: 70px;
+    top: -40px;
+}
+
+/* 滚动文字 */
+.ico-wrap {
+    margin: 0 5px 0 20px;
+    width: 20px;
+    float: left;
+}
+
+#wrap {
+    overflow: hidden;
+    margin: 10px 20px 0 20px;
+}
+
+#wrap .wrapIn {
+    width: 8000%;
+    height: 30px;
+}
+
+#wrap .wrapIn div {
+    white-space: nowrap;
+    float: left;
+    margin-right: 50px;
+}
+
+.dtls1 {
+    color: #fff;
+    width: 75%;
+    margin: 10% auto;
+    position: relative;
+    top: 5%;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.ruleclose {
+    position: absolute;
+    left: 90%;
+}
+
+/* 滚动文字 */
+.bg {
+    background: url("../images/77background.jpg") no-repeat;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-size: 100% 100%;
+    position: absolute;
+}
+
+
+.content {
+    width: 100%;
+    height: 100%;
+}
+
+.Christmas {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.Christmas-Content {
+    overflow: hidden;
+    width: 100%;
+    height: 100%
+}
+
+.Christmas-ContentCenter {
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    margin: 0px 0px 0px -605px;
+}
+
+.Wishing li {
+    width: 230px;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 0px 5px #fff;
+    border-radius: 100px;
+    color: #fff;
+    position: absolute;
+}
+
+.Wishing li:hover {
+    background: rgba(255, 255, 0, 0.6);
+}
+
+.WishingList-incoRight {
+    position: absolute;
+    right: -76px;
+    top: 25px;
+}
+
+.WishingList-incoLeft {
+    position: absolute;
+    left: -76px;
+    top: 25px;
+}
+
+.Wishing span {
+    float: left;
+    width: 50px;
+    height: 100%;
+    border-radius: 100px;
+    overflow: hidden;
+}
+
+.Wishing span img {
+    width: 100%;
+}
+
+.Wishing h5 {
+    margin: 0px;
+    color: yellow;
+    padding-left: 60px;
+    padding-top: 7px;
+}
+
+.Wishing p {
+    margin: 0px;
+    font-size: 12px;
+    padding: 3px 0px 0px 5px;
+    width: 135px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/* .WishingBtnPis {
+    background: rgba(0, 0, 0, 0.6);
+    margin: 0px;
+    border-radius: 4px;
+    position: absolute;
+    top: 104px;
+    width: 550px;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    left: -175px;
+    font-size: 12px;
+} */
+
+.WishingList-0 {
+    top: 20px;
+    left: 500px;
+}
+
+.WishingList-1 {
+    top: 100px;
+    left: 500px;
+}
+
+.WishingList-2 {
+    top: 200px;
+    left: 500px;
+}
+
+.WishingList-3 {
+    top: 300px;
+    left: 500px;
+}
+
+.WishingList-4 {
+    top: 500px;
+    left: 500px;
+}
+
+.WishingList-5 {
+    top: 130px;
+    left: 790px;
+}
+
+.WishingList-6 {
+    top: 250px;
+    left: 820px;
+}
+
+.WishingList-7 {
+    top: 370px;
+    left: 850px;
+}
+
+.WishingList-8 {
+    top: 490px;
+    left: 880px;
+}
+
+.WishingList-9 {
+    top: 610px;
+    left: 910px;
+}
+
+.WishingList-10 {
+    top: 730px;
+    left: 940px;
+}
+
+.WishingBtn {
+    position: absolute;
+    /* margin-top: 101%;
+    margin-left: 13%; */
+    top: 74%;
+    left: 19%;
+    text-align: center;
+}
+
+/* .WishingBtn a {
+    width: 100px;
+    height: 100px;
+} */
+
+.WishingBtn img {
+    width: 100%;
+    padding: 2px;
+    margin: 0 auto;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.stt {
+    width: 50%;
+    position: absolute;
+    top: 7.5%;
+    left: 25%;
+    font-weight: 600;
+    color: rgb(218, 74, 184);
+}
+
+.WishingStar img {
+    width: 80%;
+    /* margin-top: 15%;
+    margin-left: 9%; */
+    position: absolute;
+    top: 28%;
+    left: 9%;
+}
+
+.WishingText {
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    margin: 15% auto;
+}
+
+.WishingText img {
+    margin: 15% auto;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* .Christmas-anctinty {} */
+
+.Christmas-anctinty img {
+    position: absolute;
+    left: 445px;
+    top: 254px;
+    display: none;
+}
+
+.Christmas-inco-style {
+    position: absolute;
+    right: -145px;
+    top: 250px;
+}
+
+.giftList a {
+    position: absolute;
+}
+
+.giftList a img {
+    width: 100%;
+}
+
+.Christmas-Head-title {
+    float: left;
+    margin: 30px 0px 0px 25px;
+}
+
+.Christmas-Head-center {
+    float: left;
+    padding: 35px 0px 0px 20px;
+}
+
+.Christmas-Head-center-pis {
+    font-size: 18px;
+    color: #eaff00;
+    font-weight: bold;
+    text-shadow: 0px 0px 5px #000;
+}
+
+.Christmas-Head-center-timeText {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 5px;
+    text-shadow: 0px 0px 5px #000;
+    float: left;
+}
+
+.Christmas-Head-center-btn {
+    float: left;
+    margin: 25px 0px 0px 15px;
+}
+
+.giftList-img-1 {
+    top: 305px;
+    left: 480px;
+    width: 246px;
+}
+
+.giftList-img-2 {
+    top: 490px;
+    left: 400px;
+    width: 218px;
+}
+
+.giftList-img-3 {
+    top: 560px;
+    left: 585px;
+    width: 203px;
+}
+
+.giftList-img-4 {
+    top: 680px;
+    left: 430px;
+    width: 197px;
+}
+
+.Christmas-gift-pis img {
+    position: absolute;
+}
+
+.Christmas-gift-pis .leftImgInco {
+    left: 30px;
+    top: 20px;
+}
+
+.Christmas-gift-pis .rightImgInco {
+    right: 30px;
+    top: 20px;
+}
+
+.ArmorGodContent-bg-1 {
+    background: url("../images/pic-3-bg_02.jpg") top center no-repeat;
+    height: 486px;
+}
+
+.ArmorGodContent-bg-2 {
+    background: url("../images/pic-3-bg_03.jpg") top center no-repeat;
+    height: 592px;
+}
+
+.ArmorGodContetn-fname {
+    width: 1210px;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    margin: 0px 0px 0px -605px;
+}
+
+.ArmorGod-title {
+    margin: 0 auto;
+}
+
+.ArmorGod-design {
+    text-align: center;
+    color: #402c00;
+    font-size: 18px;
+    padding: 20px 0px;
+    font-weight: bold;
+    text-shadow: 0px 0px 0px red;
+}
+
+.ArmorGod-list a {
+    float: left;
+    position: relative;
+}
+
+.ArmorGod-list a .textSpanStyle {
+    color: yellow;
+    position: absolute;
+    width: 100%;
+    top: 25px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.ArmorGod-list a .textSpanStyle1 {
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    text-decoration: none;
+    position: absolute;
+    width: 100%;
+    top: 146px;
+    left: 15px;
+}
+
+.ArmorGod-inco {
+    width: 251px;
+    text-align: center;
+    margin: 15px 0px 0px 800px;
+    color: #402c00;
+    text-shadow: 0px 0px 5px red;
+}
+
+.ArmorGod-inco h4 {
+    margin: -10px 0px 5px 0px;
+}
+
+.ArmorGod-inco span {
+    font-size: 14px;
+}
+
+.ArmorGod-list {
+    padding: 0px 0px 0px 80px;
+}
+
+.ArmorGod-list-pis {
+    text-align: center;
+    color: #fff;
+    text-shadow: 0px 0px 5px #000;
+}
+
+.ArmorGod-Preferential {
+    margin-top: 18px;
+    position: relative;
+}
+
+.ArmorGod-Preferential-btn {
+    position: absolute;
+    right: 25px;
+    top: 30px;
+}
+
+.ArmorGod-Heaven {
+    margin-left: 18px;
+    float: left;
+}
+
+.ArmorGod-other {
+    margin-top: 18px;
+}
+
+.ArmorGod-LimitedTime {
+    width: 387px;
+    height: 214px;
+    position: relative;
+    background: #371f00;
+    float: left;
+}
+
+.activityTitle {
+    position: absolute;
+    width: 782px;
+    top: 515px;
+    left: 50%;
+    margin-left: -391px;
+}
+
+.addClassBg :nth-child(3) {
+    margin-left: 1em;
+}
+
+.LimitBuyTop {
+    background: url(../images/pic-3-img_19.png) no-repeat left;
+    width: 287px;
+    height: 145px;
+    position: absolute;
+    top: -24px;
+    left: -20px;
+    color: #79001c;
+    line-height: 92px;
+    padding-lefT: 120px;
+}
+
+.xsdjs-style {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 10px;
+    top: 105px;
+    left: 50%;
+    font-size: 12px;
+    margin-left: -103px;
+    width: 185px;
+    text-align: center;
+}
+
+.SpecialofferBtn {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    width: 207px;
+    margin-left: -80px;
+}
+
+.footerContent {
+    background: url(../images/footerbg_03.jpg) repeat-x;
+    position: relative;
+    padding: 20px 0px;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    height: 60px;
+}
+
+.fnameCenter {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.footerContent a {
+    color: #fff;
+    text-decoration: none;
+    line-height: 24px;
+}
+
+.footerContent p {
+    margin: 0px 0px;
+}
+
+.snowflakeList {
+    width: 100%;
+    position: absolute;
+}
+
+.snowflakeList img {
+    position: absolute;
+}
+
+.Christmas-gift-pis {
+    position: absolute;
+    width: 240px;
+    background: rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 0px 5px #000;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    padding: 5px 0px;
+    line-height: 24px;
+    top: 250px;
+    left: 50%;
+    margin-left: -135px;
+    z-index: 3;
+}
+
+#countdown {
+    float: left;
+    padding: 3px 0px 0px 10px;
+}
+
+.WishingList-zan {
+    color: #fff;
+    text-decoration: none;
+    background: url("../images/inco-zan.png") center no-repeat;
+    padding: 35px 0px 0px 0px;
+    position: absolute;
+    right: 10px;
+    top: -10px;
+    width: 27px;
+    text-align: center;
+}
+
+.Wishing-ceng {
+    background: url("../images/77tc1.png") no-repeat;
+    background-size: 100%;
+    width: 85%;
+    height: 85%;
+    position: relative;
+    z-index: 100;
+    display: none;
+    margin: 25% auto;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.WishingRule {
+    background: url("../images/77tc2.png") no-repeat;
+    background-size: 100%;
+    width: 85%;
+    height: 70%;
+    position: relative;
+    z-index: 100;
+    display: none;
+    margin: 25% auto;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.bgCeng {
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 99;
+    display: none;
+}
+
+.Wishing-ceng-close {
+    position: absolute;
+    right: 11px;
+    top: 5px;
+}
+
+.Wishing-ceng-close img {
+    width: 70%;
+}
+
+.Wishing-ceng-btn {
+    /* position: absolute; */
+    top: 200px;
+    left: 160px;
+}
+
+.Wishing-ceng-btn img {
+    width: 75px;
+    height: 75px;
+    margin: 19% auto;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.WishingMore {
+    width: 125px;
+    height: 35px;
+    background-image: url("../images/search_bg.jpg");
+    background-repeat: repeat-x;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 4px;
+    position: absolute;
+    right: 0px;
+}
+
+.WishingMore a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.Wishing-ceng-input {
+    width: 55%;
+    height: 5.5%;
+    font-size: 1em;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    background: transparent;
+    font-family: "Microsoft YaHei";
+    margin: 13% auto auto 0%;
+    vertical-align: middle;
+}
+
+.Wishing-ceng-input1 {
+    width: 55%;
+    height: 5.5%;
+    font-size: 1em;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    background: transparent;
+    font-family: "Microsoft YaHei";
+    margin: 3% auto auto 0%;
+    vertical-align: middle;
+    /* text-align: center; */
+}
+
+.Wishing-ceng-template {
+    width: 55%;
+    font-size: 1.05em;
+    height: 16%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    background: transparent;
+    font-family: "Microsoft YaHei";
+    margin: 3% auto;
+    vertical-align: middle;
+    /* text-align: center; */
+}
+
+.pis {
+    padding: 10px;
+    position: fixed;
+    z-index: 1000;
+    width: 300px;
+    left: 50%;
+    top: 50%;
+    color: red;
+    font-weight: bold;
+    margin: -10px 0px 0px -150px;
+    display: none;
+    border-radius: 100px;
+    text-align: center;
+    background: #000;
+    box-shadow: 0px 0px 5px #fff;
+}
+
+.bx-Contetn-List {
+    background: url("../images/bxceng_03.png") no-repeat;
+    width: 534px;
+    height: 347px;
+    position: absolute;
+    top: 80px;
+    left: -85px;
+    color: #ddba4c;
+    font-size: 14px;
+    display: none;
+}
+
+.bx-Contetn-List p {
+    clear: both;
+    padding-top: 8px;
+    text-align: center;
+}
+
+.bx-Contetn-List ul {
+    padding: 45px 0px 0px 20px;
+}
+
+.bx-Contetn-List ul li {
+    box-shadow: 0px 0px 10px #ddba4c;
+    border-radius: 8px;
+    width: 200px;
+    float: left;
+    overflow: hidden;
+    margin: 15px 0px 0px 30px;
+    text-align: center;
+}
+
+.bx-Contetn-List ul li img {
+    float: left;
+}
+
+.bx-Contetn-List ul li span {
+    float: left;
+    padding-left: 5px;
+    width: 120px;
+    height: 42px;
+}
+
+.line42 {
+    line-height: 42px;
+}
+
+.baiyin {
+    left: 110px;
+}
+
+.huangjin {
+    left: 300px;
+}
+
+.zuanshi {
+    left: 490px;
+}
+
+.WishingPageList {
+    text-decoration: none;
+    color: rgb(254, 5, 100);
+    margin-left: 8%;
+}
+
+.mCustomScrollBox {
+    height: 188% !important;
+}
+
+.WishingPageListZan {
+    text-decoration: none;
+    display: inline-block;
+    width: 1.8em;
+    height: 1.8em;
+    padding: 5px 10px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.WishingPageListZan img {
+    width: 100%;
+}
+
+.dzs {
+    margin-top: -5px;
+    margin-left: -17.5px;
+    color: #ff0000;
+    font-size: 10px;
+    width: 5em;
+}
+
+.duwang {
+    left: 680px;
+}
+
+.WishingMoreList {
+    width: 98%;
+    height: 90%;
+    position: relative;
+    margin: -175% auto;
+    vertical-align: middle;
+    text-align: center;
+    display: none;
+    z-index: 900;
+    border-radius: 15px;
+    background: url("../images/77tc2.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+.btmtxt {
+    /* position: absolute; */
+    margin: 120% auto auto 0;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.txtf {
+    display: inline-block;
+    margin-bottom: 0.2em;
+}
+
+@keyframes xuehua {
+    0% {
+        transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        opacity: 0.5;
+        top: 980px;
+    }
+}
+
+@-moz-keyframes xuehua {
+    0% {
+        transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        opacity: 0.5;
+        top: 980px;
+    }
+}
+
+@-webkit-keyframes xuehua {
+    0% {
+        transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        opacity: 0.5;
+        top: 980px;
+    }
+}
+
+@-o-keyframes xuehua {
+    0% {
+        transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        opacity: 0.5;
+        top: 980px;
+    }
+}
+
+.bottomPisText {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    padding: 5px 10px;
+    background: #fff;
+    color: red;
+    font-size: 14px;
+    border-radius: 4px 4px 0px 0px;
+    z-index: 1000;
+}
+
+@keyframes mache {
+    0% {
+        right: 100px;
+        top: 350px;
+        opacity: 0;
+    }
+
+    100% {
+        right: -150px;
+        top: 250px;
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes mache {
+    0% {
+        right: 100px;
+        top: 350px;
+        opacity: 0;
+    }
+
+    100% {
+        right: -150px;
+        top: 250px;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes mache {
+    0% {
+        right: 100px;
+        top: 350px;
+        opacity: 0;
+    }
+
+    100% {
+        right: -150px;
+        top: 250px;
+        opacity: 1;
+    }
+}
+
+@-o-keyframes mache {
+    0% {
+        right: 100px;
+        top: 350px;
+        opacity: 0;
+    }
+
+    100% {
+        right: -150px;
+        top: 250px;
+        opacity: 1;
+    }
+}
+
+.Christmas-inco-style {
+    animation: mache 5s infinite;
+    -moz-animation: mache 5s infinite;
+    -webkit-animation: mache 5s infinite;
+    -o-animation: mache 5s infinite;
+}
+
+
+
+@media screen and (min-width:600px) {
+    html {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .WishingStar img {
+        width: 65%;
+        top: 21%;
+        left: 16%;
+    }
+
+    .WishingBtn img {
+        width: 100%;
+        padding: 0;
+        margin: 0 36%;
+    }
+
+    .WishingText img {
+        margin: -4% auto;
+    }
+
+    .shopListContent {
+        width: 90% !important;
+        margin-left: 2.2em;
+    }
+}
+
+@media screen and (max-width:368px) {
+    .WishingBtn img {
+        width: 100%;
+        padding: 0;
+        text-align: center;
+        margin: 0 -7%;
+        vertical-align: middle;
+    }
+
+    .WishingBtn {
+        text-align: center;
+        vertical-align: middle;
+    }
+}
+
+@media screen and (min-width:700px) {
+    .Wishing-ceng-btn img {
+        margin: 35% auto;
+    }
+
+    .WishingMoreList {
+        margin: -123% auto;
+    }
+
+    .btmtxt {
+        margin: 89% auto auto 0;
+    }
+
+    .ruleclose {
+        position: absolute;
+        left: 100%;
+    }
+}
+
+@media screen and (max-width:700px) and (min-width:560px) {
+    .Wishing-ceng-btn img {
+        margin: 18% auto;
+    }
+}
+
+@media screen and (max-width:560px) and (min-width:425px) {
+    .Wishing-ceng-btn img {
+        margin: 10% auto;
+    }
+}
+
+@media screen and (max-width:425px) and (min-width:385px) {
+    .Wishing-ceng-btn img {
+        margin: 5% auto;
+    }
+}
+
+@media screen and (max-width:385px) and (min-width:330px) {
+    .Wishing-ceng-btn img {
+        width: 65px;
+        height: 65px;
+        margin: 0% auto;
+    }
+}
+
+@media screen and (max-width:330px) {
+    .Wishing-ceng-btn img {
+        width: 55px;
+        height: 55px;
+        margin: 0% auto;
+    }
+}
+
+@media screen and (min-width:625px) and (max-width:700px) {
+    .WishingMoreList {
+        margin: -125% auto;
+    }
+
+    .btmtxt {
+        margin: 85% auto auto 0;
+    }
+}
+
+
+@media screen and (min-width:540px) and (max-width:625px) {
+    .WishingMoreList {
+        margin: -130% auto;
+    }
+
+    .btmtxt {
+        margin: 93% auto auto 0;
+    }
+}
+
+@media screen and (min-width:475px) and (max-width:540px) {
+    .WishingMoreList {
+        margin: -150% auto;
+    }
+
+    .btmtxt {
+        margin: 110% auto auto 0;
+    }
+}
+
+@media screen and (max-width:420px) and (min-width:370px) and (max-height:575px) {
+    .btmtxt {
+        margin: 89% auto auto 0;
+    }
+
+    .WishingStar img {
+        width: 70%;
+        position: absolute;
+        top: 25%;
+        left: 13%;
+    }
+
+    .WishingMoreList {
+        margin: -140% auto;
+    }
+}
+
+@media screen and (max-width:420px) and (min-width:370px) and (max-height:600px) and (min-height:550px) {
+    .btmtxt {
+        margin: 95% auto auto 0;
+    }
+
+    .WishingStar img {
+        width: 70%;
+        position: absolute;
+        top: 25%;
+        left: 13%;
+    }
+
+    .WishingMoreList {
+        margin: -140% auto;
+    }
+}
+
+@media screen and (max-width:420px) and (min-width:370px) and (max-height:650px) and (min-height:600px) {
+    .btmtxt {
+        margin: 102% auto auto 0;
+    }
+
+    .WishingStar img {
+        width: 75%;
+        position: absolute;
+        top: 25%;
+        left: 11%;
+    }
+
+    .WishingMoreList {
+        margin: -150% auto;
+    }
+}
+
+@media screen and (max-width:420px) and (min-width:370px) and (max-height:700px) and (min-height:650px) {
+    .btmtxt {
+        margin: 115% auto auto 0;
+    }
+
+    .WishingStar img {
+        width: 80%;
+        position: absolute;
+        top: 25%;
+        left: 8%;
+    }
+
+    .WishingMoreList {
+        margin: -158% auto;
+    }
+}
+
+@media screen and (max-width:420px) and (min-width:370px) and (max-height:750px) and (min-height:700px) {
+    .btmtxt {
+        margin: 125% auto auto 0;
+    }
+
+    .WishingStar img {
+        width: 80%;
+        position: absolute;
+        top: 25%;
+        left: 8%;
+    }
+
+    .WishingMoreList {
+        margin: -165% auto;
+    }
+}
+
+@media screen and (max-width:420px) and (min-width:370px) and (max-height:800px) and (min-height:750px) {
+    .btmtxt {
+        margin: 140% auto auto 0;
+    }
+
+    .WishingStar img {
+        width: 80%;
+        position: absolute;
+        top: 25%;
+        left: 8%;
+    }
+}
+
+@media screen and (max-width:420px) and (min-width:370px) and (min-height:800px) {
+    .btmtxt {
+        margin: 155% auto auto 0;
+    }
+
+    .WishingStar img {
+        width: 80%;
+        position: absolute;
+        top: 25%;
+        left: 8%;
+    }
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:470px) and (min-width:420px) and (max-height:600px) {
+    .btmtxt {
+        margin: 85% auto auto 0;
+    }
+
+    .WishingStar img {
+        width: 70%;
+        position: absolute;
+        top: 25%;
+        left: 13%;
+    }
+
+    .WishingMoreList {
+        margin: -135% auto;
+    }
+}
+
+@media screen and (max-width:470px) and (min-width:420px) and (max-height:650px) and (min-height:600px) {
+    .btmtxt {
+        margin: 90% auto auto 0;
+    }
+
+    .WishingStar img {
+        width: 75%;
+        position: absolute;
+        top: 25%;
+        left: 11%;
+    }
+
+    .WishingMoreList {
+        margin: -140% auto;
+    }
+}
+
+@media screen and (max-width:470px) and (min-width:420px) and (max-height:700px) and (min-height:650px) {
+    .btmtxt {
+        margin: 103% auto auto 0;
+    }
+
+    .WishingStar img {
+        width: 80%;
+        position: absolute;
+        top: 25%;
+        left: 8%;
+    }
+
+    .WishingMoreList {
+        margin: -150% auto;
+    }
+}
+
+@media screen and (max-width:470px) and (min-width:420px) and (max-height:750px) and (min-height:700px) {
+    .btmtxt {
+        margin: 115% auto auto 0;
+    }
+
+    .WishingStar img {
+        width: 80%;
+        position: absolute;
+        top: 25%;
+        left: 8%;
+    }
+
+    .WishingMoreList {
+        margin: -160% auto;
+    }
+}
+
+@media screen and (max-width:470px) and (min-width:420px) and (max-height:800px) and (min-height:750px) {
+    .btmtxt {
+        margin: 125% auto auto 0;
+    }
+
+    .WishingStar img {
+        width: 80%;
+        position: absolute;
+        top: 25%;
+        left: 8%;
+    }
+
+    .WishingMoreList {
+        margin: -175% auto;
+    }
+}
+
+@media screen and (max-width:470px) and (min-width:420px) and (min-height:800px) {
+    .btmtxt {
+        margin: 135% auto auto 0;
+    }
+
+    .WishingStar img {
+        width: 80%;
+        position: absolute;
+        top: 25%;
+        left: 8%;
+    }
+
+    .WishingMoreList {
+        margin: -190% auto;
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width:370px) and (max-height:550px) {
+    .btmtxt {
+        margin: 88% auto auto 0;
+    }
+
+    .WishingStar img {
+        width: 70%;
+        position: absolute;
+        top: 25%;
+        left: 13%;
+    }
+
+    .WishingMoreList {
+        margin: -135% auto;
+    }
+}
+
+@media screen and (max-width:370px) and (max-height:600px) and (min-height:550px) {
+    .btmtxt {
+        margin: 95% auto auto 0;
+    }
+
+    .WishingStar img {
+        width: 70%;
+        position: absolute;
+        top: 25%;
+        left: 13%;
+    }
+
+    .WishingMoreList {
+        margin: -155% auto;
+    }
+}
+
+@media screen and (max-width:370px) and (max-height:650px) and (min-height:600px) {
+    .btmtxt {
+        margin: 108% auto auto 0;
+    }
+
+    .WishingStar img {
+        width: 75%;
+        position: absolute;
+        top: 25%;
+        left: 11%;
+    }
+
+    .WishingMoreList {
+        margin: -165% auto;
+    }
+}
+
+@media screen and (max-width:370px) and (max-height:700px) and (min-height:650px) {
+    .btmtxt {
+        margin: 123% auto auto 0;
+    }
+
+    .WishingStar img {
+        width: 80%;
+        position: absolute;
+        top: 25%;
+        left: 8%;
+    }
+
+    .WishingMoreList {
+        margin: -175% auto;
+    }
+}
+
+@media screen and (max-width:370px) and (max-height:750px) and (min-height:700px) {
+    .btmtxt {
+        margin: 135% auto auto 0;
+    }
+
+    .WishingStar img {
+        width: 80%;
+        position: absolute;
+        top: 25%;
+        left: 8%;
+    }
+
+    .WishingMoreList {
+        margin: -190% auto;
+    }
+}
+
+@media screen and (max-width:370px) and (max-height:800px) and (min-height:750px) {
+    .btmtxt {
+        margin: 145% auto auto 0;
+    }
+
+    .WishingStar img {
+        width: 80%;
+        position: absolute;
+        top: 25%;
+        left: 8%;
+    }
+
+    .WishingMoreList {
+        margin: -210% auto;
+    }
+}
+
+@media screen and (max-width:370px) and (min-height:800px) {
+    .btmtxt {
+        margin: 160% auto auto 0;
+    }
+
+    .WishingStar img {
+        width: 80%;
+        position: absolute;
+        top: 25%;
+        left: 8%;
+    }
+
+    .WishingMoreList {
+        margin: -210% auto;
+    }
+}

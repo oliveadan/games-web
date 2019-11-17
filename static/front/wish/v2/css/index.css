@@ -1,0 +1,1453 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, "Microsoft YaHei";
+}
+
+ul, li {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+img {
+    display: block;
+    border: 0px;
+}
+
+.clear {
+    clear: both;
+}
+
+.headFixdClick {
+    height: 35px;
+}
+
+.topHeadLogin {
+    height: 35px;
+    line-height: 35px;
+    background-image: url('../images/headbg.jpg');
+    background-repeat: repeat-x;
+    color: #fff;
+    font-size: 12px;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 100;
+}
+
+.huang {
+    color: yellow;
+}
+
+.topHeadLogin a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.login {
+    width: 533px;
+    height: 318px;
+    position: fixed;
+    z-index: 20;
+    top: 50%;
+    left: 50%;
+    margin: -152px 0px 0px -267px;
+    box-shadow: 1px 2px 5px #000;
+    display: none;
+    z-index: 900;
+    background: url("../images/login_03.jpg") no-repeat;
+    border-radius: 8px;
+}
+
+.loginHeadStyleBg {
+    color: #000;
+    line-height: 38px;
+    text-align: center;
+    font-size: 21px;
+    padding-top: 45px;
+}
+
+.login-form {
+    padding: 15px;
+}
+
+.control-group {
+    padding-top: 10px;
+    padding-left: 25px;
+}
+
+.control-group-1 {
+    padding-top: 15px;
+}
+
+.span3 {
+    font-family: "Microsoft YaHei";
+    padding: 0px 5px;
+}
+
+.btn {
+    background: url(../images/login_08.jpg) no-repeat;
+    border: 0px;
+    width: 136px;
+    height: 39px;
+    margin: 10px auto;
+    display: block;
+    cursor: pointer;
+}
+
+.loginClose {
+    position: absolute;
+    right: -10px;
+    top: -20px;
+}
+
+.shoppingcart {
+    width: 890px;
+    height: 532px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin: -266px 0px 0px -445px;
+    display: none;
+    z-index: 900;
+    border-radius: 15px;
+    background: url("../images/smbg_03.jpg") no-repeat;
+}
+
+.shoppingcartBg {
+    color: #076601;
+    line-height: 38px;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 45px;
+}
+
+.shoppingcartXx {
+    padding: 20px 50px;
+    line-height: 24px;
+}
+
+.shoppingcartClose {
+    position: absolute;
+    right: -10px;
+    top: -20px;
+}
+
+.inputStyleNum {
+    width: 50px;
+    height: 22px;
+    padding: 0px 5px;
+}
+
+.shoppingcartXx b {
+    color: #6a166a;
+}
+
+.xq_Contents .xq_Contents_text {
+    width: 770px;
+    height: 215px;
+    background-color: #e5e5e5;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.selectTy {
+    font-size: 12px;
+    color: #666;
+}
+
+#Confirm {
+    display: block;
+    margin: 10px auto;
+    width: 136px;
+}
+
+.shopListContent {
+    padding: 15px 50px 25px 50px;
+    font-size: 14px;
+    color: #6a166a;
+    line-height: 35px;
+    height: 409px;
+}
+
+.shoppingcartTr td {
+    background: #b8adb8;
+    color: #6a166a;
+}
+
+.blue {
+    background: #e5e5e5;
+    width: 30%;
+}
+
+.cengStyle {
+    padding: 20px;
+    width: 492px;
+    height: 278px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin: -159px 0px 0px -266px;
+    background: url(../images/login_03.jpg) no-repeat;
+    z-index: 1000;
+    display: none;
+    border-radius: 8px;
+}
+
+.cengContent {
+    padding-top: 10px;
+}
+
+.cengContent span {
+    display: block;
+    font-family: "YouYuan", "SimHei", "Microsoft YaHei";
+    font-size: 40px;
+    padding: 10px 20px;
+    text-align: center;
+    font-style: italic;
+    color: #fb1f20;
+}
+
+.cengContent span b {
+    color: #076601;
+}
+
+.cengStyle a {
+    width: 175px;
+    background: #076601;
+    color: #fff;
+    float: left;
+    margin: 60px 0px 0px 50px;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 0px;
+    border-radius: 100px;
+}
+
+.pisTextZhu {
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    font-family: "Microsoft YaHei";
+}
+
+.EventDescription, .HeavenHaoLi {
+    width: 820px;
+    height: 493px;
+    background: url("../images/smbg_03.jpg") no-repeat;
+    position: fixed;
+    z-index: 300;
+    top: 50%;
+    left: 50%;
+    margin: -300px 0px 0px -400px;
+    font-size: 12px;
+    line-height: 24px;
+    padding: 20px 35px;
+    box-shadow: 0px 0px 10px #000;
+    display: none;
+    border-radius: 17px;
+}
+
+.EventDescriptionClose {
+    position: absolute;
+    right: -10px;
+    top: -20px;
+}
+
+.EventDescription li, .HeavenHaoLi li {
+    list-style: inherit;
+    padding-bottom: 5px;
+}
+
+.EventDescription ol, .HeavenHaoLi ol {
+    padding-left: 20px;
+}
+
+.EventDescription h3, .HeavenHaoLi h3 {
+    text-align: center;
+    font-size: 18px;
+}
+
+.right {
+    float: right;
+}
+
+.bai {
+    color: #fff;
+    font-size: 15px;
+    line-height: 36px;
+}
+
+.relative {
+    position: relative;
+}
+
+.pic-1 {
+    overflow: hidden;
+}
+
+.pic-1-bg1 {
+    background: #000 url("../images/pic-1_01.jpg") top center no-repeat;
+    height: 582px;
+}
+
+.pic-1-bg2 {
+    background: #000 url("../images/pic-1_03.jpg") top center no-repeat;
+    height: 423px;
+}
+
+.pic-1-inco {
+    top: 0px;
+    width: 1210px;
+    position: absolute;
+    left: 50%;
+    margin: 0px 0px 0px -605px;
+    height: 220px;
+}
+
+.pic-1-inco img {
+    position: absolute;
+    margin-top: -10px;
+    transform-origin: 50% 0 0;
+    -webkit-transform-origin: 50% 0 0;
+    -webkit-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s;
+}
+
+.pic-1-inco-img1 {
+    left: 90px;
+}
+
+.pic-1-inco-img2 {
+    left: 180px;
+}
+
+.pic-1-inco-img3 {
+    right: 0px;
+}
+
+.rightNav {
+    position: fixed;
+    right: 10px;
+    top: 20%;
+    width: 93px;
+    text-align: center;
+}
+
+.menuNav {
+    background: url(../images/dh_02.png) no-repeat;
+    height: 186px;
+}
+
+.menuNav a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    padding-top: 7px;
+}
+
+.menuNav a:hover {
+    color: yellow;
+}
+
+.h422 {
+    height: 422px;
+    font-size: 14px;
+}
+
+@keyframes myfirst {
+    0% {
+        -webkit-transform: rotate(50deg);
+    }
+    50% {
+        -webkit-transform: rotate(-50deg);
+    }
+    100% {
+        -webkit-transform: rotate(50deg);
+    }
+}
+
+@-moz-keyframes myfirst {
+    0% {
+        -webkit-transform: rotate(50deg);
+    }
+    50% {
+        -webkit-transform: rotate(-50deg);
+    }
+    100% {
+        -webkit-transform: rotate(50deg);
+    }
+}
+
+@-webkit-keyframes myfirst {
+    0% {
+        -webkit-transform: rotate(50deg);
+    }
+    50% {
+        -webkit-transform: rotate(-50deg);
+    }
+    100% {
+        -webkit-transform: rotate(50deg);
+    }
+}
+
+@-o-keyframes myfirst {
+    0% {
+        -webkit-transform: rotate(50deg);
+    }
+    50% {
+        -webkit-transform: rotate(-50deg);
+    }
+    100% {
+        -webkit-transform: rotate(50deg);
+    }
+}
+
+.pic-1-inco img {
+    animation: myfirst 2s infinite;
+    -moz-animation: myfirst 2s infinite;
+    -webkit-animation: myfirst 2s infinite;
+    -o-animation: myfirst 2s infinite;
+}
+
+.specialofferstartTime {
+    position: absolute;
+    background-color: #ffac00;
+    padding: 10px;
+    width: 250px;
+    text-align: center;
+    left: 57px;
+    top: 140px;
+    border-radius: 4px;
+}
+
+.none {
+    display: none;
+}
+
+.pic-1-footerBg {
+    background: url("../images/pic-1-footerBg.jpg") no-repeat;
+    height: 84px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+.pic-1-content {
+    width: 1210px;
+    position: absolute;
+    top: 585px;
+    left: 50%;
+    z-index: 10;
+    margin: 0px 0px 0px -605px;
+}
+
+.pic-1-contentLeftList span {
+    float: left;
+    width: 120px;
+    color: yellow;
+    margin-right: 20px;
+    text-align: center;
+    line-height: 16px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.pic-1-contentLeftList b {
+    margin-top: -15px;
+    display: block;
+    font-weight: 300;
+    text-shadow: 0px 0px 5px #000;
+}
+
+.clear {
+    clear: both;
+}
+
+.pic-1-contentLeft {
+    width: 667px;
+    float: left;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.pic-1-contentLeftList {
+    padding: 5px 0px 0px 140px;
+}
+
+.Registration-instructions {
+    color: #fff;
+    text-align: center;
+    width: 667px;
+}
+
+.Registration-instructions span {
+    color: yellow;
+    text-shadow: 0px 0px 5px #000;
+    line-height: 30px;
+}
+
+.pic-1-contentRight {
+    width: 493px;
+    height: 352px;
+    float: left;
+    margin: -10px 0px 0px 10px;
+}
+
+.pic-1-contentRightBg {
+    background: url("../images/timeBg_03.png") no-repeat;
+    position: absolute;
+    z-index: 1;
+    height: 352px;
+}
+
+.pic-1-contentRightList {
+    padding: 45px 61px 0px 68px;
+}
+
+.RegistrationContent a {
+    float: left;
+    width: 61px;
+    height: 56px;
+    background: #000000;
+    margin: 15px;
+    border-radius: 10px;
+    font-size: 28px;
+    color: #fff;
+    padding-top: 5px;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+    transition: background 0.5s;
+    -moz-transition: background 0.5s;
+    -webkit-transition: background 0.5s;
+    -o-transition: background 0.5s;
+}
+
+.RegistrationContent a span {
+    display: block;
+    font-size: 11px;
+    color: #69ec3a;
+}
+
+.RegistrationTitle {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.RegistrationContent a:hover {
+    background: #12ff00;
+}
+
+.RegistrationContent .selectInco {
+    background: #12ff00;
+    color: #000;
+}
+
+.RegistrationContent .selectInco span {
+    color: #333;
+}
+
+.RegistrationContent .selectInco span:hover {
+    color: #FFF;
+}
+
+.selectInco img {
+    position: absolute;
+    right: -6px;
+    top: -3px;
+}
+
+.myRegistrationBtn {
+    padding: 13px 0px 0px 85px;
+}
+
+.pic-1-footerContent {
+    width: 1210px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.pic-1-footerContent img {
+    position: absolute;
+}
+
+.pic-1-footerInco0 {
+    top: -385px;
+    left: -290px;
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+}
+
+.pic-1-footerInco1 {
+    top: -385px;
+    right: -290px;
+}
+
+.pic-1-footerInco2 {
+    left: 390px;
+    top: -5px;
+}
+
+.pic-1-footerInco3 {
+    top: -15px;
+    right: 200px;
+}
+
+.pic-1-footerInco4 {
+    top: -110px;
+    right: 20px;
+}
+
+.pic-1-footerInco5 {
+    left: 70px;
+    top: -40px;
+}
+
+.ico-wrap {
+    margin-top: 7px;
+    width: 20px;
+    float: left;
+}
+
+#wrap {
+    width: 600px;
+    overflow: hidden;
+    margin: 0 20px 0 10px;
+}
+
+#wrap .wrapIn {
+    width: 8000%;
+    height: 30px;
+}
+
+#wrap .wrapIn div {
+    white-space: nowrap;
+    float: left;
+    margin-right: 50px;
+}
+
+.Christmas-bg-0 {
+    background: url("../images/pic-2-bg_02.jpg") top center no-repeat;
+    height: 567px;
+}
+
+.Christmas-bg-1 {
+    background: url("../images/pic-2-bg_03.jpg") top center no-repeat;
+    height: 501px;
+}
+
+.Christmas-Head {
+    background: url("../images/pic-2-inco_03.png") no-repeat;
+    height: 159px;
+    width: 100%;
+}
+
+.Christmas-Content {
+    overflow: hidden;
+    width: 100%;
+}
+
+.Christmas-ContentCenter {
+    width: 1210px;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    margin: 0px 0px 0px -605px;
+}
+
+.Wishing li {
+    width: 230px;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 0px 5px #fff;
+    border-radius: 100px;
+    color: #fff;
+    position: absolute;
+}
+
+.Wishing li:hover {
+    background: rgba(255, 255, 0, 0.6);
+}
+
+.WishingList-incoRight {
+    position: absolute;
+    right: -76px;
+    top: 25px;
+}
+
+.WishingList-incoLeft {
+    position: absolute;
+    left: -76px;
+    top: 25px;
+}
+
+.Wishing span {
+    float: left;
+    width: 50px;
+    height: 100%;
+    border-radius: 100px;
+    overflow: hidden;
+}
+
+.Wishing span img {
+    width: 100%;
+}
+
+.Wishing h5 {
+    margin: 0px;
+    color: yellow;
+    padding-left: 60px;
+    padding-top: 7px;
+}
+
+.Wishing p {
+    margin: 0px;
+    font-size: 12px;
+    padding: 3px 0px 0px 5px;
+    width: 135px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.WishingBtnPis {
+    background: rgba(0, 0, 0, 0.6);
+    margin: 0px;
+    border-radius: 4px;
+    position: absolute;
+    top: 104px;
+    width: 550px;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    left: -175px;
+    font-size: 12px;
+}
+
+.WishingList-0 {
+    top: 130px;
+    left: 175px;
+}
+
+.WishingList-1 {
+    top: 250px;
+    left: 145px;
+}
+
+.WishingList-2 {
+    top: 370px;
+    left: 115px;
+}
+
+.WishingList-3 {
+    top: 490px;
+    left: 85px;
+}
+
+.WishingList-4 {
+    top: 610px;
+    left: 55px;
+}
+
+.WishingList-5 {
+    top: 130px;
+    left: 790px;
+}
+
+.WishingList-6 {
+    top: 250px;
+    left: 820px;
+}
+
+.WishingList-7 {
+    top: 370px;
+    left: 850px;
+}
+
+.WishingList-8 {
+    top: 490px;
+    left: 880px;
+}
+
+.WishingList-9 {
+    top: 610px;
+    left: 910px;
+}
+
+.WishingList-10 {
+    top: 730px;
+    left: 940px;
+}
+
+.WishingBtn {
+    position: absolute;
+    top: 873px;
+    left: 40%;
+    margin: 0px 0px 0px -104px;
+}
+
+.Christmas-anctinty {
+}
+
+.Christmas-anctinty img {
+    position: absolute;
+    left: 445px;
+    top: 254px;
+    display: none;
+}
+
+.Christmas-inco-style {
+    position: absolute;
+    right: -145px;
+    top: 250px;
+}
+
+.giftList a {
+    position: absolute;
+}
+
+.giftList a img {
+    width: 100%;
+}
+
+.Christmas-Head-title {
+    float: left;
+    margin: 30px 0px 0px 25px;
+}
+
+.Christmas-Head-center {
+    float: left;
+    padding: 35px 0px 0px 20px;
+}
+
+.Christmas-Head-center-pis {
+    font-size: 18px;
+    color: #eaff00;
+    font-weight: bold;
+    text-shadow: 0px 0px 5px #000;
+}
+
+.Christmas-Head-center-timeText {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 5px;
+    text-shadow: 0px 0px 5px #000;
+    float: left;
+}
+
+.Christmas-Head-center-btn {
+    float: left;
+    margin: 25px 0px 0px 15px;
+}
+
+.giftList-img-1 {
+    top: 305px;
+    left: 480px;
+    width: 246px;
+}
+
+.giftList-img-2 {
+    top: 490px;
+    left: 400px;
+    width: 218px;
+}
+
+.giftList-img-3 {
+    top: 560px;
+    left: 585px;
+    width: 203px;
+}
+
+.giftList-img-4 {
+    top: 680px;
+    left: 430px;
+    width: 197px;
+}
+
+.Christmas-gift-pis img {
+    position: absolute;
+}
+
+.Christmas-gift-pis .leftImgInco {
+    left: 30px;
+    top: 20px;
+}
+
+.Christmas-gift-pis .rightImgInco {
+    right: 30px;
+    top: 20px;
+}
+
+.ArmorGodContent-bg-1 {
+    background: url("../images/pic-3-bg_02.jpg") top center no-repeat;
+    height: 486px;
+}
+
+.ArmorGodContent-bg-2 {
+    background: url("../images/pic-3-bg_03.jpg") top center no-repeat;
+    height: 592px;
+}
+
+.ArmorGodContetn-fname {
+    width: 1210px;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    margin: 0px 0px 0px -605px;
+}
+
+.ArmorGod-title {
+    margin: 0 auto;
+}
+
+.ArmorGod-design {
+    text-align: center;
+    color: #402c00;
+    font-size: 18px;
+    padding: 20px 0px;
+    font-weight: bold;
+    text-shadow: 0px 0px 0px red;
+}
+
+.ArmorGod-list a {
+    float: left;
+    position: relative;
+}
+
+.ArmorGod-list a .textSpanStyle {
+    color: yellow;
+    position: absolute;
+    width: 100%;
+    top: 25px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.ArmorGod-list a .textSpanStyle1 {
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    text-decoration: none;
+    position: absolute;
+    width: 100%;
+    top: 146px;
+    left: 15px;
+}
+
+.ArmorGod-inco {
+    width: 251px;
+    text-align: center;
+    margin: 15px 0px 0px 800px;
+    color: #402c00;
+    text-shadow: 0px 0px 5px red;
+}
+
+.ArmorGod-inco h4 {
+    margin: -10px 0px 5px 0px;
+}
+
+.ArmorGod-inco span {
+    font-size: 14px;
+}
+
+.ArmorGod-list {
+    padding: 0px 0px 0px 80px;
+}
+
+.ArmorGod-list-pis {
+    text-align: center;
+    color: #fff;
+    text-shadow: 0px 0px 5px #000;
+}
+
+.ArmorGod-Preferential {
+    margin-top: 18px;
+    position: relative;
+}
+
+.ArmorGod-Preferential-btn {
+    position: absolute;
+    right: 25px;
+    top: 30px;
+}
+
+.ArmorGod-Heaven {
+    margin-left: 18px;
+    float: left;
+}
+
+.ArmorGod-other {
+    margin-top: 18px;
+}
+
+.ArmorGod-LimitedTime {
+    width: 387px;
+    height: 214px;
+    position: relative;
+    background: #371f00;
+    float: left;
+}
+
+.activityTitle {
+    position: absolute;
+    width: 782px;
+    top: 515px;
+    left: 50%;
+    margin-left: -391px;
+}
+
+.LimitBuyTop {
+    background: url(../images/pic-3-img_19.png) no-repeat left;
+    width: 287px;
+    height: 145px;
+    position: absolute;
+    top: -24px;
+    left: -20px;
+    color: #79001c;
+    line-height: 92px;
+    padding-lefT: 120px;
+}
+
+.xsdjs-style {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 10px;
+    top: 105px;
+    left: 50%;
+    font-size: 12px;
+    margin-left: -103px;
+    width: 185px;
+    text-align: center;
+}
+
+.SpecialofferBtn {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    width: 207px;
+    margin-left: -80px;
+}
+
+.footerContent {
+    background: url(../images/footerbg_03.jpg) repeat-x;
+    position: relative;
+    padding: 20px 0px;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    height: 60px;
+}
+
+.fnameCenter {
+    width: 1178px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.footerContent a {
+    color: #fff;
+    text-decoration: none;
+    line-height: 24px;
+}
+
+.footerContent p {
+    margin: 0px 0px;
+}
+
+.snowflakeList {
+    width: 100%;
+    position: absolute;
+}
+
+.snowflakeList img {
+    position: absolute;
+}
+
+.Christmas-gift-pis {
+    position: absolute;
+    width: 240px;
+    background: rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 0px 5px #000;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    padding: 5px 0px;
+    line-height: 24px;
+    top: 250px;
+    left: 50%;
+    margin-left: -135px;
+    z-index: 3;
+}
+
+#countdown {
+    float: left;
+    padding: 3px 0px 0px 10px;
+}
+
+.WishingList-zan {
+    color: #fff;
+    text-decoration: none;
+    background: url("../images/inco-zan.png") center no-repeat;
+    padding: 35px 0px 0px 0px;
+    position: absolute;
+    right: 10px;
+    top: -10px;
+    width: 27px;
+    text-align: center;
+}
+
+.Wishing-ceng {
+    background: url("../images/xy_03.png") no-repeat;
+    width: 678px;
+    height: 533px;
+    position: fixed;
+    z-index: 100;
+    top: 50%;
+    left: 50%;
+    margin: -266px 0px 0px -339px;
+    display: none;
+}
+
+.bgCeng {
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 99;
+    display: none;
+}
+
+.Wishing-ceng-close {
+    position: absolute;
+    right: 40px;
+    top: 5px;
+    box-shadow: 0px 0px 5px #000;
+}
+
+.Wishing-ceng-btn {
+    position: absolute;
+    top: 340px;
+    left: 270px;
+}
+
+.WishingMore {
+    width: 125px;
+    height: 35px;
+    background-image: url("../images/search_bg.jpg");
+    background-repeat: repeat-x;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 4px;
+    position: absolute;
+    right: 0px;
+}
+
+.WishingMore a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.Wishing-ceng-input {
+    width: 180px;
+    border: 0px;
+    background: transparent;
+    font-family: "Microsoft YaHei";
+    position: absolute;
+    top: 145px;
+    left: 140px;
+    float: left
+}
+
+.Wishing-ceng-input1 {
+    width: 180px;
+    border: 0px;
+    background: transparent;
+    font-family: "Microsoft YaHei";
+    position: absolute;
+    top: 145px;
+    left: 335px;
+    float: left
+}
+
+.Wishing-ceng-template {
+    width: 375px;
+    height: 100px;
+    border: 0px;
+    background: transparent;
+    font-family: "Microsoft YaHei";
+    position: absolute;
+    top: 188px;
+    left: 140px;
+}
+
+.pis {
+    padding: 10px;
+    position: fixed;
+    z-index: 1000;
+    width: 300px;
+    left: 50%;
+    top: 50%;
+    color: red;
+    font-weight: bold;
+    margin: -10px 0px 0px -150px;
+    display: none;
+    border-radius: 100px;
+    text-align: center;
+    background: #000;
+    box-shadow: 0px 0px 5px #fff;
+}
+
+.bx-Contetn-List {
+    background: url("../images/bxceng_03.png") no-repeat;
+    width: 534px;
+    height: 347px;
+    position: absolute;
+    top: 80px;
+    left: -85px;
+    color: #ddba4c;
+    font-size: 14px;
+    display: none;
+}
+
+.bx-Contetn-List p {
+    clear: both;
+    padding-top: 8px;
+    text-align: center;
+}
+
+.bx-Contetn-List ul {
+    padding: 45px 0px 0px 20px;
+}
+
+.bx-Contetn-List ul li {
+    box-shadow: 0px 0px 10px #ddba4c;
+    border-radius: 8px;
+    width: 200px;
+    float: left;
+    overflow: hidden;
+    margin: 15px 0px 0px 30px;
+    text-align: center;
+}
+
+.bx-Contetn-List ul li img {
+    float: left;
+}
+
+.bx-Contetn-List ul li span {
+    float: left;
+    padding-left: 5px;
+    width: 120px;
+    height: 42px;
+}
+
+.line42 {
+    line-height: 42px;
+}
+
+.baiyin {
+    left: 110px;
+}
+
+.huangjin {
+    left: 300px;
+}
+
+.zuanshi {
+    left: 490px;
+}
+
+.WishingPageList {
+    text-decoration: none;
+    color: #076601;
+}
+
+.WishingPageListZan {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    background: #076601;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.duwang {
+    left: 680px;
+}
+
+.WishingMoreList {
+    width: 890px;
+    height: 532px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin: -266px 0px 0px -445px;
+    display: none;
+    z-index: 900;
+    border-radius: 15px;
+    background: url("../images/smbg_03.jpg") no-repeat;
+}
+
+@keyframes xuehua {
+    0% {
+        transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        opacity: 0.5;
+        top: 980px;
+    }
+}
+
+@-moz-keyframes xuehua {
+    0% {
+        transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        opacity: 0.5;
+        top: 980px;
+    }
+}
+
+@-webkit-keyframes xuehua {
+    0% {
+        transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        opacity: 0.5;
+        top: 980px;
+    }
+}
+
+@-o-keyframes xuehua {
+    0% {
+        transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        opacity: 0.5;
+        top: 980px;
+    }
+}
+
+.snowflakeList img {
+}
+
+.bottomPisText {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    padding: 5px 10px;
+    background: #fff;
+    color: red;
+    font-size: 14px;
+    border-radius: 4px 4px 0px 0px;
+    z-index: 1000;
+}
+
+@keyframes mache {
+    0% {
+        right: 100px;
+        top: 350px;
+        opacity: 0;
+    }
+    100% {
+        right: -150px;
+        top: 250px;
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes mache {
+    0% {
+        right: 100px;
+        top: 350px;
+        opacity: 0;
+    }
+    100% {
+        right: -150px;
+        top: 250px;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes mache {
+    0% {
+        right: 100px;
+        top: 350px;
+        opacity: 0;
+    }
+    100% {
+        right: -150px;
+        top: 250px;
+        opacity: 1;
+    }
+}
+
+@-o-keyframes mache {
+    0% {
+        right: 100px;
+        top: 350px;
+        opacity: 0;
+    }
+    100% {
+        right: -150px;
+        top: 250px;
+        opacity: 1;
+    }
+}
+
+.Christmas-inco-style {
+    animation: mache 5s infinite;
+    -moz-animation: mache 5s infinite;
+    -webkit-animation: mache 5s infinite;
+    -o-animation: mache 5s infinite;
+}

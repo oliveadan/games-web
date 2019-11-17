@@ -1,0 +1,734 @@
+@charset "UTF-8";
+/*今日之星*/
+.ranking {
+    background: rgba(248, 190, 241, 0.87);
+    margin-bottom: 20px;
+}
+
+.ranking .title {
+    color: #fff;
+    font-size: 22px;
+    font-weight: bolder;
+    padding-left: 10px;
+}
+
+.ranking .title h2 {
+    font-size: 18px;
+    color: #ffffff;
+    padding-left: 10px;
+    float: left;
+    -webkit-text-stroke: 1.3px #960bf7;
+    text-shadow: 2px 2px 7px #333333;
+    padding-top: 10px;
+}
+
+.ranking .title .ico-j {
+    float: left;
+    width: 30px;
+    height: 29px;
+    background: transparent url(../images/jzan.png) no-repeat 0 -0/30px 29px;
+    margin-top: 10px;
+    display: none;
+}
+
+.ranking .ranking-box {
+    width: 100%;
+    height: 200px;
+    padding: 10px 0;
+}
+
+.ranking .ranking-box ul li {
+    display: inline-block;
+    height: 200px;
+    position: relative;
+    width: 150px;
+}
+
+.ranking .ranking-box ul li img {
+    height: 200px;
+    object-fit: cover;
+    width: 150px;
+}
+
+.ranking .ranking-box .swiper-button-next {
+    background: url(../images/right.png) 0px 0px no-repeat;
+    width: 46px;
+    height: 80px;
+    margin-top: -40px;
+    right: 1px;
+}
+
+.ranking .ranking-box .swiper-button-prev {
+    background: url(../images/left.png) 0px 0px no-repeat;
+    width: 46px;
+    height: 80px;
+    margin-top: -40px;
+    left: 1px;
+}
+
+.ranking .ranking-box .po {
+    left: 2px;
+    bottom: 2px;
+    color: #fff;
+    line-height: 65px;
+    background: url("../images/zan1.png") rgba(245, 15, 215, 0.63) no-repeat 5px 0px;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    text-align: center;
+}
+
+.mark_ttip {
+    display: block;
+    height: 35px;
+    width: 35px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    background: url(../images/ilist.png) no-repeat;
+    text-align: center;
+}
+
+.mark_ttip i {
+    margin-left: -13px;
+    color: #fff;
+    font-style: normal;
+}
+
+@media screen and (max-width: 680px ) {
+    .ranking {
+        margin-top: 50px;
+    }
+
+    .ranking .ranking-box {
+        width: 100%;
+        height: auto;
+    }
+
+    .ranking .ranking-box ul li {
+        display: inline-block;
+        width: 30% !important;
+        height: auto;
+        position: relative;
+    }
+
+    .ranking .ranking-box ul li img {
+        height: auto;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .ranking .ranking-box .po {
+        display: none;
+    }
+}
+
+/*1*/
+.main1 {
+    background: rgba(26, 0, 84, 0.84);
+}
+
+.main1 .title {
+    width: 100%;
+    height: 60px;
+    text-align: center;
+}
+
+.main1 .title h2 {
+    font-size: 22px;
+    color: #ffffff;
+    padding-left: 20px;
+    float: left;
+    -webkit-text-stroke: 1.3px #960bf7;
+    text-shadow: 2px 2px 7px #333333;
+    padding-top: 10px;
+}
+
+.main1 .title span {
+    font-size: 18px;
+    color: #333333;
+    float: left;
+    padding-left: 30px;
+    padding-top: 20px;
+}
+
+.main1 .title .more {
+    float: right;
+    margin-right: 10px;
+    height: 40px;
+    width: 80px;
+    background: #960bf7;
+    margin-top: 10px;
+    -moz-box-shadow: 4px 5px 6px #333333;
+    -webkit-box-shadow: 4px 5px 6px #333333;
+    box-shadow: 4px 5px 6px #333333;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.main1 .title .more a {
+    font-size: 14px;
+    color: #ffffff;
+    line-height: 40px;
+}
+
+.main1 .box1 {
+    margin: 20px 10px 0 10px;
+}
+
+.main1 .box1 .video {
+    width: 580px;
+    height: 380px;
+    background: #000;
+}
+
+.main1 .box1 .pic {
+    height: 400px;
+    width: 600px;
+}
+
+.main1 .box1 .pic li {
+    width: 280px;
+    height: 380px;
+    box-shadow: 2px 3px 3px #333333;
+    float: left;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    background: rgba(255, 255, 255, 0.71);
+    position: relative;
+    overflow: hidden;
+}
+
+.main1 .box1 .pic li img {
+    width: 280px;
+    height: 380px;
+    transition: all .5s;
+}
+
+.main1 .box1 .pic li:hover img {
+    transform: scale(1.1)
+}
+
+.main1 .box1 .po {
+    right: 2px;
+    top: 2px;
+    color: #fff;
+    line-height: 65px;
+    background: url("../images/zan1.png") rgba(245, 15, 215, 0.63) no-repeat 5px 0px;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    text-align: center;
+}
+
+.main1 .box1 li .txt {
+    width: 100%;
+    height: 40px;
+    background: rgba(150, 11, 247, 0.59);
+    line-height: 40px;
+    margin-top: -40px;
+    position: relative;
+}
+
+.main1 .box1 li .txt h2 {
+    float: left;
+    color: #fff;
+    padding-left: 10px;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.main1 .box1 li .txt span {
+    float: right;
+    color: #fff;
+    padding-right: 10px;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.main1 .box1 li .txt .icon {
+    width: 24px;
+    height: 26px;
+    overflow: visible;
+    float: left;
+}
+
+.main1 .box1 li .txt .icon .newbieicon {
+    width: 24px;
+    height: 24px;
+    background: transparent url(../images/inewbie.gif) no-repeat 0 -0/24px 24px;
+    padding: 0;
+}
+
+.main1 .box1 li .txt .icon .hotelicon {
+    width: 24px;
+    height: 24px;
+    background: transparent url(../images/fhoney.png) no-repeat 50% 50%;
+    padding: 0;
+}
+
+.main1 .box1 li .txt .icon .videoicon {
+    width: 26px;
+    height: 24px;
+    background: transparent url(../images/video.png) no-repeat 1px -1px;
+    padding: 0;
+}
+
+.main1 .box2 {
+    margin: 20px 10px;
+}
+
+.main1 .box2 li {
+    width: 280px;
+    height: 380px;
+    box-shadow: 2px 3px 3px #333333;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.71);
+    position: relative;
+    overflow: hidden;
+}
+
+.main1 .box2 li:nth-child(4), .main1 .box2 li:nth-child(8) {
+    margin-right: 0px;
+}
+
+.main1 .box2 li img {
+    width: 280px;
+    height: 380px;
+    transition: all .5s;
+}
+
+.main1 .box2 li:hover img {
+    transform: scale(1.1)
+}
+
+.main1 .box2 li .po {
+    right: 0px;
+    top: 0px;
+    color: #c3bd00;
+    line-height: 122px;
+    background: url(../images/zan1.png);
+    position: absolute;
+    width: 100px;
+    height: 79px;
+    text-align: center;
+}
+
+.main1 .box2 li .txt {
+    width: 100%;
+    height: 120px;
+    background: rgba(150, 1, 257, 0.92);
+    line-height: 26px;
+    margin-top: -120px;
+    position: relative;
+}
+
+.main1 .box2 li .txt h2 {
+    float: left;
+    color: #fff;
+    padding-left: 6px;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.main1 .box2 li .txt span {
+    float: right;
+    color: #fff;
+    padding-right: 10px;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.main1 .box2 li .txt .icon {
+    width: 24px;
+    height: 26px;
+    overflow: visible;
+    float: left;
+}
+
+.main1 .box2 li .txt .icon .newbieicon {
+    width: 24px;
+    height: 24px;
+    background: transparent url(../images/inewbie.gif) no-repeat 0 -0/24px 24px;
+    padding: 0;
+}
+
+.main1 .box2 li .txt .icon .hotelicon {
+    width: 24px;
+    height: 24px;
+    background: transparent url(../images/fhoney.png) no-repeat 50% 50%;
+    padding: 0;
+}
+
+.main1 .box2 li .txt .icon .videoicon {
+    width: 26px;
+    height: 24px;
+    background: transparent url(../images/video.png) no-repeat 1px -1px;
+    padding: 0;
+}
+
+/*國際判斷*/
+.main1 li .mark {
+    width: 40px;
+    height: 27px;
+    overflow: visible;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+}
+
+.main1 li .mark .hanguo {
+    width: 40px;
+    height: 27px;
+    background: transparent url(../images/hanguo.png) no-repeat 1px -1px;
+    padding: 0;
+}
+
+.main1 li .mark .riben {
+    width: 40px;
+    height: 27px;
+    background: transparent url(../images/riben.png) no-repeat 1px -1px;
+    padding: 0;
+}
+
+.main1 li .mark .cn {
+    width: 40px;
+    height: 27px;
+    background: transparent url(../images/cn.png) no-repeat 1px -1px;
+    padding: 0;
+}
+
+.main1 li .mark .taiwan {
+    width: 40px;
+    height: 27px;
+    background: transparent url(../images/taiwan.png) no-repeat 1px -1px;
+    padding: 0;
+}
+
+.main1 li .mark .nuowei {
+    width: 40px;
+    height: 27px;
+    background: transparent url(../images/nuowei.png) no-repeat 1px -1px;
+    padding: 0;
+}
+
+.main1 li .mark .danmai {
+    width: 40px;
+    height: 27px;
+    background: transparent url(../images/danmai.png) no-repeat 1px -1px;
+    padding: 0;
+}
+
+.main1 li .mark .ruidian {
+    width: 40px;
+    height: 27px;
+    background: transparent url(../images/ruidian.png) no-repeat 1px -1px;
+    padding: 0;
+}
+
+.main1 li .mark .fenlan {
+    width: 40px;
+    height: 27px;
+    background: transparent url(../images/fenlan.png) no-repeat 1px -1px;
+    padding: 0;
+}
+
+.main1 li .mark .meiguo {
+    width: 40px;
+    height: 27px;
+    background: transparent url(../images/meiguo.png) no-repeat 1px -1px;
+    padding: 0;
+}
+
+.main1 li .mark .yingguo {
+    width: 40px;
+    height: 27px;
+    background: transparent url(../images/yingguo.png) no-repeat 1px -1px;
+    padding: 0;
+}
+
+.main1 li .mark .eluosi {
+    width: 40px;
+    height: 27px;
+    background: transparent url(../images/eluosi.png) no-repeat 1px -1px;
+    padding: 0;
+}
+
+.main1 li .mark .jinanada {
+    width: 40px;
+    height: 27px;
+    background: transparent url(../images/jianada.png) no-repeat 1px -1px;
+    padding: 0;
+}
+
+.main1 li .mark .faguo {
+    width: 40px;
+    height: 27px;
+    background: transparent url(../images/faguo.png) no-repeat 1px -1px;
+    padding: 0;
+}
+
+.main1 li .mark .deguo {
+    width: 40px;
+    height: 27px;
+    background: transparent url(../images/deguo.png) no-repeat 1px -1px;
+    padding: 0;
+}
+
+.main1 li .mark .yidali {
+    width: 40px;
+    height: 27px;
+    background: transparent url(../images/yidali.png) no-repeat 1px -1px;
+    padding: 0;
+}
+
+.main1 li .mark .helan {
+    width: 40px;
+    height: 27px;
+    background: transparent url(../images/helan.png) no-repeat 1px -1px;
+    padding: 0;
+}
+
+.main1 li .mark .baxi {
+    width: 40px;
+    height: 27px;
+    background: transparent url(../images/baxi.png) no-repeat 1px -1px;
+    padding: 0;
+}
+
+.main1 li .mark .aierlan {
+    width: 40px;
+    height: 27px;
+    background: transparent url(../images/aierlan.png) no-repeat 1px -1px;
+    padding: 0;
+}
+
+.main1 li .mark .moxige {
+    width: 40px;
+    height: 27px;
+    background: transparent url(../images/moxige.png) no-repeat 1px -1px;
+    padding: 0;
+}
+
+.main1 li .mark .xibanya {
+    width: 40px;
+    height: 27px;
+    background: transparent url(../images/xibanya.png) no-repeat 1px -1px;
+    padding: 0;
+}
+
+.main1 li .mark .putaoya {
+    width: 40px;
+    height: 27px;
+    background: transparent url(../images/putaoya.png) no-repeat 1px -1px;
+    padding: 0;
+}
+
+.main1 li .mark .wukelan {
+    width: 40px;
+    height: 27px;
+    background: transparent url(../images/wukelan.png) no-repeat 1px -1px;
+    padding: 0;
+}
+
+.main1 li .mark .baieluosi {
+    width: 40px;
+    height: 27px;
+    background: transparent url(../images/baieluosi.png) no-repeat 1px -1px;
+    padding: 0;
+}
+
+.main1 li .mark .xinjiapo {
+    width: 40px;
+    height: 27px;
+    background: transparent url(../images/xinjiapo.png) no-repeat 1px -1px;
+    padding: 0;
+}
+
+.main1 li .mark .yuenan {
+    width: 40px;
+    height: 27px;
+    background: transparent url(../images/yuenan.png) no-repeat 1px -1px;
+    padding: 0;
+}
+
+.main1 li .mark .jianpuzhai {
+    width: 40px;
+    height: 27px;
+    background: transparent url(../images/jianpuzhai.png) no-repeat 1px -1px;
+    padding: 0;
+}
+
+.main1 li .mark .taiguo {
+    width: 40px;
+    height: 27px;
+    background: transparent url(../images/taiguo.png) no-repeat 1px -1px;
+    padding: 0;
+}
+
+.main1 li .mark .miandian {
+    width: 40px;
+    height: 27px;
+    background: transparent url(../images/miandian.png) no-repeat 1px -1px;
+    padding: 0;
+}
+
+.main1 li .mark .malaixiya {
+    width: 40px;
+    height: 27px;
+    background: transparent url(../images/malaixiya.png) no-repeat 1px -1px;
+    padding: 0;
+}
+
+.main1 li .mark1 {
+    width: 39px;
+    height: auto;
+    overflow: visible;
+    position: absolute;
+    left: 5px;
+    top: 35px;
+}
+
+/*.main1 li .mark1 .guanshi {
+	width: 39px;
+	height: 65px;
+	background: transparent url(../images/wanshi.png) no-repeat 1px -1px;
+	padding: 0;
+}*/
+
+.main1 li .mark1 .tuijie {
+    width: 39px;
+    height: 65px;
+    background: transparent url(../images/tuijie.png) no-repeat 1px -1px;
+    padding: 0;
+}
+
+@media screen and (max-width: 680px ) {
+    .main1 .box1 {
+        margin: 10px 0;
+    }
+
+    .main1 .box1 .video {
+        display: none;
+    }
+
+    .main1 .box1 .pic {
+        height: auto;
+        width: 100%;
+    }
+
+    .main1 .box1 .pic li {
+        width: 48%;
+        height: auto;
+        margin-right: 1%;
+        float: none;
+        display: inline-block;
+    }
+
+    .main1 .box1 .pic li:nth-child(2n+1) {
+        margin-left: 1%;
+    }
+
+    .main1 .box1 .pic li:nth-child(2n+2) {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .main1 .box1 .pic li img {
+        width: 100%;
+        height: auto;
+    }
+
+    .main1 .title span {
+        display: none;
+    }
+
+    .main1 .box2 {
+        margin: 10px 0;
+    }
+
+    .main1 .box2 li {
+        width: 48%;
+        height: auto;
+        margin-right: 1%;
+        float: none;
+        display: inline-block;
+    }
+
+    .main1 .box2 li:nth-child(2n+1) {
+        margin-left: 1%;
+    }
+
+    .main1 .box2 li:nth-child(2n+2) {
+        margin-right: 0;
+    }
+
+    .main1 .box2 li img {
+        width: 100%;
+        height: auto;
+    }
+
+    .main1 .box2 li .txt h2 {
+        width: 100%;
+        padding-left: 10px;
+        font-size: 12px;
+        overflow: hidden;
+        height: 40px;
+    }
+
+    .main1 .box1 li .txt h2 {
+        width: 100%;
+        padding-left: 10px;
+        font-size: 12px;
+        overflow: hidden;
+        height: 40px;
+    }
+}
+
+/*登录*/
+.tclogin {
+    background: url(../images/tclogin.png) no-repeat;
+    background-size: cover;
+    width: 360px;
+    height: 317px;
+    overflow: hidden;
+    display: none
+}
+
+.tclogin .user_name {
+    width: 350px;
+    height: 80px;
+    line-height: 80px;
+    background: #fff4e4;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 24px;
+    border: none;
+    margin: 0 auto;
+    margin-top: 68px;
+    display: block;
+    color: #6c3114
+}
+
+.tclogin .tcsub {
+    width: 350px;
+    height: 80px;
+    line-height: 80px;
+    background: #f63d3d;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 30px;
+    border: none;
+    margin: 0 auto;
+    margin-top: 68px;
+    display: block;
+    color: #fff;
+    font-weight: bold
+}

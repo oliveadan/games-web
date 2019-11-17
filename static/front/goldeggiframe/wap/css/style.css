@@ -1,0 +1,495 @@
+* {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-tap-highlight-color: transparent;
+	/* For some Androids */
+}
+
+body {
+	margin: 0 auto;
+	background: #fff;
+	font-size: 16px;
+	font-family: 'STHeiti', 'Microsoft YaHei', Helvetica, Arial, sans-serif;
+	max-width: 750px;
+}
+
+/* #page {} */
+
+/* .header {
+	width: 100%;
+	height: 0.9rem;
+	background: url(../images/header-m-bg.png);
+	color: #fff;
+	text-align: center;
+	line-height: 0.9rem;
+	position: relative
+}
+
+.header .logo {
+	display: inline-block;
+	margin: 0 0 0 1.2rem;
+	width: 2.7rem;
+	height: 100%;
+	background: url(../../../../img/logo240x80.png) center center no-repeat;
+	background-size: cover;
+} */
+
+.search {
+	width: 0.7rem;
+    height: 0.36rem;
+    line-height: 0.36rem;
+    background: rgb(223, 152, 0);
+    color: #fff;
+    border-radius: 0.1rem;
+    margin-left: 0.1rem;
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    margin-top: 0.07rem;
+	
+}
+
+/* 大奖广播弹窗样式 开始 */
+.broadcast-win {
+	background: url(../../../images/broadcast-win.png) no-repeat;
+	background-size: cover;
+	width: 5.5rem;
+	height: 6.27rem;
+	overflow: hidden;
+	text-align: center;
+	display: block;
+}
+
+.broadcast-msg {
+	margin-top: 4.3rem;
+	color: #5e2b17;
+}
+
+.broadcast-msg span {
+	color: #f63d3d;
+}
+
+.broadcast-win button {
+	width: 3rem;
+	height: 0.65rem;
+	line-height: 0.65rem;
+	display: block;
+	margin: 0 auto;
+	margin-top: 0.2rem;
+	background: #f63d3d;
+	border: none;
+	border-radius: 0.1rem;
+	color: #fff;
+	font-size: 0.4rem;
+	position: relative;
+	cursor: pointer;
+}
+
+/* 大奖广播弹窗样式 结束 */
+
+.zjdmain {
+	background: url(../images/bg.jpg) no-repeat;
+	background-size: cover;
+	width: 100%;
+	margin: 0 auto;
+	height: 7.2rem;
+	position: relative;
+	overflow: hidden
+}
+
+.egg {
+	width: 5.52rem;
+	height: 2.13rem;
+	margin: 2.8rem auto 0.2rem auto;
+	position: relative;
+}
+
+.eggList {
+	position: relative;
+	width: 5.52rem;
+}
+
+.eggList li {
+	float: left;
+	cursor: pointer;
+	position: relative;
+	margin: 0 0.1rem;
+	width: 1.64rem;
+	height: 2rem;
+}
+
+.eggList li span {
+	position: absolute;
+	background: url(../images/egg_1.png) no-repeat bottom;
+	width: 1.64rem;
+	height: 2rem;
+	display: block;
+	z-index: 99;
+	background-size: cover;
+}
+
+.eggList li.curr span {
+	background: url(../images/egg_2.png) no-repeat bottom;
+	cursor: default;
+	z-index: 99;
+	background-size: cover;
+}
+
+.eggList li.curr sup {
+	position: absolute;
+	background: url(../images/fireworks.png) no-repeat;
+	width: 2rem;
+	height: 2.18rem;
+	top: -0.76rem;
+	left: -0.1rem;
+	z-index: 90;
+	background-size: cover;
+}
+
+.hammer {
+	background: url(../images/hammer.png) no-repeat;
+	width: 1.2rem;
+	height: 0.91rem;
+	position: absolute;
+	z-index: 100;
+	left: 1rem;
+	top: -0.65rem;
+	background-size: cover;
+}
+
+.zjdmain .logined {
+	height: 0.5rem;
+	line-height: 0.5rem;
+	position: absolute;
+	top: 0rem;
+	left: 50%;
+	margin-left: -3.2rem;
+	text-align: center;
+	width: 6.4rem;
+	color: #deb558;
+	font-size: 0.2rem;
+	z-index: 10;
+	display: none;
+	background: #72180a;
+	border: 0.02rem solid #d4a43e;
+	border-radius: 0.3rem
+}
+
+.zjdmain .logined i {
+	color: #deb558;
+	font-size: 0.32rem;
+	margin: 0 0.05rem;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.zjdmain .logined span {}
+
+.zjdmain .logined b {
+	font-weight: normal;
+	color: #fff100;
+	font-size: 0.24rem;
+	margin: 0 0.05rem;
+}
+
+.zjdmain .logined .btn {
+	width: 0.7rem;
+	height: 0.36rem;
+	line-height: 0.36rem;
+	display: inline-block;
+	background: #e60014;
+	color: #fff;
+	border-radius: 0.1rem;
+	margin-left: 0.1rem;
+	display: inline-block;
+	position: relative;
+	vertical-align: top;
+	margin-top: 0.07rem;
+}
+
+.wininfobg {
+	background: url(../images/wininfo.png) no-repeat;
+	background-size: cover;
+	width: 5.98rem;
+	height: 1.25rem;
+	text-align: center;
+	overflow: hidden;
+	margin: 0 auto;
+	margin-top: 0.7rem;
+}
+
+.wininfo {
+	width: 5.3rem;
+	height: 0.5rem;
+	margin-top: 0.34rem;
+	margin-left: 0.4rem;
+	overflow: hidden
+}
+
+.wininfo ul {
+	line-height: 0.5rem;
+}
+
+.wininfo ul li {
+	color: #ffd5b3;
+	font-size: 0.2rem;
+}
+
+.wininfo ul li em,
+.wininfo ul li i {
+	color: #fff100;
+	font-weight: bold;
+	font-style: normal;
+	margin: 0 0.05rem
+}
+
+.content {
+	background: #330c05;
+	min-height: 3rem;
+	padding-bottom: 0.3rem
+}
+
+.content .title {
+	background: url(../images/title.png) no-repeat;
+	width: 2.77rem;
+	height: 0.3rem;
+	line-height: 0.3rem;
+	text-align: center;
+	background-size: cover;
+	margin: 0 auto;
+	color: #fff;
+	font-size: 0.3rem;
+	font-weight: bold;
+	margin-bottom: 0.15rem
+}
+
+.content p {
+	font-size: 0.16rem;
+	color: #c7a176;
+	line-height: 0.4rem;
+	margin: 0 0.65rem;
+}
+
+.content img {
+	width: 100%;
+}
+
+.tclogin {
+	background: url(../images/tclogin.png) no-repeat;
+	background-size: cover;
+	width: 5.64rem;
+	height: 3.17rem;
+	overflow: hidden;
+	display: none
+}
+
+.tclogin .user_name {
+	width: 3.5rem;
+	height: 0.8rem;
+	line-height: 0.8rem;
+	background: #fff4e4;
+	border-radius: 0.2rem;
+	text-align: center;
+	font-size: 0.24rem;
+	border: none;
+	margin: 0 auto;
+	margin-top: 0.68rem;
+	display: block;
+	color: #6c3114
+}
+
+.tclogin .tcsub {
+	width: 3.5rem;
+	height: 0.8rem;
+	line-height: 0.8rem;
+	background: #f63d3d;
+	border-radius: 0.2rem;
+	text-align: center;
+	font-size: 0.3rem;
+	border: none;
+	margin: 0 auto;
+	margin-top: 0.68rem;
+	display: block;
+	color: #fff;
+	font-weight: bold
+}
+
+.tcwin {
+	background: url(../images/tcwin.png) no-repeat;
+	background-size: cover;
+	width: 5.64rem;
+	height: 6.44rem;
+	overflow: hidden;
+	text-align: center;
+	display: none
+}
+
+.tcwin .wintext {
+	margin-top: 4.5rem;
+	font-size: 0.36rem;
+	color: #5e2b17;
+}
+
+.tcwin .wintext b {
+	color: #f63d3d;
+	font-weight: normal
+}
+
+.tcwin .makesure {
+	width: 3rem;
+	height: 0.75rem;
+	line-height: 0.75rem;
+	display: block;
+	margin: 0 auto;
+	margin-top: 0.2rem;
+	background: #f63d3d;
+	border: none;
+	border-radius: 0.2rem;
+	color: #fff;
+	font-size: 0.3rem;
+	position: relative;
+}
+
+.tcwin .picture img {
+	position: absolute;
+	position: absolute;
+	left: 63px;
+	top: 30px;
+	width: 160px;
+	height: 150px;
+	z-index: 1;
+}
+
+
+.layui-layer-nobg {
+	box-shadow: 0;
+}
+
+.layui-layer-nobg .layui-layer-setwin {
+	right: 0;
+	top: 0;
+}
+
+.layui-layer-nobg .layui-layer-setwin .layui-layer-close2 {
+	background: url(../images/close.png) no-repeat;
+	background-size: cover;
+	width: 0.68rem;
+	height: 0.68rem;
+	display: block;
+	right: -0.24rem;
+	top: -0.24rem
+}
+
+.layui-layer-nobg .layui-layer-setwin .layui-layer-close2:hover {
+	background: url(../images/close.png) no-repeat;
+	background-size: cover;
+}
+
+
+
+.hbcxcon {
+	margin: 0 auto;
+	height: 10.45rem
+}
+
+.hbcxcon .hbcxtitle {
+	height: 0.9rem;
+	position: relative;
+	line-height: 0.9rem;
+	text-align: center;
+	color: #fff;
+	font-size: 0.28rem;
+	border-bottom: 1px solid #f83737;
+	background: #b30000
+}
+
+.hbcxcon .hbcxtitle .back {
+	position: absolute;
+	left: 0.3rem;
+	top: 0rem;
+	background-size: cover;
+	font-size: 0.3rem;
+	display: block;
+	color: #deb558
+}
+
+.hbcxcon .content table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.hbcxcon .content table tr th {
+	height: 0.9rem;
+	line-height: 0.9rem;
+	color: #ffadad;
+	font-size: 0.27rem;
+	text-align: center;
+	border: 1px solid #f83737;
+	border-top: none;
+}
+
+.hbcxcon .content table tr td {
+	height: 0.9rem;
+	line-height: 0.9rem;
+	color: #ffffff;
+	font-size: 0.27rem;
+	text-align: center;
+	border: 1px solid #f83737;
+	border-top: none;
+	text-align: center
+}
+
+.hbcxcon .content table tr td span {
+	color: #ffcf2e
+}
+
+.pages {
+	padding-top: 0.2rem;
+	text-align: center
+}
+
+.pages span.total {
+	color: #fff;
+	font-size: 0.2rem;
+	margin-right: 0.2rem
+}
+
+.pages a {
+	min-width: 0.3rem;
+	height: 0.6rem;
+	line-height: 0.6rem;
+	padding: 0 0.1rem;
+	background: #fff;
+	display: inline-block;
+	color: #64717b;
+	font-size: 0.2rem;
+	border-radius: 0.05rem;
+	text-align: center;
+	margin: 0 0.05rem
+}
+
+.pages a.on {
+	color: #fff;
+	background: #f83737;
+	border-color: #46c972;
+}
+
+@media screen and (min-width: 500px) {
+	.tclogin {
+		width: 360px;
+		border-radius: 20px;
+	}
+
+	.tclogin .user_name {
+		width: 3.2rem;
+		height: 0.65rem;
+		line-height: 0.65rem;
+		margin-top: 0.8rem;
+	}
+
+	.tclogin .tcsub {
+		width: 3rem;
+		height: 0.6rem;
+		line-height: 0.6rem;
+		margin-top: 0.75rem;
+	}
+}

@@ -1,0 +1,500 @@
+
+@media (min-width: 980px) {
+.news_row:hover::before          { top: 30px;}
+.news_row:hover > .newsDate      { top: 3px; }
+.news_row:hover                  { top: -3px; -webkit-box-shadow: 6px 8px 14px 0px rgba(0,0,0,0.4); -moz-box-shadow: 6px 8px 14px 0px rgba(0,0,0,0.4); box-shadow: 6px 8px 14px 0px rgba(0,0,0,0.4); }
+
+}
+
+
+
+@media (max-width: 1280px) {
+.wrapper-feature-title h1,
+.wrapper-instruction-title h1       { font-size: 26pt; width: 32%; padding-right: 0;}
+.wrapper-feature-item h1 ,
+.wrapper-instruction-item h1        { font-size: 16pt;}
+.wrapper-feature-item.en h1,
+.wrapper-instruction-item.en h1     { font-size: 12pt;}
+ol.wrapper-rule-content li          { font-size: 12pt;}
+ol.wrapper-rule-content.en li       { font-size: 10pt;}
+.tile                               { height: 160px; }
+
+}
+
+@media (max-width: 1024px) {
+.circlebox                          { padding-top: 6%;}
+#aboutus4                           { width: 30%; padding-top: 37%;}
+.inline a h1                        { padding-top: 73px;}
+.wrapper-feature-item               { width: 32%;}
+#eventBannerTxt                     { font-size: 14pt;}
+#menu > ul> li > a                  { font-size: 12px;}
+.tile                               { height: 138px;}
+#rankingImgTitle                    { padding-top: 40px;}
+
+}
+
+@media (max-width: 980px) {
+#wrap 								{ padding: 0; }
+#wrapper-header						{ top:0; height: 60px;}
+#xinSlider 						    { margin-top: 60px;}
+.slideItem							{ top : 60px; }
+#header 							{ height:60px; }
+#logo 								{ height: 48px; top:0px; left:20px; }
+#logo a {text-align: center;}
+#logo img							{ width: 60%; margin-top: 6px; margin-left: 50%}
+.slide img 							{ margin-top: 60px;}
+#language-desktop					{ display:none; }
+#menu								{ display:none; }
+.mobile-menu-btn 					{ display:block; }
+.recruit .inner .wrap .one_third	{ width:50%; }
+.recruit .inner table				{ width:100%; }
+.jackpot .inner .life 			  	{ padding: 5% 0; display:table; width: 100%; margin: 0 auto; text-align: center;}
+.language_menu, #langDeskTopMenu    { display: none;}
+.content.aboutus, .content.news,
+.content.lobby                      { margin-top: 60px;}
+.content.sub                        { margin-top: 60px;}
+.readmore                           { width: 100%; padding-top: 0px;}
+.content.event                      { margin-top: 60px;}
+.inline a h1                        { padding-top: 90px;}
+.news_main							{ margin-top: 90px; padding: 30px 0 30px 50px;}
+.newsDate                           { font-size: 30px;}
+.month 								{ height: 30px;}
+.year                               { font-size: 16pt;}
+.newstext							{ height: 42px; }
+a.goDetail							{ font-size: 12px;}
+.news_row                           { width: 110%; }
+.rl_search{display:none;}
+.rl_search_mobile{display:block;}
+.commentt{display: block}
+}
+
+@media (max-width: 846px) {
+.recruit .inner						{ padding: 50px 10%; }
+.recruit .inner	.half				{ width:100%; }
+.jackpot .life .half				{ padding: 5% 0; display:table; width: 100%; margin: 0 auto; text-align: center;}
+.sm .sm_mode 						{ margin-top: 0;}
+ul.gamecategory                     { padding: 0 20%;}
+form#contactform                    { padding-right: 8%;}
+.contactinfo h1,.contactinfo p      { padding-left: 30%;}
+.content.sub                        { margin-top: 60px;}
+.contactinfo img                    { margin-bottom: 136px;left: 8%;width: 40%;}
+#aboutus1                           { right: 0%; width: 37%; padding-top: 12%;}
+#aboutus2                           { left: 4%;;width: 38%;}
+#aboutus3                           { width: 40%;padding-top: 11%;}
+#aboutus4                           { width: 30%;padding-top: 51%;}
+.content.aboutus                    { margin-top: 60px;}
+#cloud                              { position: absolute; width: 36%; display: block; left: -12%; padding-top: 31%; transform: rotateZ(-13deg);}
+.inline a h1                        { padding-top: 54px;font-size: 12px;}
+.tile h1                            { font-size: 12px;}
+.content.event                      { margin-top: 60px;}
+.wrapper-instruction-col-3          { padding-bottom: 0px;}
+.eventTag  							{ height: 36px; margin-top: -3.5%; }
+.eventTag h1 						{ font-size: 15px; }
+.coinBattleEventInstruction  	    { display: none; }
+.coinBattleEventDetailMobile  		{ display: block; }
+.coinBattleContainer				{ width: 50%; }
+.coinBattleEventTitleImg 			{ margin: 13px auto; height: 58%;}
+.coinBattleEventDetailImg 			{ margin: 15px auto; height: 40%;}
+.arrowIcon.glyphicon-menu-right		{ transform: translateX(-35%); opacity: 1;}
+.arrowIcon.glyphicon-menu-left      { transform: translateX(35%); opacity: 1;}
+
+}
+
+@media (max-width: 1024px) {
+.rankingButtonBar {
+    width: 100%;
+}
+.rankinginput{
+width: 93%;
+    height: 50px;}
+.rankingButtonBar input{
+	margin: 5px 0 0 45px;
+    width: 68%;
+    height: 35px;
+    padding-left: 10px;
+    border-radius: 5px;
+}
+.rankingBtn1{
+	display: block;
+	text-align: center;
+}
+
+.rankingBtn2{
+	display: block;
+	text-align: center;
+	margin-top: 50px;
+}
+}
+@media (max-width: 768px) {
+.rankingButtonBar {
+    width: 100%;
+}
+.rankinginput{
+width: 93%;
+    height: 50px;
+}
+.rankinginput1{
+    width: 93%;
+    height: 50px;
+    margin-left: 10px;
+}
+.rankingButtonBar input{
+	margin: 5px 0 0 45px;
+    width: 68%;
+    height: 35px;
+    padding-left: 10px;
+    border-radius: 5px;
+}
+.rankingBtn1{
+	display: block;
+	margin-left: -20px;
+}
+
+.rankingBtn2{
+	display: block;
+	text-align: center;
+	margin-top: 60px;
+}
+.headd img{
+    width: 350px;
+    height: 90px;
+}
+
+#commenttr{
+    height: 50px;
+    display: inline-table;
+    width: 60%;
+    float: left;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background: #170321;
+    line-height: 24px;
+}
+
+.content.event {
+    margin-top: 0px;
+    height: auto;
+    z-index: 900;
+    background-size: 420px auto;
+    background-image: url(../images/mobile-bg.jpg);
+    background-repeat: no-repeat;
+    background-color: #000119;
+}
+#addshare{
+  width: 113.86px;
+  height: 40px;
+}
+.commenttt {display: none;}
+
+
+.tile                               { width:24%;height: 120px;}
+.circle                             { width: 150px; height: 150px; font-size: 24px; padding-top: 50px; }
+.news_main                          { width: 90%; margin-bottom: 20px;}
+.newstext                           { width: 100%; font-size: 16px; padding-top: 10px;}
+.newstitle                          { width: 100%; padding-right: 20px; font-size: 18px}
+.moretext p 						{ font-size: 16px; }
+.readmore                           { padding-top: 0; width: 100%;}
+.moretext video                     { width: 100%;margin-left: 0;margin-top: 12px;}
+.circlebox                          { padding-top: 13%;}
+.circle.tablecircle                 { right: 47.5%;}
+.circle.videocircle                 { left: 47.3%;}
+.sm .inner                          { width: 90%;}
+.jackpot .inner .life .inline       { height: 100px;}
+.circle.slotcircle                  { padding-top: 64px;}
+.circlebox                          { padding-top: 13%;}
+.sm .life .half.right img           { width: 129%; margin-top: 17%; margin-left: -12%;}
+.title img                          { max-width: 40px;}
+.wrapper-feature-item               { width: 32.9%; padding: 0; margin: 0;}
+.wrapper-feature-title h1,
+.wrapper-instruction-title h1       { width: 28%;}
+.wrapper-instruction-item h1        { font-size: 12pt; padding-right: 8%; text-align: left;}
+ol.wrapper-rule-content li          { font-size: 12pt; line-height: 14pt;}
+ol.wrapper-rule-content.en li       { font-size: 10pt; line-height: 12pt;}
+.wrapper-feature-item h1,
+.wrapper-instruction-item h1        { font-size: 12pt;}
+#eventImg4                          { width: 100%; padding-top: 93%; margin-left: -3%;}
+#wrapper-instruction                { width: 100%;}
+.wrapper-rule-col-2                 { padding-bottom: 22px;}
+.wrapper-instruction-title h1       { padding-right: 10px; text-align: right;}
+.wrapper-feature-title h1,
+.wrapper-instruction-title h1,
+.wrapper-rule-title h1              { font-size: 22pt;}
+.circle.videocircle,
+.circle.tablecircle                 { margin-top: -50px;}
+.circle.sc                          { padding-top: 60px;}
+img#rankingMedal                    { width: 25%;margin-right: 18px;}
+#eventRankingTable .eventRankingTableBorder{ width: 85%;}
+h1.rankingRemark                    { width: 92%;}
+#eventRankingTable thead tr         { padding-bottom: 10px;}
+.wrapper-instruction-col-1          { text-align: center;}
+.wrapper-instruction-item           { width: 90%;margin: 0 auto;}
+.wrapper-feature-content img        { width: 80%;}
+#eventBannerTxt.en                  { font-size: 13pt;}
+.wrapper-instruction-title.en       { width: 85%;}
+.wrapper-rule-title.en              { width: 90%;}
+#eventRanking                       { width: 90%;}
+.rankingbr                          { display: block;}
+#imgTitle-1, #imgTitle-2,
+#imgTitle-3                         { width: 100%;}
+#rankingImgTitle                    { padding-top: 27px;width: 80%;}
+.eventTxt                           { width: 55%;}
+img#startStamp, img#finishStamp     { top: 5%;}
+.news_row::before                   { left: -57.41px;}
+.socailMediaItem					{ width: 6%; }
+
+}
+
+@media (max-width: 736px){
+.inline a h1                        { padding-top: 52px;}
+.aboutus_row1 p                     { font-size: 14px; line-height: 18px;}
+
+.wrapper-feature-title h1,
+.wrapper-instruction-title h1       { width: 40%;}
+.wrapper-instruction-item h1        { font-size: 16px;}
+.wrapper-feature-item h1            { font-size: 14px;}
+.wrapper-feature-item               { width: 32.5%;}
+ol.wrapper-rule-content li          { font-size: 10pt; line-height: 11pt;}
+ol.wrapper-rule-content.en li       { font-size: 10pt;line-height: 10pt;}
+.circle.videocircle,
+.circle.tablecircle                 { margin-top: -56px;}
+.circle.tablecircle                 { right: 46.5%;}
+.go-top                             { right: 0.2em; background-color: rgba(54, 54, 54, 0.75); }
+img#rankingMedal                    { width: 35%; margin-right: 14px;}
+#eventRankingTitle.english          { font-size: 24pt;}
+.wrapper-feature-content img        { width: 80%;}
+#eventBannerTxt                     { font-size: 12pt;}
+.tile                               { height: 102px;}
+.tile h1                            { font-size: 10px;}
+#wrapper-instruction                { width: 100%;}
+.wrapper-instruction-title.en       { width: 72%;}
+.wrapper-rule-title.en              { width: 72%;}
+.newstitle                          { font-size: 18px;}
+.moretext p                         { font-size: 15px; font-weight: 400;}
+#xinSlider-indicators				{ top : 94.5%; }
+.gamebar                            { display: none;}
+.gamebar.mobile                     { display: block;}
+}
+
+
+@media (max-width: 667px) {
+h2, h3 								{ text-align:center;}
+.inner								{ padding: 30px 10% 0;}
+.footer.inner                       { padding: 0;}
+.sm .life .half 					{ width: 100%; padding: 0;}
+.sm .inner p 						{ min-height: 100px}
+.sm .life img 						{ width: 100%; margin: 0;}
+.desktop							{ display:none; }
+.mobile								{ display:block; }
+.inline a h1                        { padding-top: 47px;font-size: 10px;}
+.circlebox                          { padding-top: 15%;}
+
+}
+
+
+@media (max-width: 568px){
+.inline a h1                        { padding-top: 33px; font-size: 7px;}
+.circlebox                          { padding-top: 17%;}
+.wrapper-feature-title h1,
+.wrapper-instruction-title h1       { width: 50%;}
+#eventBannerTxt                     { font-size: 12pt;}
+}
+
+
+@media (max-width: 450px) {
+.tile                               { width:24%;}
+ul.gamecategory                     { padding: 0 0;}
+label                               { padding: 15px 5px 5px 5px; font-size: 10px;}
+.contactinfo                        { width: 100%; text-align: center; border-bottom: 3px solid #eee; padding-bottom: 24px;}
+.contactinfo h1,.contactinfo p      { padding-left: 0%;}
+.contactform                        { width: 100%; padding-left: 2%; padding-right: 2%}
+.contactinfo img                    { margin-bottom: 150px; width: 50%; left: 25%;}
+#contactform input[type="submit"]   { margin-left: 36%;}
+form#contactform                    { padding-right: 0%;}
+.aboutus_row1 p                     { font-size: 16px; width:94%; text-align: center; line-height: 20px;}
+.aboutus_row2                       { height: 350px}
+.aboutus_row1 img                   { right: 0%; padding-top: 60%; width:38%;}
+#aboutus1                           { right: -6%; padding-top: 41%; width: 38%;}
+#aboutus2                           { left: 4%; width: 38%;}
+#aboutus3                           { width: 52%; padding-top: 18%;}
+#aboutus4                           { width: 36%; padding-top: 69%;}
+.newstitle                          { width: 100%; font-size: 16px; padding-right: 0px; padding-left: 5px;}
+.readmore                           { width: 100%; font-size: 12px; padding-top: 4px;}
+.news_main                          { width: 100%; max-width: 84%; margin-left: 16%; padding: 30px 20px 30px 30px;}
+.news_row::before                   { left: -35.7px;}
+.aboutus_row1 h1                    { padding-left: 0%; text-align: center;}
+.inner                              { padding: 30px 0% 0;}
+.footer.inner                       { padding: 0;}
+.inner h2                           { padding-left: 0;}
+.jackpot .inner p                   { padding-top: 10px; width: 80%;}
+.inline                             { width: 50%; display: inline-block;}
+.jackpot .inner .life               { padding: 8% 14% 0% 14%;}
+.inner img                          { padding-bottom: 12px;width: 80%;}
+.title h3                           { font-size: 18px;}
+.sm .inner                          { padding-top: 0px;}
+.inner h3                           { text-align: center;padding-top: 10px;}
+.sm .life img                       { padding-top: 35px;}
+.sm .inner p                        { text-align: center; width: 80%; padding-top: 12px;}
+.chat .inner img                    { width: 80%;}
+.chat .inner p,.bet .inner p,
+.vip .inner p                       { width: 88%;}
+.half.right img                     { width: 80%;}
+#cloud                              { position: absolute; width: 36%; display: block; left: -12%; padding-top: 35%; transform: rotateZ(-13deg);}
+.jackpot .inner .life .inline       { width: 40%; margin: 0px 10px; height: 140px;}
+.inline a h1                        { padding-top: 74px; font-size: 14px;}
+.tile h1                            { padding-top: 5px; font-size: 10px;}
+input#gameInput                     { width: 160px; height: 40px; font-size: 14px;}
+input#gameInput::placeholder        { font-size: 14px;}
+.tile                               { width:32%; height: 148px; animation:mobilegameFadeIn 1s ease-in-out forwards ;}
+.tile.hidetile                      { animation:mobilegameFadeOut 0.3s ease-in-out forwards ;}
+.less                               { font-size: 26px;}
+.title h2                           { font-size: 24px;}
+video.promotionvideo                { width: 98%;}
+.content.sub                        { margin-bottom: 244px;}
+.go-top                             { font-size: 36px; padding: 7px; right: 0.3em; background-color: rgba(54, 54, 54, 0.75); color: white;}
+.go-top:hover                       { color: white; text-decoration: none; background-color:rgba(54, 54, 54, 0.75);}
+.circle                             { width: 120px; height: 120px; font-size: 18px; line-height: 20px; padding-top: 46px;}
+.circlebox                          { padding-top: 18%;}
+.circle.tablecircle                 { right: 46.5%;}
+.circle.videocircle                 { left: 46.3%;}
+ul.gameUL                           { width: 100%; padding-bottom: 10px;}
+.circle.slotcircle                  { padding-top: 52px;}
+.circle.sc                          { padding-top: 22%;}
+img.machine                         { width: 90%;}
+img.smhero                          { width: 90%;}
+.sm .life .half.right img           { width: 100%; margin-top: 0; margin-left: 0;}
+#eventBannerTxt                     { width: 63%;padding-top: 2%;font-size: 10pt;}
+.wrapper-feature-title h1,
+.wrapper-instruction-title h1       { width: 87%;}
+.wrapper-feature-item               { width: 100%;padding-bottom: 30px;}
+.wrapper-feature-item img           { width: 100%;padding-top: 10px;}
+.wrapper-feature-item h1            { padding-top: 10px;font-size: 12pt;}
+#wrapper-instruction                { width: 100%;}
+.wrapper-instruction-col-3          { width: 100%;padding-bottom: 0px;}
+.wrapper-instruction-title h1       { width: 50%;margin: 0 auto;text-align: center;padding-right: 0px;float: none;}
+#eventImg4                          { width: 28%; padding-top: 0px; right: -10px; top: 36%; position: absolute;}
+.wrapper-instruction-col-1,
+.wrapper-instruction-col-2          { width: 100%; padding: 0px 4%;}
+.wrapper-instruction-col-2          { padding-top: 16%;}
+.wrapper-instruction-item h1,
+.instruction-detail.en h1           { font-size: 10pt; padding-right: 5%;}
+#eventImg3                          { position: absolute; width: 26%;}
+.wrapper-rule-content               { width: 90%; margin: 0 auto; padding-top: 42px;}
+.wrapper-instruction-item           { width: 70%; padding-bottom: 15px;}
+.wrapper-feature-title              { padding-top: 35px; padding-bottom: 14px;}
+.wrapper-rule-title h1              { text-align: center; width: 50%; margin: 0 auto;}
+ol.wrapper-rule-content li          { text-align: left; font-size: 11pt; line-height: 15pt; padding-bottom: 5px;}
+#eventImg3.zh, #eventImg3           { width: 26%; top: 78%;}
+.wrapper-rule-title h1,
+.wrapper-instruction-title h1,
+.wrapper-feature-title h1           { font-size: 18pt;}
+#eventImg3                          { display: none;}
+.circle.sc                          { font-size: 13pt;}
+.circle.videocircle,
+.circle.tablecircle                 { margin-top: -35px;}
+#eventRankingTitle                  { font-size: 18pt;}
+#eventRankingTable th               { font-size: 12pt;}
+img#rankingMedal                    { width: 60%; margin-right: 10px;}
+#eventRankingTable thead tr         { padding-bottom: 0px;}
+h1.rankingRemark                    { padding-bottom: 40px;}
+h1.rankingRemark                    { font-size: 9pt; text-align: center; width: 100%;}
+.enlarge                            { font-size: 15pt;}
+#eventRankingTitle.english          { font-size: 16pt;line-height: 24pt;}
+#eventRankingTableDiv               { font-size: 13pt;}
+.eventTxt                           { width: 45%;}
+.wrapper-rule-col-2                 { margin: auto 5%; width: 90%;}
+.wrapper-feature-content img        { width: 90%;}
+#eventBannerTxt.en                  { font-size: 9pt;}
+.slide img                          { margin-top: 50px;}
+.wrapper-rule-broder                { width: 70%; padding: 0 2% 0 8%;}
+img#startStamp, img#finishStamp     { top: 5%;}
+.eventBannerTxtbottom               { padding-bottom: 28px;}
+.wrapper-rule-col-2                 { top:40px;}
+.newsDate                           { left: -164.5px; font-size: 20px;}
+.newstitle p                        { margin: 0; font-size: 13pt; font-weight: normal; }
+.newstext                           { height: 40px;}
+.moretext p                         { font-size: 14px; line-height: 20px !important; padding-left: 5px; padding-right: 5px;font-weight: 400; }
+a.goDetail                          { font-size: 10pt;}
+.month 								{ height: 24px;}
+.year                               { font-size: 13pt;}
+.news_main							{ border-left: 3px solid #c71d22;}
+.news_row::before					{ height: 8px; width: 8px;}
+.news_row                           { width: 100%; }
+.eventTag  							{ height: 20px; width: 20%; margin-top: -4.8%;}
+.eventTag h1 						{ font-size: 10px; }
+.coinBattleEventTitle               { height: 40px; }
+.coinBattleEventDetail              { height: 30px; }
+.coinBattleEventTitleImg 			{ margin: 10px auto; height: 52%;}
+.coinBattleEventDetailImg 			{ margin: 7px auto; height: 50%;}
+.coinBattleContainer				{ width: 90%;}
+.socailMediaItem				    { width: 12%;}
+.bottommenu > ul > li               { width: 64px;}
+.bottommenu > ul > li > a           { font-size: 12px;}
+#xinSlider-indicators				{ top : 91.5%; }
+.arrowIcon.glyphicon-menu-right,
+.arrowIcon.glyphicon-menu-left      { font-size: 25pt;}
+}
+
+
+@media (max-width: 375px) {
+.contactinfo img                    { margin-bottom: 150px;}
+#contactform input[type="submit"]   { margin-left: 33%;}
+.footer .inner p                    { font-size: 12px;}
+.aboutus_row1 p                     { font-size: 16px; width:98%;}
+.aboutus_row1 img                   { right: 0%; padding-top: 72%; width:35%;}
+.aboutus_row2                       { height: 302px}
+#aboutus1                           { right: -6%; padding-top: 41%; width: 38%;}
+#aboutus2                           { left: 4%; width: 38%;}
+#aboutus3                           { width: 52%; padding-top: 18%;}
+#aboutus4                           { width: 36% ;padding-top: 66%;}
+.inner h3                           { margin: 0 auto;width: 84%;}
+.inner h2                       	{ font-size: 22px !important;}
+.bottommenu > ul > li > a           { font-size: 14px;}
+.inline a h1                        { padding-top: 65px; font-size: 14px;}
+.jackpot .inner .life .inline       { height: 128px;}
+.tile                        		{ height: 142px;}
+.circlebox                        	{ padding-top: 13%;}
+.wrapper-rule-title h1              { width: 50%;}
+#eventImg3.zh, #eventImg3           { width: 22%;top: 78.4%;}
+.wrapper-rule-content              	{ padding-top: 14px;}
+
+}
+
+
+@media (max-width: 360px) {
+.contactinfo img 					{ margin-bottom: 146px;}
+#contactform input[type="submit"] 	{ margin-left: 30%;}
+.bottommenu>ul>li>a 				{ font-size: 11px;}
+.footer .inner p 					{ font-size: 10px;}
+.aboutus_row1 img					{ padding-top: 94%;}
+.aboutus_row2 						{ height: 264px;}
+#aboutus1 							{ padding-top: 43%;}
+.jackpot .inner .life 				{ padding: 8% 8% 0% 8%;}
+.tile 								{ height: 118px;}
+.tile h1 							{ padding-top: 6px; font-size: 10px;}
+.content.sub						{ margin-bottom: 244px;}
+.aboutus_row1 p 					{ font-size: 12px;}
+.circle 							{ width: 80px;height: 80px; font-size: 14px; line-height: 12px; padding-top: 28px;}
+.circlebox 							{ padding-top: 20%;}
+.circle.slotcircle 					{ padding-top: 36px;}
+.contact-us th, .contact-us td 		{ float:left; }
+.title h2 							{ font-size: 32px;}
+.wrapper-rule-col-2 				{ padding-bottom: 4px;}
+#eventRankingTableDiv				{ font-size: 9pt;}
+
+}
+
+
+@keyframes mobilegameFadeOut {
+0%    { opacity: 1; transform: scale(1,1) translatey(0px); width:32%; display: inline-block; padding: 0.5%; margin: 0.5%;}
+99%   { opacity: 0; transform: scale(1,1) translatey(200px); width: 32%; display: inline-block; padding: 0.5%; margin: 0.5%;}
+100%  { opacity: 0; transform: scale(1,1) translatey(200px); width: 0%; display: none; padding: 0; margin: 0;}
+}
+
+
+@keyframes mobilegameFadeIn {
+0%    { opacity: 0; width: 0%; transform: scale(1,1) translatey(200px); display: none; padding: 0; margin: 0;}
+50%   { opacity: 0; width: 0%; transform: scale(1,1) translatey(200px); display: none; padding: 0; margin: 0;}
+51%   { opacity: 0; width: 32%; transform: scale(1,1) translatey(200px); display: none; padding: 0.5%; margin: 0.5%;}
+100%  { opacity: 1; width: 32%; transform: scale(1,1) translatey(0px); display: inline-block; padding: 0.5%; margin: 0.5%;}
+
+}

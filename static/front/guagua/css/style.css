@@ -1,0 +1,233 @@
+.main_box {
+
+    font-family: "\5FAE\8F6F\96C5\9ED1", Helvetica, "黑体", Arial, Tahoma
+}
+
+.main_box .box1 {
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+
+}
+
+.main_box .box1 .bg_in {
+    position: absolute;
+    left: 0.3rem;
+    top: 0.3rem;
+    bottom: 0.3rem;
+    right: 0.3rem;
+    background: #ffe4f3;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+}
+
+.main_box .box1 .bg_in .title {
+    color: #fd0196;
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 0.25rem 0;
+}
+
+.main_box .box1 .content {
+    z-index: 10;
+    position: relative;
+    height: 107px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    visibility:hidden;
+}
+#mask_img_bg {
+position: absolute;
+left: 30px;
+top: 50px;
+width: 230px;
+bottom: 50px;
+right: 20px;
+font-size: 0.8rem;
+background: #fff;
+border-radius: 6px;
+-webkit-border-radius: 6px;
+text-align: center;
+color: red;
+    padding-top:50px;
+}
+
+#mask_img_bg img {
+    width: 300px;
+    height:250px;
+    margin: 0 auto;
+    display: block;
+}
+
+#redux {
+ z-index: 22;
+position: absolute;
+left: 0.67rem;
+padding: 0.2rem;
+box-sizing: border-box;
+width: 250px;
+height: 230px;
+border-radius: 6px;
+-webkit-border-radius: 6px;
+}
+
+.main_box .mask {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 98;
+}
+
+
+.black_overlay {
+    display: none;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 100000;
+    -moz-opacity: 0.7;
+    opacity: .70;
+    filter: alpha(opacity=70);
+}
+.white_content {
+    display: none;
+    position: fixed;
+    top: 25%;
+    left: 35%;
+    width: 589px;
+    height: 391px;
+    z-index: 100001;
+    overflow: auto;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+.cxbox {
+    width: 589px;
+    height: 391px;
+    margin: 0 auto;
+    background: url(../images/bjcx.png) no-repeat;
+}
+.cxbox_bt {
+    height: 36px;
+    line-height: 36px;
+}
+.cxbox_bt p {
+    font-size: 17px;
+    color: #f1f3b3;
+    float: left;
+    padding-left: 15px;
+}
+.cxbox_bt a {
+    font-size: 17px;
+    margin-right: 20px;
+    float: right;
+}
+.cxbox_hy {
+    height: 50px;
+    padding: 30px 0 0 90px;
+}
+.cxbox_hy p {
+    float: left;
+    font-size: 17px;
+    color: #f1f3b3;
+    line-height: 32px;
+}
+.cxbox_hy input {
+    border: 1px solid #cb2129;
+    height: 30px;
+    line-height: 30px;
+    width: 220px;
+    background: #750606;
+    float: left;
+    font-size: 17px;
+    color: #f1f3b3;
+    font-family: Arial, "å¾®è½¯é›…é»‘";
+    padding-left: 10px;
+}
+.cxbox_hy a {
+    background: url(../images/bjs.jpg) no-repeat;
+    height: 32px;
+    width: 86px;
+    display: block;
+    float: left;
+    font-size: 17px;
+    line-height: 32px;
+    text-align: center;
+    color: #7c0303;
+}
+.cxbox_bd table {
+    margin: 0 auto;
+    border-bottom: 1px solid #dd0002;
+    border-left: 1px solid #dd0002;
+}
+.cxbox_bd table tr td {
+    line-height: 32px;
+    text-align: center;
+    font-size: 15px;
+    font-family: Arial, "å¾®è½¯é›…é»‘";
+    border: 1px solid #dd0002;
+    border-bottom: 0px;
+    border-left: 0px;
+}
+.cxbox_bd table tr.ad {
+    background: #700001;
+}
+.winlist {
+    height: 267px;
+    width: 958px;
+    margin: 30px auto;
+    background: #6c1411;
+    border-radius: 15px;
+    text-align: center
+}
+.winlist .bd {
+    margin-left: 80px;
+    display: block;
+    float: left;
+    width: 350px;
+    text-align: center;
+    margin-top: 30px;
+}
+.winlist ul span {
+    padding: 0 5px
+}
+.winlist ul em {
+    font-style: normal;
+    color: #fef1de
+}
+.winlist ul li {
+    line-height: 35px;
+    height: 35px;
+    overflow: hidden;
+    color: #ffcf2e;
+    font-size: 14px;
+}
+.winlist .bd {
+    margin-left: 80px;
+    display: block;
+    float: left;
+    width: 350px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.broadcast-win {
+	background: url(/static/front/images/broadcast-win.png) no-repeat;
+	background-size: cover;width: 438px;height: 500px;overflow: hidden;text-align: center;display:block;
+}
+.broadcast-msg {
+	margin-top: 340px;font-size: 24px;color: #5e2b17;
+}
+.broadcast-msg span {
+	color:#f63d3d;
+}
+.broadcast-win button {
+	width: 200px;height: 45px;line-height: 45px;display: block;margin: 0 auto;margin-top: 30px;background: #f63d3d;border: none;border-radius: 20px;color: #fff;font-size: 24px;position: relative;cursor: pointer;
+}

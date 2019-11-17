@@ -1,0 +1,121 @@
+#projects {
+    overflow: hidden;
+}
+
+.project {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 0 0.1rem;
+}
+.project {
+    float: left;
+    width: 2rem;
+    height: 2.8rem;
+}
+.grid {
+    width:100%;
+    position: relative;
+}
+div.projects {
+    height: 9rem;
+}
+div.projects {
+    float: left;
+    width: 100%;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+div.projects .controls {
+    position: absolute;
+    right: 0;
+    bottom: 0.3rem;
+}
+div.projects .controls {
+    float: left;
+   	width: 2rem;
+    height: 2.8rem;
+}
+.controls .mask {
+    float: left;
+    position: relative;
+    background: url(../images/project_card_bg.png) no-repeat;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+div.projects .controls .bottom{
+      -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+.project.ani0 {
+    right: 5rem;
+    bottom: 3rem;
+}
+.project.ani1 {
+    right: 2.6rem;
+    bottom: 3rem;
+}
+.project.ani2 {
+    right: 0.2rem;
+    bottom: 3rem;
+}
+.project.ani3 {
+    right: 5rem;
+    bottom: 0;
+}
+
+.project.ani4 {
+    right: 2.6rem;
+    bottom: 0;
+}
+
+.project.ani5 {
+    right:0.2rem;
+    bottom: 0;
+}
+.project .front {
+    background: url(../../images/project_front_bg.png) no-repeat;
+    display: table;
+    background-size: 100%;
+}
+.project .back, .project .front {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.project .back, .project .front {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width:2rem;
+    height: 2.77rem;
+    border-radius: 0.1rem;
+    text-align: center;
+}
+
+.project, .project .back, .project .front, .socials a, .transform_holder .back, .transform_holder .front, .transform_holder .transform {
+    -webkit-transition: all 1s cubic-bezier(0.68,-.55,.265,1.55);
+    -moz-transition: all 1s cubic-bezier(0.68,-.55,.265,1.55);
+    -o-transition: all 1s cubic-bezier(0.68,-.55,.265,1.55);
+    -ms-transition: all 1s cubic-bezier(0.68,-.55,.265,1.55);
+    transition: all 1s cubic-bezier(0.68,-.55,.265,1.55);
+}
+.project {
+    -webkit-perspective: 1000;
+    -moz-perspective: 1000;
+    -o-perspective: 1000;
+    perspective: 1000;
+    -webkit-transform: perspective(200rem);
+    -ms-transform: perspective(200rem);
+    -moz-transform: perspective(200rem);
+    -webkit-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+}
