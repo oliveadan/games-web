@@ -1,7 +1,7 @@
 package gameperiod
 
 import (
-	. "phage-games-web/models/common"
+	. "games-web/models/common"
 	"phage/controllers/sysmanage"
 
 	"github.com/astaxie/beego"

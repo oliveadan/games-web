@@ -1,8 +1,8 @@
 package upgradingapi
 
 import (
+	. "games-web/controllers/front"
 	"github.com/astaxie/beego"
-	. "phage-games-web/controllers/front"
 )
 
 type UpgradingIframeController struct {

@@ -2,14 +2,14 @@ package rich
 
 import (
 	"fmt"
+	. "games-web/models/common"
+	. "games-web/models/gamedetail/rich"
+	"games-web/utils"
 	"github.com/360EntSecGroup-Skylar/excelize"
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/orm"
 	"github.com/astaxie/beego/utils/pagination"
 	"os"
-	. "phage-games-web/models/common"
-	. "phage-games-web/models/gamedetail/rich"
-	"phage-games-web/utils"
 	"phage/controllers/sysmanage"
 	. "phage/models"
 	"time"

@@ -2,11 +2,11 @@ package front
 
 import (
 	"fmt"
+	. "games-web/models/common"
+	. "games-web/models/gift"
+	. "games-web/models/rewardlog"
+	. "games-web/utils"
 	"net/http"
-	. "phage-games-web/models/common"
-	. "phage-games-web/models/gift"
-	. "phage-games-web/models/rewardlog"
-	. "phage-games-web/utils"
 	"phage/models/system"
 	. "phage/utils"
 	"strings"

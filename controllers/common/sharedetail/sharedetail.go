@@ -2,9 +2,9 @@ package sharedetail
 
 import (
 	"fmt"
+	. "games-web/models/common"
+	"games-web/utils"
 	"os"
-	. "phage-games-web/models/common"
-	"phage-games-web/utils"
 	"phage/controllers/sysmanage"
 	. "phage/models"
 	"strings"

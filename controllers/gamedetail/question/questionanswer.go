@@ -2,8 +2,8 @@ package question
 
 import (
 	"fmt"
-	. "phage-games-web/models/common"
-	. "phage-games-web/models/gamedetail/question"
+	. "games-web/models/common"
+	. "games-web/models/gamedetail/question"
 	"phage/controllers/sysmanage"
 	. "phage/utils"
 	"strconv"

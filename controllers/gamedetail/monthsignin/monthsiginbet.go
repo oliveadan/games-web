@@ -2,6 +2,8 @@ package monthsignin
 
 import (
 	"fmt"
+	"games-web/models/common"
+	. "games-web/models/gamedetail/monthsignin"
 	"github.com/360EntSecGroup-Skylar/excelize"
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/logs"
@@ -10,8 +12,6 @@ import (
 	"github.com/astaxie/beego/utils/pagination"
 	"html/template"
 	"net/url"
-	"phage-games-web/models/common"
-	. "phage-games-web/models/gamedetail/monthsignin"
 	"phage/controllers/sysmanage"
 	. "phage/models"
 	"phage/utils"

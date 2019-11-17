@@ -1,15 +1,15 @@
 package upgrading
 
 import (
+	. "games-web/models/common"
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/orm"
 	"github.com/astaxie/beego/utils/pagination"
 	"html/template"
-	. "phage-games-web/models/common"
 	"phage/controllers/sysmanage"
 	. "phage/models"
 
-	. "phage-games-web/models/gamedetail/upgrading"
+	. "games-web/models/gamedetail/upgrading"
 )
 
 type UpgradingAttribute struct {

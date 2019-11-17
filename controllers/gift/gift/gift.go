@@ -1,9 +1,9 @@
 package gift
 
 import (
+	. "games-web/models/common"
+	. "games-web/models/gift"
 	"html/template"
-	. "phage-games-web/models/common"
-	. "phage-games-web/models/gift"
 	"phage/controllers/sysmanage"
 	. "phage/models"
 

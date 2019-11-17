@@ -1,11 +1,11 @@
 package vipvalueapi
 
 import (
+	. "games-web/controllers/front"
+	"games-web/models/gamedetail/vipvalue"
+	. "games-web/models/rewardlog"
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/orm"
-	. "phage-games-web/controllers/front"
-	"phage-games-web/models/gamedetail/vipvalue"
-	. "phage-games-web/models/rewardlog"
 	"phage/controllers/sysmanage"
 	. "phage/models"
 	"strings"

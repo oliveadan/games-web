@@ -1,9 +1,9 @@
 package upgradingapi
 
 import (
+	. "games-web/controllers/front"
+	. "games-web/models/gamedetail/upgrading"
 	"github.com/astaxie/beego"
-	. "phage-games-web/controllers/front"
-	. "phage-games-web/models/gamedetail/upgrading"
 	"strings"
 )
 

@@ -2,8 +2,8 @@ package questionscore
 
 import (
 	"fmt"
-	. "phage-games-web/models/common"
-	. "phage-games-web/models/gamedetail/questionscore"
+	. "games-web/models/common"
+	. "games-web/models/gamedetail/questionscore"
 	"phage/controllers/sysmanage"
 	. "phage/utils"
 	"strconv"

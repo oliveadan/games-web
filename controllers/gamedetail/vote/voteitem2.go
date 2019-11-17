@@ -2,11 +2,11 @@ package vote
 
 import (
 	"fmt"
+	. "games-web/models/common"
+	. "games-web/models/gamedetail/vote"
+	. "games-web/models/rewardlog"
+	"games-web/utils"
 	"html/template"
-	. "phage-games-web/models/common"
-	. "phage-games-web/models/gamedetail/vote"
-	. "phage-games-web/models/rewardlog"
-	"phage-games-web/utils"
 	"phage/controllers/sysmanage"
 	. "phage/models"
 	"strconv"

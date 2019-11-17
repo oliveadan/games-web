@@ -1,17 +1,17 @@
 package game
 
 import (
+	. "games-web/models/common"
 	"html/template"
-	. "phage-games-web/models/common"
 	"phage/controllers/sysmanage"
 	. "phage/models"
 	"strings"
 
+	"games-web/utils"
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/orm"
 	"github.com/astaxie/beego/utils/pagination"
 	"github.com/astaxie/beego/validation"
-	"phage-games-web/utils"
 )
 
 func validate(game *Game) (hasError bool, errMsg string) {

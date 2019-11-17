@@ -2,9 +2,9 @@ package memberlottery
 
 import (
 	"fmt"
+	. "games-web/models/common"
 	"html/template"
 	"net/url"
-	. "phage-games-web/models/common"
 	"phage/controllers/sysmanage"
 	. "phage/models"
 	"phage/utils"
@@ -12,6 +12,7 @@ import (
 	"strings"
 	"time"
 
+	utils2 "games-web/utils"
 	"github.com/360EntSecGroup-Skylar/excelize"
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/orm"
@@ -19,7 +20,6 @@ import (
 	"github.com/astaxie/beego/validation"
 	"math"
 	"os"
-	utils2 "phage-games-web/utils"
 )
 
 func validate(memberLottery *MemberLottery) (hasError bool, errMsg string) {

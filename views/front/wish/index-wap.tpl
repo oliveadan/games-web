@@ -66,8 +66,8 @@
                     <img src="{{static_front}}/static/front/wish/images/77close.png"></a>
                 <input name="username" class="Wishing-ceng-input" id="username" type="text" placeholder="请填写会员账号"
                        datatype="*1-26" nullmsg="请填写会员账号" errormsg="请填写1-26位用户名" value="" />
-                <input name="mobile" class="Wishing-ceng-input1" id="mobile" type="text" placeholder="非会员请填写您的手机号"
-                       datatype="*1-16" nullmsg="请填写您的手机号" errormsg="请填写11位您的手机号" value="" />
+   {{/*             <input name="mobile" class="Wishing-ceng-input1" id="mobile" type="text" placeholder="非会员请填写您的手机号"
+                       datatype="*1-16" nullmsg="请填写您的手机号" errormsg="请填写11位您的手机号" value="" />*/}}
                 <textarea name="WishingTextarea" class="Wishing-ceng-template" placeholder="请填写您的愿望"></textarea>
                 <a href="javascript:Util.WishingSm();" class="Wishing-ceng-btn">
                     <img src="{{static_front}}/static/front/wish/images/77heart.png"></a>

@@ -2,11 +2,11 @@ package redapi
 
 import (
 	"fmt"
+	. "games-web/controllers/front"
+	. "games-web/models/common"
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/orm"
 	"github.com/astaxie/beego/validation"
-	. "phage-games-web/controllers/front"
-	. "phage-games-web/models/common"
 	. "phage/utils"
 	"strings"
 )

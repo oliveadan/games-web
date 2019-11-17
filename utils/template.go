@@ -2,7 +2,7 @@ package utils
 
 import . "phage/utils"
 import (
-	"phage-games-web/models/common"
+	"games-web/models/common"
 )
 
 func GetSiteConfigCodeMap() map[string]string {

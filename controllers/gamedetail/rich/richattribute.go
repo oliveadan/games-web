@@ -2,10 +2,10 @@ package rich
 
 import (
 	"fmt"
+	. "games-web/models/common"
+	"games-web/utils"
 	"html/template"
 	"os"
-	. "phage-games-web/models/common"
-	"phage-games-web/utils"
 	"phage/controllers/sysmanage"
 	. "phage/models"
 	. "phage/utils"

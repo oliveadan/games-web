@@ -3,9 +3,9 @@ package front
 import (
 	"encoding/base64"
 	"fmt"
+	. "games-web/models/common"
 	"net/http"
 	"net/url"
-	. "phage-games-web/models/common"
 	"phage/utils"
 	"strings"
 	"time"

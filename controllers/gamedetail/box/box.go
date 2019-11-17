@@ -1,11 +1,11 @@
 package box
 
 import (
+	"games-web/models/common"
+	. "games-web/models/gamedetail/box"
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/orm"
 	"html/template"
-	"phage-games-web/models/common"
-	. "phage-games-web/models/gamedetail/box"
 	"phage/controllers/sysmanage"
 )
 

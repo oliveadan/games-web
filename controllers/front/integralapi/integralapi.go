@@ -1,10 +1,10 @@
 package integralapi
 
 import (
-	. "phage-games-web/controllers/front"
-	. "phage-games-web/models/common"
-	. "phage-games-web/models/gift"
-	. "phage-games-web/models/rewardlog"
+	. "games-web/controllers/front"
+	. "games-web/models/common"
+	. "games-web/models/gift"
+	. "games-web/models/rewardlog"
 	. "phage/models"
 	. "phage/utils"
 	"strings"

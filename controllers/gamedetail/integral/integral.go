@@ -2,9 +2,9 @@ package integral
 
 import (
 	"fmt"
+	. "games-web/models/common"
 	"html/template"
 	"net/url"
-	. "phage-games-web/models/common"
 	"phage/controllers/sysmanage"
 	. "phage/models"
 	"phage/utils"

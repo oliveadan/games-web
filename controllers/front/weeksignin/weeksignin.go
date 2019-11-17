@@ -1,13 +1,13 @@
 package weeksignin
 
 import (
+	. "games-web/controllers/front"
+	. "games-web/models/common"
+	. "games-web/models/gift"
+	. "games-web/models/rewardlog"
+	"games-web/utils"
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/orm"
-	. "phage-games-web/controllers/front"
-	. "phage-games-web/models/common"
-	. "phage-games-web/models/gift"
-	. "phage-games-web/models/rewardlog"
-	"phage-games-web/utils"
 	"phage/models"
 	"strings"
 	"time"

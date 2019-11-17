@@ -1,7 +1,7 @@
 package KingRaceapi
 
 import (
-	. "phage-games-web/controllers/front"
+	. "games-web/controllers/front"
 	. "phage/utils"
 
 	"github.com/astaxie/beego"

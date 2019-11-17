@@ -1,10 +1,10 @@
 package signin
 
 import (
+	. "games-web/models/common"
+	. "games-web/models/gamedetail/signin"
+	"games-web/utils"
 	"html/template"
-	. "phage-games-web/models/common"
-	. "phage-games-web/models/gamedetail/signin"
-	"phage-games-web/utils"
 	"phage/controllers/sysmanage"
 	. "phage/models"
 	"strconv"

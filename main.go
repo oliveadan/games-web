@@ -1,10 +1,10 @@
 package main
 
 import (
+	_ "games-web/initial"
+	_ "games-web/routers"
 	"html/template"
 	"net/http"
-	_ "phage-games-web/initial"
-	_ "phage-games-web/routers"
 
 	"github.com/astaxie/beego"
 )

@@ -3,7 +3,7 @@ package front
 import (
 	"container/list"
 	"encoding/json"
-	"phage-games-web/utils"
+	"games-web/utils"
 
 	"github.com/astaxie/beego"
 	"github.com/gorilla/websocket"

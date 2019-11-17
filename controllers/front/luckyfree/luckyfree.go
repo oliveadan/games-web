@@ -1,11 +1,11 @@
 package luckyfree
 
 import (
+	. "games-web/controllers/front"
+	. "games-web/models/common"
+	gift2 "games-web/models/gift"
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/orm"
-	. "phage-games-web/controllers/front"
-	. "phage-games-web/models/common"
-	gift2 "phage-games-web/models/gift"
 	. "phage/utils"
 )
 

@@ -1,11 +1,11 @@
 package sec
 
 import (
+	"games-web/controllers/front"
+	. "games-web/models/common"
+	. "games-web/models/gift"
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/orm"
-	"phage-games-web/controllers/front"
-	. "phage-games-web/models/common"
-	. "phage-games-web/models/gift"
 	. "phage/utils"
 
 	"fmt"

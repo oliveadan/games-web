@@ -1,10 +1,10 @@
 package guaguaapi
 
 import (
+	. "games-web/controllers/front"
+	. "games-web/models/common"
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/orm"
-	. "phage-games-web/controllers/front"
-	. "phage-games-web/models/common"
 	. "phage/utils"
 )
 

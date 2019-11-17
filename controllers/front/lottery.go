@@ -1,11 +1,11 @@
 package front
 
 import (
+	. "games-web/models/common"
+	. "games-web/models/gift"
+	. "games-web/models/rewardlog"
+	utils2 "games-web/utils"
 	"github.com/astaxie/beego/logs"
-	. "phage-games-web/models/common"
-	. "phage-games-web/models/gift"
-	. "phage-games-web/models/rewardlog"
-	utils2 "phage-games-web/utils"
 	. "phage/models"
 	"phage/utils"
 	"strconv"

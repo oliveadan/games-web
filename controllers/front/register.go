@@ -1,13 +1,13 @@
 package front
 
 import (
+	"games-web/models/common"
+	"games-web/utils"
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/orm"
 	"github.com/astaxie/beego/validation"
 	"html/template"
 	"net/http"
-	"phage-games-web/models/common"
-	"phage-games-web/utils"
 	"phage/models"
 	"phage/models/system"
 	. "phage/utils"

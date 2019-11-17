@@ -2,13 +2,13 @@ package boxapi
 
 import (
 	"fmt"
+	. "games-web/controllers/front"
+	. "games-web/models/common"
+	. "games-web/models/gamedetail/box"
+	. "games-web/models/rewardlog"
+	. "games-web/utils"
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/orm"
-	. "phage-games-web/controllers/front"
-	. "phage-games-web/models/common"
-	. "phage-games-web/models/gamedetail/box"
-	. "phage-games-web/models/rewardlog"
-	. "phage-games-web/utils"
 	"phage/models/system"
 	. "phage/utils"
 	"strconv"

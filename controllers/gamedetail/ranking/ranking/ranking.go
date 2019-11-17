@@ -2,6 +2,9 @@ package ranking
 
 import (
 	"fmt"
+	. "games-web/models/common"
+	. "games-web/models/gamedetail/ranking"
+	"games-web/utils"
 	"github.com/360EntSecGroup-Skylar/excelize"
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/orm"
@@ -9,9 +12,6 @@ import (
 	"github.com/astaxie/beego/validation"
 	"html/template"
 	"net/url"
-	. "phage-games-web/models/common"
-	. "phage-games-web/models/gamedetail/ranking"
-	"phage-games-web/utils"
 	"phage/controllers/sysmanage"
 	. "phage/models"
 	. "phage/utils"

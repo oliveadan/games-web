@@ -1,9 +1,9 @@
 package wheel
 
 import (
+	. "games-web/models/common"
+	"games-web/utils"
 	"html/template"
-	. "phage-games-web/models/common"
-	"phage-games-web/utils"
 	"phage/controllers/sysmanage"
 
 	"github.com/astaxie/beego"

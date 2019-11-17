@@ -1,18 +1,18 @@
 package wishapi
 
 import (
+	. "games-web/controllers/front"
+	. "games-web/models/common"
+	. "games-web/models/gamedetail/wish"
+	"github.com/astaxie/beego"
+	"github.com/astaxie/beego/logs"
+	"github.com/astaxie/beego/orm"
 	"html"
-	. "phage-games-web/controllers/front"
-	. "phage-games-web/models/common"
-	. "phage-games-web/models/gamedetail/wish"
 	. "phage/models"
 	. "phage/utils"
-	"strings"
-
-	"github.com/astaxie/beego"
-	"github.com/astaxie/beego/orm"
-	"github.com/astaxie/beego/validation"
 	"regexp"
+	"strings"
+	"time"
 )
 
 type WishApiController struct {
@@ -48,7 +48,7 @@ func (this *WishApiController) Get() {
 	}
 }
 
-// 许愿
+//许愿和砸金蛋联动
 func (this *WishApiController) Wish() {
 	var code int
 	var msg string
@@ -61,36 +61,15 @@ func (this *WishApiController) Wish() {
 		msg = "请刷新后重新许愿"
 		return
 	}
-	if account == "" && mobile == "" {
-		msg = "会员账号与手机号至少填一个"
+	if account == "" {
+		msg = "请输入您的会员账号"
 		return
 	}
-	valid := validation.Validation{}
 	o := orm.NewOrm()
-	if account != "" {
-		num, err := o.QueryTable(new(Member)).Filter("Account", account).Count()
-		if err != nil {
-			msg = "请刷新后重新许愿"
-			return
-		}
-		if num != 1 {
-			valid.Required(mobile, "errmsg").Message("非会员请填写手机号")
-			valid.Phone(mobile, "errmsg").Message("手机号格式不正确")
-		}
-	} else {
-		valid.Required(mobile, "errmsg").Message("非会员请填写手机号")
-		valid.Phone(mobile, "errmsg").Message("手机号格式不正确")
-	}
-	valid.Required(wc, "errmsg").Message("您还没填写愿望，请填写")
-
-	if valid.HasErrors() {
-		for _, err := range valid.Errors {
-			msg = err.Message
-			return
-		}
-	}
-	if account == "" {
-		account = mobile
+	exist := o.QueryTable(new(Member)).Filter("Account", account).Exist()
+	if !exist {
+		msg = "您输入的会员账号不存在"
+		return
 	}
 	wc = html.EscapeString(wc)
 	wish := Wish{GameId: gId, Account: account, Mobile: mobile, Content: wc, Thumbs: 0, Enabled: 0}
@@ -98,6 +77,25 @@ func (this *WishApiController) Wish() {
 	if ok {
 		code = int(id)
 		msg = "许愿成功，祝您愿望成真！"
+		//添加砸金蛋抽奖次数
+		b := o.QueryTable(new(MemberLottery)).Filter("GameId", 10).Filter("Account", account).Exist()
+		if !b {
+			ml := MemberLottery{}
+			ml.CreateDate = time.Now()
+			ml.ModifyDate = time.Now()
+			ml.GameId = 10
+			ml.Account = account
+			ml.Version = 0
+			_, err := o.Insert(&ml)
+			if err != nil {
+				logs.Info("insert MemberLottery error", err)
+			}
+		} else {
+			_, err := o.QueryTable(new(MemberLottery)).Filter("GameId", 10).Filter("Account", account).Update(orm.Params{"LotteryNums": orm.ColValue(orm.ColAdd, 1)})
+			if err != nil {
+				logs.Info("update MemberLottery err", err)
+			}
+		}
 		return
 	} else {
 		err := o.Read(&wish, "GameId", "Account")

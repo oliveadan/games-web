@@ -1,12 +1,12 @@
 package rankingconfig
 
 import (
+	. "games-web/models/common"
+	. "games-web/models/gamedetail/ranking"
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/orm"
 	"github.com/astaxie/beego/utils/pagination"
 	"html/template"
-	. "phage-games-web/models/common"
-	. "phage-games-web/models/gamedetail/ranking"
 	"phage/controllers/sysmanage"
 	. "phage/models"
 )

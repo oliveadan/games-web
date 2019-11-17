@@ -2,13 +2,13 @@ package vipvalue
 
 import (
 	"fmt"
+	. "games-web/models/gamedetail/vipvalue"
 	"github.com/360EntSecGroup-Skylar/excelize"
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/orm"
 	"github.com/astaxie/beego/utils/pagination"
 	"html/template"
 	"net/url"
-	. "phage-games-web/models/gamedetail/vipvalue"
 	"phage/controllers/sysmanage"
 	. "phage/models"
 	"phage/utils"

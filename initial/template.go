@@ -1,7 +1,7 @@
 package initial
 
 import (
-	"phage-games-web/utils"
+	"games-web/utils"
 
 	"github.com/astaxie/beego"
 )

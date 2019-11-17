@@ -2,11 +2,11 @@ package questionscore
 
 import (
 	"fmt"
+	. "games-web/models/common"
+	. "games-web/models/gamedetail/questionscore"
 	"github.com/360EntSecGroup-Skylar/excelize"
 	"html/template"
 	"net/url"
-	. "phage-games-web/models/common"
-	. "phage-games-web/models/gamedetail/questionscore"
 	"phage/controllers/sysmanage"
 	"phage/utils"
 	"strconv"

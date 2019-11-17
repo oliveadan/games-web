@@ -2,10 +2,10 @@ package voteapi
 
 import (
 	"fmt"
-	. "phage-games-web/controllers/front"
-	. "phage-games-web/models/common"
-	. "phage-games-web/models/gamedetail/vote"
-	. "phage-games-web/models/rewardlog"
+	. "games-web/controllers/front"
+	. "games-web/models/common"
+	. "games-web/models/gamedetail/vote"
+	. "games-web/models/rewardlog"
 	. "phage/utils"
 	"strings"
 	"time"

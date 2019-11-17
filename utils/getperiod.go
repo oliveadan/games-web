@@ -1,8 +1,8 @@
 package utils
 
 import (
+	. "games-web/models/common"
 	"github.com/astaxie/beego/orm"
-	. "phage-games-web/models/common"
 	"sort"
 	"strconv"
 	"time"

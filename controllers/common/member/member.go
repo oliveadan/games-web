@@ -3,10 +3,10 @@ package member
 import (
 	"encoding/csv"
 	"fmt"
+	. "games-web/models/common"
 	"html/template"
 	"io/ioutil"
 	"net/url"
-	. "phage-games-web/models/common"
 	"phage/controllers/sysmanage"
 	. "phage/models"
 	"phage/utils"

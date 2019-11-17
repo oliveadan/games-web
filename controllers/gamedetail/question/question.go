@@ -1,9 +1,9 @@
 package question
 
 import (
+	. "games-web/models/common"
+	. "games-web/models/gamedetail/question"
 	"html/template"
-	. "phage-games-web/models/common"
-	. "phage-games-web/models/gamedetail/question"
 	"phage/controllers/sysmanage"
 	"strings"
 

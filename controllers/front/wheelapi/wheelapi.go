@@ -1,9 +1,9 @@
 package wheelapi
 
 import (
-	. "phage-games-web/controllers/front"
-	. "phage-games-web/models/common"
-	"phage-games-web/utils"
+	. "games-web/controllers/front"
+	. "games-web/models/common"
+	"games-web/utils"
 	. "phage/utils"
 
 	"github.com/astaxie/beego"

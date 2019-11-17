@@ -1,11 +1,11 @@
 package seckillandrush
 
 import (
+	"games-web/models/common"
+	"games-web/models/gamedetail/seckillandrush"
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/orm"
 	"html/template"
-	"phage-games-web/models/common"
-	"phage-games-web/models/gamedetail/seckillandrush"
 	"phage/controllers/sysmanage"
 )
 

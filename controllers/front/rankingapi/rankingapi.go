@@ -1,10 +1,10 @@
 package rankingapi
 
 import (
+	. "games-web/controllers/front"
+	. "games-web/models/gamedetail/ranking"
+	"games-web/utils"
 	"github.com/astaxie/beego"
-	. "phage-games-web/controllers/front"
-	. "phage-games-web/models/gamedetail/ranking"
-	"phage-games-web/utils"
 	"strings"
 )
 

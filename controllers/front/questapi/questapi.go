@@ -1,11 +1,11 @@
 package questapi
 
 import (
+	. "games-web/controllers/front"
+	. "games-web/models/common"
+	. "games-web/models/gamedetail/question"
 	"html"
 	"html/template"
-	. "phage-games-web/controllers/front"
-	. "phage-games-web/models/common"
-	. "phage-games-web/models/gamedetail/question"
 	. "phage/utils"
 	"strings"
 	"time"

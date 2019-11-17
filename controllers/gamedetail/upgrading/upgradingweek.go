@@ -2,6 +2,9 @@ package upgrading
 
 import (
 	"fmt"
+	. "games-web/models/common"
+	. "games-web/models/gamedetail/upgrading"
+	"games-web/utils"
 	"github.com/360EntSecGroup-Skylar/excelize"
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/orm"
@@ -10,9 +13,6 @@ import (
 	"math"
 	"net/url"
 	"os"
-	. "phage-games-web/models/common"
-	. "phage-games-web/models/gamedetail/upgrading"
-	"phage-games-web/utils"
 	"phage/controllers/sysmanage"
 	. "phage/models"
 	. "phage/utils"

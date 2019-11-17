@@ -2,11 +2,11 @@ package voteapi
 
 import (
 	"fmt"
+	. "games-web/controllers/front"
+	. "games-web/models/common"
+	. "games-web/models/gamedetail/vote"
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/orm"
-	. "phage-games-web/controllers/front"
-	. "phage-games-web/models/common"
-	. "phage-games-web/models/gamedetail/vote"
 	. "phage/utils"
 	"strconv"
 	"strings"
