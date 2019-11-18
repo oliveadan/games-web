@@ -78,24 +78,30 @@ func (this *WishApiController) Wish() {
 		code = int(id)
 		msg = "许愿成功，祝您愿望成真！"
 		//添加砸金蛋抽奖次数
-		b := o.QueryTable(new(MemberLottery)).Filter("GameId", 10).Filter("Account", account).Exist()
+		b := o.QueryTable(new(MemberLottery)).Filter("GameId", 53).Filter("Account", account).Exist()
 		if !b {
 			ml := MemberLottery{}
 			ml.CreateDate = time.Now()
 			ml.ModifyDate = time.Now()
-			ml.GameId = 10
+			ml.GameId = 53
 			ml.Account = account
 			ml.Version = 0
+			ml.LotteryNums = 1
+			o.Begin()
 			_, err := o.Insert(&ml)
 			if err != nil {
+				o.Rollback()
 				logs.Info("insert MemberLottery error", err)
 			}
+
 		} else {
-			_, err := o.QueryTable(new(MemberLottery)).Filter("GameId", 10).Filter("Account", account).Update(orm.Params{"LotteryNums": orm.ColValue(orm.ColAdd, 1)})
+			_, err := o.QueryTable(new(MemberLottery)).Filter("GameId", 53).Filter("Account", account).Update(orm.Params{"LotteryNums": orm.ColValue(orm.ColAdd, 1)})
 			if err != nil {
+				o.Rollback()
 				logs.Info("update MemberLottery err", err)
 			}
 		}
+		o.Commit()
 		return
 	} else {
 		err := o.Read(&wish, "GameId", "Account")
